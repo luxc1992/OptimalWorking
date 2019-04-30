@@ -67,7 +67,7 @@ dependencies {
     api project(':basicframework')
     api project(':VideoSDK')
     //状态栏
-//    compile files('libs/tbs_sdk_thirdapp_v3.5.0.1004_43500_sharewithdownload_withoutGame_obfs_20170801_113025.jar')
+    //    compile files('libs/tbs_sdk_thirdapp_v3.5.0.1004_43500_sharewithdownload_withoutGame_obfs_20170801_113025.jar')
     implementation files('libs/AMap3DMap_6.2.0_AMapSearch_6.1.0_AMapLocation_4.0.1_20180427.jar')
     testCompile 'junit:junit:4.12'
     implementation rootProject.ext.dependencies["design"]
@@ -75,8 +75,8 @@ dependencies {
     implementation rootProject.ext.dependencies["indexablerecyclerview"]
     implementation rootProject.ext.dependencies["cardview"]
     implementation rootProject.ext.dependencies["services"]
-
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     implementation files('libs/alipaySdk-20180403.jar')
+    implementation project(':sharelibrary')
 }
