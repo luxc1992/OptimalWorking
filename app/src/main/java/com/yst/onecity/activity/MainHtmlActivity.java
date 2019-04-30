@@ -1020,7 +1020,6 @@ public class MainHtmlActivity extends BaseActivity implements EasyPermissions.Pe
         });
     }
 
-
     /**
      * 获取信息
      *
