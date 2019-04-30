@@ -1,0 +1,242 @@
+<resources>
+    <string name="app_name">IM聊天</string>
+
+    <!--添加好友-->
+    <string name="txt_add_frient_input_userid">请添加输入好友信息</string>
+    <string name="txt_add_frient_adduserbtn">添加</string>
+
+    <!--删除好友-->
+    <string name="txt_del_frient_input_userid">请删除输入好友id</string>
+    <string name="txt_del_frient_adduserbtn">删除</string>
+    <string name="txt_frients_infomation">我的</string>
+
+    <!--联系人-->
+    <string name="txt_frients_newFriend">新朋友</string>
+    <string name="txt_frients_groupChat">群聊</string>
+
+    <!--启动页-->
+    <string name="intentTextLeft">跳转</string>
+    <string name="intentTextRight"> )</string>
+
+    <!--群聊-->
+    <string name="txt_create_groupChat">创建群聊</string>
+    <string name="txt_groupChat">群聊</string>
+    <string name="txt_groupChat_MyChat">约聊</string>
+    <string name="txt_groupChat_AllChat">私信</string>
+    <string name="txt_groupChat_roomExplain">聊天室简介</string>
+    <string name="txt_groupChat_totlePerson">参与人数 :</string>
+    <string name="txt_groupChat_hotTips">热门标签 :</string>
+    <string name="txt_groupChat_createTime">创建时间 :</string>
+    <string name="txt_groupChat_person">人</string>
+
+    <string name="txt_groupChat_joinGroup">申请加入</string>
+    <string name="txt_groupChat_exitGroup">退出群聊</string>
+    <string name="txt_groupChat_joinPerson">参与人数：</string>
+    <string name="txt_groupChat_personNum">/20</string>
+
+    <string name="txt_groupChat_createGroup">我创建的</string>
+    <string name="txt_groupChat_mineGroup">我的群聊</string>
+    <string name="txt_groupChat_otherGroup">热门群聊</string>
+
+    <string name="txt_groupChat_disband">解散</string>
+    <string name="txt_groupChat_exited">退出</string>
+    <string name="txt_groupChat_joined">加入</string>
+    <string name="txt_groupChat_creat">创建中...</string>
+
+    <!--群聊-->
+    <string name="txt_groupChat_groupName">群聊标题(4到20字)</string>
+    <string name="txt_groupChat_groupaddPic">添加图片</string>
+    <string name="txt_groupChat_groupTopic">介绍</string>
+
+    <string name="txt_groupChat_groupIntivee">被邀请者</string>
+    <string name="txt_groupChat_groupType">行业</string>
+
+    <string name="txt_groupChat_groupUserManager">管理员</string>
+    <string name="txt_groupChat_groupPerson">成员</string>
+    <string name="txt_groupChat_groupNewApplication">申请</string>
+    <string name="txt_groupChat_groupPerson_num">名成员</string>
+
+    <string name="txt_groupChat_create">创建</string>
+
+    <string name="txt_groupIntro_tips150">/150</string>
+    <string name="txt_groupIntro_newApply">新申请</string>
+    <string name="txt_groupIntro_pers">人</string>
+    <string name="txt_groupIntro_groupMember">群成员 </string>
+    <string name="txt_groupIntro_groupManager">管理员 </string>
+    <string name="txt_search">请输入关键字</string>
+
+    <string name="txt_all_invite">全部</string>
+
+    <!--dialog-->
+    <string name="cancle">取消</string>
+    <string name="please_select_industry">请选择行业(最多选择5个)</string>
+    <string name="sure">确定</string>
+    <string name="txt_group_shut_already">禁言中</string>
+    <string name="txt_group_shut">禁言</string>
+    <string name="txt_group_move">移出</string>
+    <string name="txt_group_sure">同意</string>
+    <string name="txt_group_dont">拒绝</string>
+
+    <string name="txt_open_userersion">请打开拍照和读取照片权限</string>
+
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <!--录音-->
+    <string name="up_for_cancel">手指上滑，取消发送</string>
+    <string name="want_to_cancle">松开手指，取消发送</string>
+    <string name="time_too_short">录音时间过短</string>
+    <string name="long_click_record">长按 录音</string>
+    <string name="hang_up_finsh">松开 结束</string>
+    <string name="release_cancel">松开 取消</string>
+
+    <!--私聊列表显示-->
+    <string name="im_news_person_pic">[图片]</string>
+    <string name="im_news_person_voice">[语音]</string>
+
+    <!--长城币-->
+    <string name="im_news_pay_10money">继续私聊需要花费10长城币</string>
+    <string name="im_news_continue">是否继续聊天？</string>
+
+    <!--群聊列表操作提示-->
+    <string name="im_group_list_disband">是否解散该群？</string>
+    <string name="im_group_list_exit">确定退出该聊天室？</string>
+    <string name="im_group_list_join">确定加入该聊天室？</string>
+    <string name="im_group_list_audit">管理员正在审核，审核通过后即可进入约聊室</string>
+    <string name="im_group_list_sure">确定</string>
+    <string name="im_group_list_cannel">取消</string>
+    <!-- -;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+    <!--标题文字-->
+    <string name="txt_save">保存</string>
+    <string name="txt_finish">完成</string>
+    <string name="txt_close">取消</string>
+    <!--注册确认-->
+    <string name="im_register_sure">确认</string>
+    <string name="im_register_send_msg">发送验证码</string>
+
+    <!--登录-->
+    <string name="im_login_register">创建账号</string>
+    <string name="im_login_user">登录</string>
+    <string name="im_login_forget_password">忘记密码</string>
+
+    <!-- 我的页面设置 -->
+    <string name="mine_setting_name">16个字以内</string>
+    <string name="mine_setting_send_msg">验证码：</string>
+    <string name="mine_setting_nan">男</string>
+    <string name="mine_setting_nv">女</string>
+    <string name="mine_setting_phone">手机号码：</string>
+    <string name="mine_setting_phone_msg">请输入正确的手机号</string>
+    <string name="mine_setting_hint_phone">请输入手机号</string>
+    <string name="mine_setting_hint_code">请输入验证码</string>
+    <string name="mine_setting_hint_agin_code">请再次输入新密码</string>
+    <string name="mine_setting_login">登陆密码：</string>
+    <string name="mine_setting_clear_cache">清除缓存</string>
+    <string name="mine_setting_camera">拍照</string>
+    <string name="mine_setting_photo">从手机相册选择</string>
+    <string name="mine_setting_cancle">取消</string>
+    <string name="mine_setting_exit_login">退出登录</string>
+    <string name="mine_setting_sure_phone">确认手机号码</string>
+    <string name="mine_setting_exit_login_msg">退出后不会删除任何历史数据，下次登录依然可以使用本账户</string>
+    <string name="mine_setting_update_phone_msg">更换手机后，下次登录可使用新手机号登录，当前手机号：</string>
+    <string name="mine_setting_commite">提交</string>
+    <string name="mine_setting_send_nomsg">收不到验证码？</string>
+    <string name="mine_setting_send_formsg">忘记旧密码？</string>
+    <string name="mine_setting_code_msg">短信验证码已发送，请填写验证码！</string>
+    <string name="mine_setting_login_pws_msg">设置登录密码后可以通过手机号加密码登录！</string>
+    <string name="mine_setting_login_forget_pws_msg">如果你已经忘记登录密码，可以在本页面重置登录密码。后续可通过手机号加微信密码登录</string>
+    <string name="mine_setting_login_cod_pws_msg">注：</string>
+    <string name="mine_setting_login_cod_pws_msg1">密码必须至少8个字符。而且同时包含字母和数字</string>
+    <string name="mine_setting_old_pwd_msg">请输入旧密码"</string>
+    <string name="mine_setting_new_pwd_msg">请输入新密码</string>
+    <string name="mine_setting_old_pwd">旧密码：</string>
+    <string name="mine_setting_new_pwd">新密码：</string>
+    <string name="mine_setting_sure_pwd">确认密码：</string>
+    <string name="mine_setting_get_new_code">重新获取验证码</string>
+
+    <!--完善个人信息-->
+    <string name="personal_setting_city">设置地区</string>
+    <string name="personal_setting_select">已选地区</string>
+    <string name="personal_setting_all">全部</string>
+
+    <!--首页-->
+    <string name="txt_main_msglist">消息</string>
+    <string name="txt_main_friendlist">通讯录</string>
+    <string name="txt_main_other">我</string>
+
+    <!--搜索-->
+    <string name="txt_search_hint">搜索</string>
+    <string name="txt_search_nearest">联系人</string>
+    <string name="txt_search_more_nearest">查看更多联系人</string>
+    <string name="txt_search_group">群聊</string>
+    <string name="txt_search_more_group">查看更多群聊</string>
+
+    <!--申请人列表-->
+    <string name="app_list_title">新的好友/群</string>
+    <string name="app_list_friend">新的好友</string>
+    <string name="app_list_group">新的申请入群</string>
+
+    <!--重置密码-->
+    <string name="txt_forgot_password_setPwd">重置密码</string>
+
+
+    <!--groupChat-->
+    <string name="txt_group_name">提示文字</string>
+    <string name="txt_group_update_name">修改群名称</string>
+    <string name="txt_group_group_name">群聊名称</string>
+    <string name="txt_group_remark">群备注</string>
+    <string name="txt_group_mine_name">我在本群的昵称</string>
+
+    <string name="txt_group_hint_name">这个是群名称</string>
+    <string name="txt_group_notice_edit">----------仅群主可编辑----------</string>
+    <string name="txt_group_notice">群公告</string>
+    <string name="txt_select">选择</string>
+    <string name="txt_more_select">多选</string>
+    <string name="txt_single_select">单选</string>
+
+
+    <string name="txt_group_update_transport">转发</string>
+    <string name="txt_group_update_recall">撤回</string>
+    <string name="txt_group_update_copy">复制</string>
+    <string name="txt_group_edit">编辑</string>
+    <string name="txt_group_choose">最近聊天</string>
+    <string name="txt_num">(4)</string>
+
+    <string name="txt_all_friend">全部好友</string>
+    <string name="txt_delete_groups">删除成员</string>
+    <string name="txt_choose_groups">选择联系人</string>
+
+
+    <string name="txt_new_friend">发起群聊</string>
+    <string name="txt_new_group">加好友/群</string>
+
+    <string name="txt_input_group_hint">请输入群昵称搜索</string>
+    <string name="txt_input_friend_hint">请输入好友搜索</string>
+    <string name="txt_input_find_friend">找人</string>
+    <string name="txt_input_find_group">找群</string>
+
+    <string name="txt_input_apply_address">添加到通讯录</string>
+    <string name="txt_input_applied">已申请</string>
+
+    <!-- 多图选择 -->
+    <string name="mis_folder_all">所有照片</string>
+    <string name="mis_preview">预览</string>
+    <string name="mis_msg_no_camera">没有系统相机</string>
+    <string name="mis_msg_amount_limit">已经达到最高选择数量</string>
+    <string name="mis_action_done">完成</string>
+    <string name="mis_photo_unit">张</string>
+    <string name="mis_tip_take_photo">拍摄照片</string>
+    <string name="mis_error_image_not_exist">图片错误</string>
+    <string name="mis_error_no_permission">无权限</string>
+    <string name="mis_permission_dialog_title">权限拒绝</string>
+    <string name="mis_permission_dialog_ok">好</string>
+    <string name="mis_permission_dialog_cancel">拒绝</string>
+    <string name="mis_permission_rationale">浏览图片需要您提供浏览存储的权限</string>
+    <string name="mis_permission_rationale_write_storage">保存拍照图片需要您提供写存储权限</string>
+    <string name="mis_action_button_string">%1$s(%2$d/%3$d)</string>
+
+</resources>

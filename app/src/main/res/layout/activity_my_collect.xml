@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yst.onecity.activity.mine.MyCollectActivity">
+
+    <include layout="@layout/main_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ECECEC" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mycollect_vp_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/color_F05452"
+        app:tabIndicatorHeight="3dp"
+        app:tabSelectedTextColor="@color/color_222222"
+        app:tabTextColor="#7D7D7D" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ECECEC" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mycollect_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

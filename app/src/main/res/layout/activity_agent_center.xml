@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/main_title"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_center_list"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="课题列表"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/back_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_center_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立即添加"
+        android:textSize="15sp"
+        android:textColor="@color/color_ABABAB"
+        android:drawableTop="@mipmap/jia"
+        android:drawablePadding="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="13dp"
+        android:visibility="gone"
+        />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_agent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_marginBottom="5dp"
+        app:srlAccentColor="@android:color/black"
+        app:srlEnablePreviewInEditMode="true"
+        app:srlPrimaryColor="@color/white"
+        >
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

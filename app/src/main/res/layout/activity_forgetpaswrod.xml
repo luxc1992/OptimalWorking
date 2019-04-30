@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:layout_marginLeft="@dimen/x15">
+
+        <com.yst.onecity.view.ContainsEmojiEditText
+            android:id="@+id/et_real_phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_toRightOf="@+id/tv_phone"
+            android:background="@null"
+            android:drawableLeft="@mipmap/ic_phone"
+            android:drawablePadding="@dimen/x10"
+            android:hint="@string/please_input_phone_num"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/x15"
+            android:textColor="@color/color_666666"
+            android:textColorHint="@color/color_999999"
+            android:textSize="@dimen/textsize_12" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:layout_marginLeft="@dimen/x15">
+
+        <com.yst.onecity.view.ContainsEmojiEditText
+            android:id="@+id/et_real_code"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@null"
+            android:drawableLeft="@mipmap/ic_code"
+            android:drawablePadding="@dimen/x10"
+            android:hint="@string/please_input_verification_code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/x15"
+            android:textColor="@color/color_666666"
+            android:textColorHint="@color/color_999999"
+            android:textSize="@dimen/textsize_12" />
+
+        <TextView
+            android:id="@+id/btn_get_verification_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="@dimen/x15"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_get_verification_code"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x15"
+            android:paddingRight="@dimen/x15"
+            android:text="获取验证码"
+            android:textColor="#FF5424" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:layout_marginLeft="@dimen/x15">
+
+        <com.yst.onecity.view.ContainsEmojiEditText
+            android:id="@+id/et_real_psw"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@null"
+            android:digits="0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+            android:drawableLeft="@mipmap/ic_psw"
+            android:drawablePadding="@dimen/x10"
+            android:hint="@string/please_input_new_pwd_str"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/x15"
+            android:textColor="@color/color_666666"
+            android:textColorHint="@color/color_999999"
+            android:textSize="@dimen/textsize_12" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <TextView
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_margin="@dimen/x15"
+        android:background="@drawable/shape_btn_bg"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textColor="@color/white" />
+</LinearLayout>

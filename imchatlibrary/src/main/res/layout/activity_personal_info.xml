@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlackF5"
+    android:orientation="vertical"
+    tools:context=".ui.activity.GroupDetailsActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space22" />
+
+    <com.yst.im.imchatlibrary.base.baseview.AbstractTitleView
+        android:id="@+id/titleView_personal_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space44"
+        android:background="@color/colorWrite"
+        title:left_image="@mipmap/back_title_right"
+        title:right_text_color="@color/colorBlck999"
+        title:small_text_size="15sp"
+        title:title_text_color="@color/colorBlack222"
+        title:title_text_size="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space20"
+        android:background="#ffebebeb" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.yst.im.imchatlibrary.widget.NoScrollGridView
+                android:visibility="gone"
+                android:paddingTop="@dimen/space10"
+                android:paddingBottom="@dimen/space10"
+                android:id="@+id/gv_personal_member_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWrite"
+                android:columnWidth="@dimen/space70"
+                android:numColumns="5"
+                android:paddingLeft="@dimen/space12"
+                android:paddingRight="@dimen/space12"
+                android:stretchMode="spacingWidthUniform"
+                android:listSelector="@color/colorWrite"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space20"
+                android:background="#ffebebeb"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space50"
+                android:background="@color/colorWrite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space15"
+                    android:text="置顶聊天"
+                    android:textColor="@color/colorBlack1D"
+                    android:textSize="@dimen/text_size_large" />
+
+                <ch.ielse.view.SwitchView
+                    android:id="@+id/sv_personal_setting_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/space30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space15" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space50"
+                android:background="@color/colorWrite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space15"
+                    android:text="消息免打扰"
+                    android:textColor="@color/colorBlack1D"
+                    android:textSize="@dimen/text_size_large" />
+
+                <ch.ielse.view.SwitchView
+                    android:id="@+id/sv_personal_setting_disturb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/space30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space15" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space20"
+                android:background="#ffebebeb" />
+
+
+            <TextView
+                android:id="@+id/txt_personal_clear_history"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space50"
+                android:background="@color/colorWrite"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space15"
+                android:text="清空聊天记录"
+                android:textColor="@color/colorBlack1D"
+                android:textSize="@dimen/text_size_large" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

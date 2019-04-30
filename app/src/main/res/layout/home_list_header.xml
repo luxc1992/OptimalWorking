@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.yst.onecity.view.BannerView
+        android:id="@+id/banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:scrollbars="none">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/small_banner"
+            app:corner_radius="4dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,69 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//    afterEval0uate {
+//        tasks.matching {
+//            it.name.startsWith('dex') }.each { dx ->
+//            if (dx.additionalParameters == null) {
+//                dx.additionalParameters = []
+//            }
+//            dx.additionalParameters += '--multi-dex'
+//            dx.additionalParameters += "--main-dex-list=$projectDir/multidex.keep".toString()
+//        }
+//    }
+    buildToolsVersion '28.0.3'
+}
+repositories {
+    maven { url "https://jitpack.io" }
+    jcenter()
+    flatDir {
+        dir 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+    //noinspection GradleCompatible
+    compile rootProject.ext.dependencies["appcompat-v7"]
+    testCompile 'junit:junit:4.12'
+    compile rootProject.ext.dependencies["glide"]
+    compile rootProject.ext.dependencies["gson"]
+    compile rootProject.ext.dependencies["XTabLayout"]
+    compile rootProject.ext.dependencies["swipemenulistview"]
+    compile rootProject.ext.dependencies["okhttputils"]
+    compile rootProject.ext.dependencies["smartrefresh"]
+    compile rootProject.ext.dependencies["SmartRefreshHeader"]
+    compile rootProject.ext.dependencies["photoview"]
+    compile rootProject.ext.dependencies["base-adapter"]
+    compile rootProject.ext.dependencies["switchbutton"]
+    compile rootProject.ext.dependencies["picasso"]
+    compile rootProject.ext.dependencies["multidex"]
+    compile('pub.devrel:easypermissions:0.4.2') {
+        exclude module: 'support-v4'
+        exclude group: 'com.android.support'
+    }
+    compile project(':imsdk')
+    //完整版引入
+//    compile('com.shuyu:GSYVideoPlayer:4.1.3')
+
+}

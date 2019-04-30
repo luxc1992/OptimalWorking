@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include layout="@layout/main_title"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_mine_head"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="230dp"
+        >
+
+        <TextView
+            android:id="@+id/txt_nobank_txxtview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/nobank_textview"
+            android:textColor="@color/color_666666"
+            android:textSize="15dp" />
+
+        <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+            android:id="@+id/image_head"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/ic_bangding"
+            app:oval="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_nobank_textview"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_btn_bg"
+        android:text="@string/bank_textvie_card"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="18dp"
+        />
+</LinearLayout>

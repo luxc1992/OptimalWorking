@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorffeeeeee"
+    android:orientation="vertical">
+
+    <com.yst.im.imchatlibrary.base.baseview.AbstractTitleView
+        android:id="@+id/titleview_apply_affirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space44"
+        android:layout_marginBottom="@dimen/space15"
+        android:background="@color/colorWrite"
+        title:left_image="@mipmap/back_title_right"
+        title:right_image="@drawable/icon_more_screen"
+        title:small_text_size="15sp"
+        title:title_name="好友申请"
+        title:title_text_color="@color/colorBlack333"
+        title:title_text_size="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:background="@color/colorffd7d7d7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"
+        android:padding="@dimen/space15">
+
+        <com.yst.im.imchatlibrary.widget.ImRoundedImageView
+            android:id="@+id/group_icon_view"
+            android:layout_width="@dimen/space65"
+            android:layout_height="@dimen/space65"
+            android:src="@mipmap/icon_default" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space10"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txt_apply_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxWidth="@dimen/space220"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/colorff222222"
+                    android:textSize="@dimen/text_size_17sp" />
+
+                <ImageView
+                    android:id="@+id/img_apply_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space15"
+                    android:layout_toRightOf="@+id/txt_apply_comment"
+                    android:background="@drawable/icon_woman" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_apply_nick"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="昵称："
+                android:textColor="@color/colorff999999"
+                android:textSize="@dimen/text_size_15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:background="@color/colorffd7d7d7" />
+
+    <LinearLayout
+        android:id="@+id/ll_apply_group_affirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorWrite"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="@dimen/space15"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/space15"
+                android:text="申请加入"
+                android:textColor="@color/colorff333333"
+                android:textSize="@dimen/text_size_17sp" />
+
+            <TextView
+                android:id="@+id/txt_apply_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/colorff439eff"
+                android:textSize="@dimen/text_size_15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_apply_name_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/space10"
+            android:text=""
+            android:textColor="@color/colorff999999"
+            android:textSize="@dimen/text_size_15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_apply_friend_affirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorWrite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space15"
+            android:layout_marginRight="@dimen/space15"
+            android:text="验证信息"
+            android:textColor="@color/colorff333333"
+            android:textSize="@dimen/text_size_17sp" />
+
+        <TextView
+            android:id="@+id/txt_apply_name_firend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/colorff999999"
+            android:textSize="@dimen/text_size_15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:layout_marginBottom="@dimen/space15"
+        android:background="@color/colorffd7d7d7" />
+
+    <LinearLayout
+        android:id="@+id/ll_firend_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorWrite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space15"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:singleLine="true"
+            android:text="备注名"
+            android:textColor="@color/colorBlack333"
+            android:textSize="@dimen/text_size_17sp" />
+
+        <TextView
+            android:id="@+id/txt_comment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space20"
+            android:clickable="false"
+            android:text=""
+            android:textColor="@color/colorff999999"
+            android:textSize="@dimen/text_size_15sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_comment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/space15"
+            android:src="@mipmap/item_right_allow"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:background="@color/colorffd7d7d7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorWrite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space15"
+            android:layout_weight="1"
+            android:text="地区"
+            android:textColor="@color/colorBlack333"
+            android:textSize="@dimen/text_size_xlarge" />
+
+        <TextView
+            android:id="@+id/txt_apply_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space15"
+            android:layout_marginRight="@dimen/space15"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/colorff999999"
+            android:textSize="@dimen/text_size_15sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txt_affire_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space45"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginRight="@dimen/space15"
+        android:layout_marginTop="@dimen/space90"
+        android:background="@drawable/btn_shape_width_blue"
+        android:gravity="center"
+        android:text="@string/txt_input_apply_address"
+        android:textColor="@color/colorWrite"
+        android:textSize="@dimen/text_size_15sp" />
+</LinearLayout>

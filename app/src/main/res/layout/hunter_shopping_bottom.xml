@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:id="@+id/ll_my_pay"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_pay" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/hunter_pay"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/textsize_13"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_my_drliver"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_wait_send"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/hunter_drliver"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/textsize_13"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_my_take"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_already_send" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="待收货"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/textsize_13"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_my_appraise"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_evaluate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/hunter_appraise"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/textsize_13"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_my_after"
+        android:layout_width="6dp"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_exchange" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/my_order_exchange"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/textsize_13"
+            />
+    </LinearLayout>
+
+</LinearLayout>

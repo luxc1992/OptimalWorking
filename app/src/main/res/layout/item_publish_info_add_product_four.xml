@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/x10"
+    >
+    <RelativeLayout
+        android:id="@+id/item_four_publish_add_product_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10"
+        >
+        <LinearLayout
+            android:id="@+id/item_four_publish_add_product_ll_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/x15"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/x15">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_tl_tr_4"
+                android:gravity="center"
+                android:padding="@dimen/x5"
+                android:text="@string/plan_number"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_14" />
+
+            <TextView
+                android:id="@+id/item_four_publish_add_product_tv_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bl_br_4"
+                android:gravity="center"
+                android:padding="@dimen/x5"
+                android:text="32424"
+                android:textColor="@color/color_F05452"
+                android:textSize="@dimen/textsize_14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_four_publish_add_product_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x10"
+            android:layout_marginTop="@dimen/x3"
+            android:layout_toEndOf="@+id/item_four_publish_add_product_ll_number"
+            android:text="吐火搜索计划"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/textsize_18"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_toRightOf="@+id/item_four_publish_add_product_ll_number" />
+
+        <TextView
+            android:id="@+id/item_four_publish_add_product_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/item_four_publish_add_product_tv_title"
+            android:layout_alignBottom="@+id/item_four_publish_add_product_ll_number"
+            android:drawableStart="@mipmap/time"
+            android:drawablePadding="@dimen/x5"
+            android:text="2018-02-26"
+            android:layout_marginBottom="@dimen/x3"
+            android:textSize="@dimen/textsize_14"
+            android:layout_alignLeft="@+id/item_four_publish_add_product_tv_title"
+            android:drawableLeft="@mipmap/time" />
+        <TextView
+            android:id="@+id/item_four_publish_add_product_tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="黑龙江省哈尔滨市"
+            android:layout_toEndOf="@+id/item_four_publish_add_product_tv_time"
+            android:layout_alignBottom="@+id/item_four_publish_add_product_ll_number"
+            android:layout_marginStart="@dimen/x10"
+            android:drawableStart="@mipmap/addproduct__address"
+            android:drawablePadding="@dimen/x5"
+            android:textSize="@dimen/textsize_14"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/x3"
+            android:maxLines="1"
+            android:layout_toRightOf="@+id/item_four_publish_add_product_tv_time"
+            android:layout_marginLeft="@dimen/x10"
+            android:drawableLeft="@mipmap/addproduct__address" />
+        <CheckBox
+            android:id="@+id/item_four_publish_add_product_cb_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AddPlanCheckboxTheme"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/x10"
+            android:layout_marginTop="@dimen/x5"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x10" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/item_four_publish_add_product_tv_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我最大的爱好就是吃，各种吃，哪里有美食我就在哪里，所以这肉嘟嘟的脸也不知何时能够下去，今天小编就盘点了一下全球各个国家最好吃的美食，大家可以看下有你的最爱没有。"
+        android:maxLines="2"
+        android:layout_marginStart="@dimen/x15"
+        android:layout_marginEnd="@dimen/x15"
+        android:layout_marginTop="@dimen/x10"
+        android:textSize="@dimen/textsize_16"
+        />
+
+    <SurfaceView
+        android:id="@+id/item_four_publish_add_product_iv_sf"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x200"
+        android:layout_marginEnd="@dimen/x15"
+        android:layout_marginStart="@dimen/x15"
+        android:layout_marginTop="@dimen/x15"
+        android:background="@color/green" />
+
+    <RelativeLayout
+        android:id="@+id/item_four_publish_add_product_ll_num"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x30"
+        android:layout_marginStart="@dimen/x15"
+        android:layout_marginEnd="@dimen/x15"
+        android:orientation="horizontal"
+        android:padding="@dimen/x5"
+        android:layout_marginTop="@dimen/x15"
+        android:layout_marginBottom="@dimen/x15"
+        >
+        <TextView
+            android:id="@+id/item_four_publish_add_product_tv_share_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x5"
+            android:drawableStart="@mipmap/fenxiang"
+            android:gravity="center_vertical"
+            android:text="468"
+            android:layout_toStartOf="@+id/item_four_publish_add_product_tv_comment_num"
+            android:layout_marginEnd="@dimen/x60"
+            android:drawablePadding="@dimen/x6"
+            android:drawableLeft="@mipmap/fenxiang"
+            android:layout_toLeftOf="@+id/item_four_publish_add_product_tv_comment_num"
+            android:layout_marginRight="@dimen/x60" />
+        <TextView
+            android:id="@+id/item_four_publish_add_product_tv_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x5"
+            android:gravity="center_vertical"
+            android:drawableStart="@mipmap/pinglun"
+            android:text="968"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="@dimen/x6"
+            android:drawableLeft="@mipmap/pinglun" />
+        <TextView
+            android:id="@+id/item_four_publish_add_product_tv_like_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x5"
+            android:gravity="center_vertical"
+            android:text="8068"
+            android:drawableStart="@mipmap/dianzan"
+            android:layout_toEndOf="@+id/item_four_publish_add_product_tv_comment_num"
+            android:layout_marginStart="@dimen/x60"
+            android:drawablePadding="@dimen/x6"
+            android:drawableLeft="@mipmap/dianzan"
+            android:layout_toRightOf="@+id/item_four_publish_add_product_tv_comment_num" />
+    </RelativeLayout>
+</LinearLayout>

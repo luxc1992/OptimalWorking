@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+        android:id="@+id/iv_ser_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x180"
+        android:scaleType="centerCrop"
+        app:corner_radius="5dp"
+        app:oval="false"
+        android:src="@mipmap/serbackground"
+       />
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/shenhezhong" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@id/iv_ser_background"
+        android:alpha="0.3"
+        android:background="@color/black"
+        android:orientation="horizontal"></View>
+
+    <TextView
+        android:id="@+id/tv_server_name"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="ABCZ专业幼教"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_server_price"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="¥300-900"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

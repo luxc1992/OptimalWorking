@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yst.onecity.activity.mine.MyZxingActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/main_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x9"
+            android:orientation="horizontal">
+
+            <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+                android:id="@+id/zxing_head"
+                android:layout_width="@dimen/x55"
+                android:layout_height="@dimen/x55"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/x20"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/default_nor_avatar"
+                app:corner_radius="4dp"
+                app:oval="false" />
+
+            <TextView
+                android:id="@+id/zxing_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x20"
+                android:gravity="center"
+                android:textColor="@color/color_222222"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/zxing_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/zxing"
+            android:textColor="@color/color_999999" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/zxing_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ED5452"
+        android:padding="0dp"
+        android:text="@string/share_zxing"
+        android:textColor="@color/white" />
+</RelativeLayout>

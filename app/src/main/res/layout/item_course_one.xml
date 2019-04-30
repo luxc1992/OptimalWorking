@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_F6F6F6"
+    >
+    <ImageView
+        android:id="@+id/iv_one_delete"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:src="@mipmap/delet_green"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_one_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/iv_one_delete"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        >
+        <TextView
+            android:id="@+id/txt_one_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="出海冲浪，练就你的是困难。"
+            android:textColor="@color/color_222222"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/txt_one_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="出海冲浪出海冲浪出海冲浪出海冲浪出海冲浪出海冲浪出海冲浪出海冲浪。"
+            android:textColor="@color/color_222222"
+            android:layout_marginTop="12dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+        <ImageView
+            android:id="@+id/iv_one_pic"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@mipmap/list_bg"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="12dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_DDDDDD"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/ll_one_content"
+        />
+
+</RelativeLayout>

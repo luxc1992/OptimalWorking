@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/ref_apply_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWrite">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+      <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/swipemenu_apply_listview"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:overScrollMode="never"
+          android:scrollbars="none"
+          ></com.baoyz.swipemenulistview.SwipeMenuListView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

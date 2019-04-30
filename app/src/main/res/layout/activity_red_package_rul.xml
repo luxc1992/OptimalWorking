@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWrite"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_title" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_rul_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/red_package_rul_icon"
+            />
+
+        <ImageView
+            android:id="@+id/iv_success_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/red_package_success"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_defeated_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/red_package_defeated"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+</LinearLayout>

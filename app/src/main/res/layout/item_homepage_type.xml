@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="77dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="77dp"
+        android:layout_height="42dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/color_333333"
+        android:background="@mipmap/box"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:text="全部" />
+</LinearLayout>

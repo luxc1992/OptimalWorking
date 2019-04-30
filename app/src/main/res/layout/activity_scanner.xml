@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/scanner_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <com.yst.onecity.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:corner_color="@color/corner_color"
+            app:frame_color="@color/viewfinder_frame"
+            app:label_text="将二维码放入扫描框内，即可自动扫描"
+            app:label_text_color="@color/laser_color"
+            app:laser_color="@color/laser_color"
+            app:mask_color="@color/viewfinder_mask"
+            app:result_color="@color/result_view"
+            app:result_point_color="@color/result_point_color" />
+
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btn_flash"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:background="?attr/selectableItemBackground"
+                android:padding="6dip"
+                android:scaleType="centerInside"
+                android:src="@mipmap/dengguang" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/tv_light_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开启"
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

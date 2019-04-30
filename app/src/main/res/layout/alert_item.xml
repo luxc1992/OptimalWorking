@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eaeaea">
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space15"
+            android:src="@mipmap/close_x" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="请选择日期"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_16" />
+        <ImageView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/space25"
+            android:src="@mipmap/select_pigeon" />
+    </RelativeLayout>
+    <com.yst.onecity.view.customcalend.CalendarActivity
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_marginRight="@dimen/x16"
+        android:layout_marginTop="@dimen/x16"
+        android:paddingBottom="@dimen/space15"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="mainTextSize">45px</dimen>
+    <dimen name="mainTextItemSize">40px</dimen>
+    <dimen name="homeTextItemSize">30px</dimen>
+    <dimen name="x96">96dp</dimen>
+
+
+    <!-- 边距 -->
+    <dimen name="space0.2">0.2dp</dimen>
+    <dimen name="space0.5">0.5dip</dimen>
+    <dimen name="space1">1dp</dimen>
+    <dimen name="space2">2dp</dimen>
+    <dimen name="space3">3dp</dimen>
+    <dimen name="space5">5dp</dimen>
+    <dimen name="space4">4dp</dimen>
+    <dimen name="_space5">-5dp</dimen>
+    <dimen name="space7">7dp</dimen>
+    <dimen name="space8">8dp</dimen>
+    <dimen name="space9">9dp</dimen>
+    <dimen name="space10">10dp</dimen>
+    <dimen name="_space10">-10dp</dimen>
+    <dimen name="space11">11dp</dimen>
+    <dimen name="space12">12dp</dimen>
+    <dimen name="space13">13dp</dimen>
+    <dimen name="space14">14dp</dimen>
+    <dimen name="space15">15dp</dimen>
+    <dimen name="space16">16dp</dimen>
+    <dimen name="space17">17dp</dimen>
+    <dimen name="space18">18dp</dimen>
+    <dimen name="space20">20dp</dimen>
+    <dimen name="space22">22dp</dimen>
+    <dimen name="_space20">-20dp</dimen>
+    <dimen name="space23">23dp</dimen>
+    <dimen name="space24">24dp</dimen>
+    <dimen name="space25">25dp</dimen>
+    <dimen name="space26">26dp</dimen>
+    <dimen name="space27">27dp</dimen>
+    <dimen name="space30">30dp</dimen>
+    <dimen name="_space30">-30dp</dimen>
+    <dimen name="space32">32dp</dimen>
+    <dimen name="space35">35dp</dimen>
+    <dimen name="space36">36dp</dimen>
+    <dimen name="space39">39dp</dimen>
+    <dimen name="space40">40dp</dimen>
+    <dimen name="space44">44dp</dimen><!--标准导航栏高度，底部菜单栏高度-->
+    <dimen name="space45">45dp</dimen>
+    <dimen name="space47">47dp</dimen>
+    <dimen name="space48">48dp</dimen>
+    <dimen name="space49">49dp</dimen>
+    <dimen name="space50">50dp</dimen>
+    <dimen name="space53">53dp</dimen>
+    <dimen name="space55">55dp</dimen>
+    <dimen name="space57">57dp</dimen>
+    <dimen name="space59">59dp</dimen>
+    <dimen name="space60">60dp</dimen>
+    <dimen name="space63">63dp</dimen>
+    <dimen name="space65">65dp</dimen>
+    <dimen name="space70">70dp</dimen>
+    <dimen name="space72">72dp</dimen>
+    <dimen name="space74">74dp</dimen>
+    <dimen name="space78">78dp</dimen>
+    <dimen name="space80">80dp</dimen>
+    <dimen name="space89">89dp</dimen>
+    <dimen name="space90">90dp</dimen>
+    <dimen name="space92">92dp</dimen>
+    <dimen name="space98">98dp</dimen>
+    <dimen name="space100">100dp</dimen>
+    <dimen name="space106">106dp</dimen>
+    <dimen name="space108">108dp</dimen>
+    <dimen name="space110">110dp</dimen>
+    <dimen name="space115">115dp</dimen>
+    <dimen name="space128">128dp</dimen>
+    <dimen name="space83">83dp</dimen>
+    <dimen name="space120">120dp</dimen>
+    <dimen name="space135">135dp</dimen>
+    <dimen name="space145">145dp</dimen>
+    <dimen name="space150">150dp</dimen>
+    <dimen name="space157">157dp</dimen>
+    <dimen name="space165">165dp</dimen>
+    <dimen name="space170">170dp</dimen>
+    <dimen name="space175">175dp</dimen>
+    <dimen name="space180">180dp</dimen>
+    <dimen name="space187">187dp</dimen>
+    <dimen name="space190">190dp</dimen>
+    <dimen name="space195">195dp</dimen>
+    <dimen name="space200">200dp</dimen>
+    <dimen name="space204">204dp</dimen>
+    <dimen name="space210">210dp</dimen>
+    <dimen name="space220">220dp</dimen>
+    <dimen name="space230">230dp</dimen>
+    <dimen name="space250">250dp</dimen>
+    <dimen name="space262">262dp</dimen>
+    <dimen name="space270">270dp</dimen>
+    <dimen name="space300">300dp</dimen>
+    <dimen name="space354">354dp</dimen>
+    <dimen name="space344">344dp</dimen>
+
+
+    <!-- 字体大小 -->
+    <dimen name="text_size_xxsmall">8sp</dimen>
+    <dimen name="text_size_xsmall">10sp</dimen>
+    <dimen name="text_size_11sp">11sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_nomal">13sp</dimen><!--标准使用-->
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_15sp">15sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_large_size">16sp</dimen>
+    <dimen name="text_size_17sp">17sp</dimen>
+    <dimen name="text_size_xlarge">18sp</dimen>
+    <dimen name="text_size_xxlarge">20sp</dimen>
+
+    <dimen name="space102">102dp</dimen>
+    <dimen name="space292">292dp</dimen>
+    <dimen name="space37">37dp</dimen>
+    <dimen name="space0">0dp</dimen>
+    <dimen name="common_padding">15dp</dimen>
+
+    <dimen name="mis_image_size">120dp</dimen>
+    <dimen name="mis_space_size">3dp</dimen>
+    <dimen name="mis_folder_cover_size">72dp</dimen>
+</resources>

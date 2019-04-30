@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <com.yst.im.imchatlibrary.widget.ImRoundedImageView
+        android:id="@+id/img_groupMembers_UserIcon"
+        android:layout_width="@dimen/space44"
+        android:layout_height="@dimen/space44"
+        android:layout_marginBottom="@dimen/space10"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginTop="@dimen/space10"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/space0"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/img_groupMembers_UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="马云"
+            android:textColor="@color/colorBlack555"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/space7">
+
+            <TextView
+                android:id="@+id/img_groupMembers_UserTopic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阿里"
+                android:textColor="@color/colorBlack72"
+                android:textSize="@dimen/text_size_11sp" />
+
+            <TextView
+                android:id="@+id/img_groupMembers_UserCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space5"
+                android:text="CEO"
+                android:textColor="@color/colorBlack72"
+                android:textSize="@dimen/text_size_11sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:focusable="false"
+        android:id="@+id/img_groupMembers_cannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/space5"
+        android:paddingBottom="@dimen/space5"
+        android:paddingLeft="@dimen/space10"
+        android:paddingRight="@dimen/space10"
+        android:text="取消" />
+
+    <TextView
+        android:focusable="false"
+        android:id="@+id/img_groupMembers_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/space5"
+        android:layout_marginRight="@dimen/space15"
+        android:background="@color/colorRed"
+        android:paddingTop="@dimen/space5"
+        android:paddingBottom="@dimen/space5"
+        android:paddingLeft="@dimen/space10"
+        android:paddingRight="@dimen/space10"
+        android:text="同意" />
+
+
+</LinearLayout>

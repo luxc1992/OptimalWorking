@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/main_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x10"
+        android:background="@color/color_F9F9F9"
+        />
+
+    <EditText
+        android:id="@+id/et_project_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:hint="@string/project_title"
+        android:textSize="15sp"
+        android:maxLength="30"
+        android:lines="1"
+        android:padding="@dimen/x15"
+        android:textColorHint="@color/gray"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x10"
+        android:background="@color/color_F9F9F9"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@color/colorWhite"
+        >
+        <EditText
+            android:id="@+id/et_project_content"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="@string/project_content"
+            android:textSize="15sp"
+            android:lineSpacingExtra="@dimen/x6"
+            android:minHeight="140dp"
+            android:maxLength="200"
+            android:padding="@dimen/x15"
+            android:textColorHint="@color/gray" />
+
+        <TextView
+            android:id="@+id/txt_project_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/project_position"
+            android:textSize="12sp"
+            android:drawableStart="@mipmap/address_black"
+            android:drawablePadding="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_project_position"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_project_addcover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@id/txt_project_position"
+            >
+            <ImageView
+                android:id="@+id/iv_project_cover"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@mipmap/tianjia_white"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/project_addcover"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:id="@+id/btn_project_ok"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_project_sure"
+            android:text="@string/project_sure"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/colorWhite"
+            />
+    </RelativeLayout>
+</LinearLayout>

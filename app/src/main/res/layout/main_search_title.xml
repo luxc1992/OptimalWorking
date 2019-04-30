@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/nav_icon_back" />
+    </LinearLayout>
+    <com.yst.onecity.view.ContainsEmojiEditText
+        android:id="@+id/et_search"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/shape_search_bag"
+        android:drawableLeft="@mipmap/icon_search"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:hint="@string/tv_search"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:textSize="13sp"
+        android:textColor="@color/color_9C9C9C"
+        android:paddingLeft="8dp" />
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/ok"
+        android:textColor="@color/color_222222" />
+</LinearLayout>

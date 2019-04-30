@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/main_title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space5"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/space10"
+            android:layout_weight="2"
+            android:background="#f1f1f1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space10"
+                android:paddingLeft="@dimen/space10"
+                android:paddingTop="@dimen/space10"
+                android:text="选择一级分类"
+                android:textColor="#a9a9a9" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f1f1f1"/>
+            <TextView
+                android:id="@+id/classify_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space3"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space10"
+                android:paddingLeft="@dimen/space15"
+                android:paddingTop="@dimen/space10"
+                android:text="服装"
+                android:textColor="@color/color_F05452" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/space10"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space20"
+                android:paddingBottom="@dimen/space10"
+                android:paddingTop="@dimen/space10"
+                android:text="选择二级分类"
+                android:textColor="#a9a9a9" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f1f1f1"/>
+            <ListView
+                android:id="@+id/select_second"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:paddingLeft="@dimen/space10"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

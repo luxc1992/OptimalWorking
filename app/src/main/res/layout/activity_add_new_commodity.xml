@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_new_commodity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.yst.onecity.activity.issue.AddNewCommodityActivity">
+
+    <include layout="@layout/main_title" />
+
+
+    <com.yst.onecity.view.MyScrollView
+        android:id="@+id/parent_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/activity_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:text="选择分类"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_issue_commodity_classify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/x20"
+                    android:drawableEnd="@mipmap/nav_icon_next"
+                    android:maxLength="50"
+                    android:text="@string/issue_commodity_classify_hint"
+                    android:textColor="@color/color_DDDDDD"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/activity_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:text="@string/issue_commodity_name"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.yst.onecity.view.ContainsEmojiEditText
+                    android:id="@+id/edit_commodity_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@null"
+                    android:hint="@string/issue_commodity_hint"
+                    android:maxLength="50"
+                    android:textColor="@color/release_list_bg_color"
+                    android:textColorHint="@color/color_DDDDDD"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:background="@color/activity_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x5"
+                android:layout_marginTop="@dimen/x10"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:text="副标题    "
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.yst.onecity.view.ContainsEmojiEditText
+                    android:id="@+id/edit_commodity_headline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@null"
+                    android:hint="@string/issue_commodity_hint"
+                    android:maxLength="50"
+                    android:textColor="@color/release_list_bg_color"
+                    android:textColorHint="@color/color_DDDDDD"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/x5"
+                android:background="@color/activity_line_color" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:orientation="horizontal">
+
+                <com.yst.onecity.view.MyGridView
+                    android:id="@+id/add_commodity_image_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x18"
+                    android:layout_marginTop="@dimen/x15"
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="10dp">
+
+                </com.yst.onecity.view.MyGridView>
+
+                <TextView
+                    android:id="@+id/tev_grid_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:padding="@dimen/x8"
+                    android:text="@string/issue_add_commodity_hint"
+                    android:textColor="@color/color_DDDDDD" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x5"
+                android:layout_marginTop="@dimen/x10"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:text="@string/issue_commodity_particulars"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <!-- 富文本编辑器 -->
+                <com.yst.onecity.view.editor.CommoditySortRichEditor
+                    android:id="@+id/richEditor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    app:sreHint="@string/ps_title"
+                    app:sreHintColor="@color/color_DDDDDD"
+                    app:sreTextSize="14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x10"
+                    android:layout_marginTop="@dimen/x15"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_add_commodity_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="@dimen/x15"
+                        android:src="@mipmap/addproduct_addpic" />
+
+                    <ImageView
+                        android:id="@+id/image_add_commodity_video"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:src="@mipmap/addproduct_addvideo" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/activity_line_color"
+                android:padding="@dimen/x10"
+                android:text="商品规格"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/linear_father_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:background="@color/activity_line_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_add_commodity_specification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/x10">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/tianjiashangpinguige" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x25"
+                    android:text="添加商品规格"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/x16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/activity_line_color" />
+
+            <TextView
+                android:id="@+id/tev_generate_specification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@drawable/shape_goods_add_code"
+                android:padding="@dimen/x10"
+                android:text="     生成规格     "
+                android:textColor="@color/red" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/activity_line_color"
+                android:orientation="vertical"
+                android:padding="@dimen/x15">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.yst.onecity.view.MyListView
+                        android:id="@+id/lv_generate_specification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:divider="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/x10"
+                android:text="运费模板"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/activity_line_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_establish_freight_template"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/x10">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/tianjiashangpinguige" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x25"
+                    android:text="创建新模板"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/x16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/activity_line_color" />
+
+            <com.yst.onecity.view.MyListView
+                android:id="@+id/lv_template"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null">
+
+            </com.yst.onecity.view.MyListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/activity_line_color">
+
+                <TextView
+                    android:id="@+id/btn_commit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x40"
+                    android:layout_margin="@dimen/x20"
+                    android:background="@drawable/shape_btn_pink_red_bg"
+                    android:gravity="center"
+                    android:text="完成"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </com.yst.onecity.view.MyScrollView>
+</LinearLayout>

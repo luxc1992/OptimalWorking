@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_title"/>
+
+    <com.yst.onecity.view.viewpagerindicator.ViewPagerIndicator
+        android:id="@+id/indicator_card_union_order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space40"
+        android:layout_marginTop="@dimen/space5"
+        android:paddingLeft="@dimen/space40"
+        android:paddingRight="@dimen/space40"
+        android:background="@color/white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_F1F1F1"/>
+</LinearLayout>

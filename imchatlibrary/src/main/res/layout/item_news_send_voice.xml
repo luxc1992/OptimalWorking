@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_news_send_voice_time"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space30"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/txt_news_voice_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/space63"
+        android:text="发送者" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/space5"
+        android:orientation="horizontal">
+
+
+        <!--录音框-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img_news_voice_fail"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space10"
+                android:layout_toLeftOf="@+id/img_news_send_red"
+                android:focusable="false"
+                android:visibility="gone"
+                android:src="@drawable/msg_state_fail_resend" />
+
+            <ProgressBar
+                android:id="@+id/pb_news_voice_progress"
+                style="@android:style/Widget.ProgressBar.Small.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_alignBottom="@+id/img_news_voice_fail"
+                android:layout_alignEnd="@+id/img_news_voice_fail"
+                android:layout_alignRight="@+id/img_news_voice_fail" />
+
+            <ImageView
+                android:id="@+id/img_news_send_red"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:layout_toLeftOf="@+id/rel_news_send"
+                android:src="@drawable/yuyin_tixing_red"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/rel_news_send"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="4dp">
+                <!--语音条-->
+                <ImageView
+                    android:id="@+id/img_news_right_voiceLine"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/selector_im_voice_right"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:lineSpacingExtra="2dp"
+                    android:maxWidth="200dp"
+                    android:minWidth="90dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="12dp" />
+                <!--信号栏-->
+                <LinearLayout
+                    android:id="@+id/lil_news_right_singer"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_space30"
+                    android:layout_toRightOf="@+id/img_news_right_voiceLine"
+                    android:background="@drawable/anim_yuyin_sign_right"
+                    android:orientation="horizontal"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_news_send_voice_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:text="60 ''"
+                    android:textColor="#686666"
+                    android:textSize="@dimen/text_size_15sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.yst.im.imchatlibrary.widget.ImRoundedImageView
+            android:id="@+id/img_news_send_user_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            app:oval="true"/>
+    </LinearLayout>
+</LinearLayout>

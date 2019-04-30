@@ -1,0 +1,65 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.jakewharton.butterknife'
+//apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // Enabling multidex support.
+        multiDexEnabled true
+        ndk{abiFilters "armeabi"}
+        manifestPlaceholders = [
+                JPUSH_PKGNAME   : "com.yst.onecity",
+                JPUSH_APPKEY    : "41776fbe2dddf1b892452663", //JPush上注册的包名对应的appkey（*换成你的*）
+                JPUSH_CHANNEL   : "developer-default", //暂时填写默认值即可.
+                BUILD_TIME_VALUE: new Date().format('yyyyMMdd'),
+                JPUSH_KEY_VALUE : '88888888'
+        ]
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '28.0.3'
+}
+
+dependencies {
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile project(':sharelibrary')
+    compile files('libs/tbs_sdk_thirdapp_v3.5.0.1004_43500_sharewithdownload_withoutGame_obfs_20170801_113025.jar')
+    compile project(':imchatlibrary')
+    compile rootProject.ext.dependencies["appcompat-v7"]
+    compile rootProject.ext.dependencies["recyclerview"]
+    compile rootProject.ext.dependencies["constraint"]
+    compile rootProject.ext.dependencies["support-v4"]
+    compile rootProject.ext.dependencies["jpush"]
+    compile rootProject.ext.dependencies["jcore"]
+    compile rootProject.ext.dependencies["gson"]
+    compile rootProject.ext.dependencies["glide"]
+    compile rootProject.ext.dependencies["zxing"]
+    compile rootProject.ext.dependencies["smartrefresh"]
+    compile rootProject.ext.dependencies["okhttputils"]
+    compile rootProject.ext.dependencies["butterknife"]
+    compile rootProject.ext.dependencies["MultiImageSelector"]
+    compile rootProject.ext.dependencies["rxbus"]
+    compile rootProject.ext.dependencies["bugly-crashreport"]
+    compile rootProject.ext.dependencies["bugly-nativecrashreport"]
+    compile rootProject.ext.dependencies["PickerView"]
+    compile rootProject.ext.dependencies["multidex"]
+    compile rootProject.ext.dependencies["nineoldandroids"]
+    compile rootProject.ext.dependencies["barlibrary"]
+}

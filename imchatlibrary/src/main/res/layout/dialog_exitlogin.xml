@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWrite"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_camera"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space30"
+        android:text="@string/mine_setting_exit_login_msg"
+        android:textSize="@dimen/space12"
+        android:textColor="@color/colorff333333"
+        android:gravity="center"
+        />
+
+    <View
+        android:background="@color/colorffd7d7d7"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space1"/>
+
+    <TextView
+        android:id="@+id/tv_exit_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space50"
+        android:gravity="center"
+        android:text="@string/mine_setting_exit_login"
+        android:textSize="@dimen/space16"
+        android:textColor="@color/colorff439eff"
+        />
+
+    <View
+        android:background="@color/colorffd7d7d7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space8"/>
+    <TextView
+        android:id="@+id/tv_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space50"
+        android:gravity="center"
+        android:text="@string/mine_setting_cancle"
+        android:textSize="@dimen/space16"
+        android:textColor="@color/colorff333333"
+        />
+</LinearLayout>

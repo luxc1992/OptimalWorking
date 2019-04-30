@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWrite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="@dimen/mis_space_size"
+        android:verticalSpacing="@dimen/mis_space_size"
+        android:paddingBottom="?android:attr/actionBarSize"
+        android:clipToPadding="false"
+        android:numColumns="4"
+        android:background="@color/colorWrite"
+        android:listSelector="@color/colorWrite"
+        />
+
+    <RelativeLayout
+        android:clickable="true"
+        android:id="@+id/footer"
+        android:background="#cc000000"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/category_btn"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/mis_folder_text_color"
+            tools:text="所有图片"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/mis_text_indicator"
+            android:drawablePadding="5dp"
+            android:background="@null"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+</RelativeLayout>

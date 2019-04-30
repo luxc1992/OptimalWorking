@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="15dp">
+
+    <com.yst.onecity.view.ContainsEmojiEditText
+        android:id="@+id/et_comment"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_text_bg"
+        android:drawablePadding="8dp"
+        android:gravity="start"
+        android:hint="请输入回复内容..."
+        android:imeOptions="actionSend"
+        android:inputType="textMultiLine"
+        android:maxLength="150"
+        android:minHeight="40dp"
+        android:padding="@dimen/x10"
+        android:singleLine="true"
+        android:textColor="@color/color_333333"
+        android:textColorHint="@color/color_999999"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_solid_red_bg"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="3dp"
+        android:text="回复"
+        android:textColor="#ffffffff" />
+
+</LinearLayout>

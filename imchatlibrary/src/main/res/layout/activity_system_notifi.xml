@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ui.fragment.FriendListFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space22"
+        android:background="@drawable/shape_address_book_title" />
+
+    <com.yst.im.imchatlibrary.base.baseview.AbstractTitleView
+        android:id="@+id/titleview_system_notifi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space44"
+        android:background="@drawable/shape_address_book_title"
+        title:left_image="@mipmap/back_white_icon"
+        title:left_text_color="@color/colorff999999"
+        title:right_text_color="@color/colorff999999"
+        title:small_text_size="@dimen/text_size_14sp"
+        title:title_text_color="@color/colorWrite"
+        title:title_text_size="@dimen/text_size_xlarge" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:background="@color/colorBlackEB" />
+
+    <ListView
+        android:id="@+id/listview_system_notifi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorffd7d7d7"
+        android:dividerHeight="@dimen/space0.5" />
+
+</LinearLayout>

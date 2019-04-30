@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F2F2F2"
+    android:orientation="vertical">
+
+    <include layout="@layout/line" />
+
+    <TextView
+        android:id="@+id/tv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/color_222222"
+        android:minHeight="@dimen/x40"
+        android:text="@string/input_trade_pwd_sign" />
+
+    <com.yst.onecity.view.MyPasswordView
+        android:id="@+id/passwordView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:cursorVisible="false"
+        android:inputType="number"
+        android:maxLength="6"
+        app:pivBorderColor="@color/color_DDDDDD"
+        app:pivBorderRadius="2dp"
+        app:pivBorderWidth="2dp"
+        app:pivPasswordColor="@color/black"
+        app:pivPasswordLength="6"
+        app:pivPasswordWidth="4dp"
+        app:pivSplitLineWidth="4" />
+
+    <LinearLayout
+        android:id="@+id/ll_forget_trade_verify_identity_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <include layout="@layout/line" />
+
+        <com.yst.onecity.view.ContainsEmojiEditText
+            android:id="@+id/et_verify_identity_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/textsize_14"
+            android:digits="0123456789xX"
+            android:textColor="@color/color_666666"
+            android:textColorHint="@color/color_999999"
+            android:hint="@string/acount_input_identity_card"
+            android:paddingLeft="@dimen/x15" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_trade_pwd_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10"
+        android:gravity="center"
+        android:text="@string/trade_pwd_tips"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/btn_next_step"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_margin="@dimen/x15"
+        android:background="@drawable/shape_btn_pink_red_bg"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:visibility="visible" />
+</LinearLayout>

@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/space220"
+    android:layout_height="@dimen/space106"
+    android:orientation="vertical"
+    android:layout_marginTop="130dp"
+    android:background="@drawable/shape_im_white_10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+     >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space106"
+            android:gravity="center"
+            android:paddingLeft="@dimen/space20"
+            android:paddingRight="@dimen/space20"
+            android:textColor="@color/colorBlack333"
+            android:textSize="16sp"
+            android:maxLines="2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space1"
+            android:layout_above="@+id/ll_button"
+            android:background="@color/colorBlackF9" />
+
+        <LinearLayout
+            android:id="@+id/ll_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space39"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancle"
+                android:layout_width="@dimen/space0"
+                android:layout_weight="1"
+                android:layout_height="@dimen/space39"
+                android:background="@null"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/colorRed"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="@dimen/space1"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlackF9"/>
+
+            <Button
+                android:id="@+id/sure"
+                android:layout_width="@dimen/space0"
+                android:layout_weight="1"
+                android:layout_height="@dimen/space39"
+                android:background="@null"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="@color/colorRed"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

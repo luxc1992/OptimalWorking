@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000"
+        android:orientation="vertical" >
+        <!--头部-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:background="@color/white" >
+            <ImageView
+                android:id="@+id/publish_video_iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="7dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/close_x"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/video"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_20" />
+
+            <ImageView
+                android:id="@+id/publish_video_iv_cameraRotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingBottom="@dimen/x7"
+                android:paddingStart="@dimen/x6"
+                android:paddingEnd="@dimen/x12"
+                android:paddingTop="@dimen/x7"
+                android:scaleType="fitXY"
+                android:src="@mipmap/camera_change"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <com.taobao.av.ui.view.SquareFrameLayout
+            android:id="@+id/publish_video_camera_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <SurfaceView
+                android:id="@+id/publish_video_camera_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/publish_video_iv_notice_recordlimit"
+                android:layout_width="110dp"
+                android:layout_height="36dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/taorecorder_nitification_recordlimit"
+                android:visibility="invisible"
+                />
+        </com.taobao.av.ui.view.SquareFrameLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            layout="@layout/aliwx_sv_recorder_timeline" />
+
+        <RelativeLayout
+            android:id="@+id/rl_recorder_controller"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/publish_video_iv_delete"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/x40"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/chexiao"
+                android:layout_toLeftOf="@+id/publish_video_iv_recorder"
+                android:layout_marginRight="@dimen/x50"
+                android:button="@null"
+                />
+
+            <ImageView
+                android:id="@+id/publish_video_iv_recorder"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/x80"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/anzupai"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/iv_Recorder_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="按住拍"
+                android:textColor="@color/color_B0B0B0"
+                android:textSize="16sp"
+                android:layout_below="@id/publish_video_iv_recorder"
+                android:layout_marginTop="@dimen/x10"
+                />
+
+            <ImageView
+                android:id="@+id/publish_video_iv_ok"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/x40"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/que_ding"
+                android:layout_toEndOf="@+id/publish_video_iv_recorder"
+                android:layout_marginStart="@dimen/x50"
+                android:button="@null"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/publish_video_view_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:visibility="gone" >
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/taorecorder_uik_circular_progress" />
+    </RelativeLayout>
+
+</FrameLayout>

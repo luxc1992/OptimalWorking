@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorffeeeeee"
+    android:orientation="vertical">
+
+    <com.yst.im.imchatlibrary.base.baseview.AbstractTitleView
+        android:id="@+id/titleview_set_update_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space44"
+        android:background="@color/colorWrite"
+        title:left_text="取消"
+        title:left_text_color="@color/colorff999999"
+        title:right_text="下一步"
+        title:right_text_color="@color/colorff439eff"
+        title:small_text_size="15sp"
+        title:title_name="更换手机号"
+        title:title_text_color="@color/colorBlack333"
+        title:title_text_size="18sp"
+        android:paddingRight="@dimen/space5"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:background="@color/colorffd7d7d7" />
+
+    <TextView
+        android:id="@+id/txt_update_phone_msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space50"
+        android:background="@color/colorfff1f0f7"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space15"
+        android:paddingRight="@dimen/space15"
+        android:text="@string/mine_setting_update_phone_msg"
+        android:textColor="@color/colorff999999"
+        android:textSize="@dimen/space14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:background="@color/colorffd7d7d7" />
+
+    <com.yst.im.imchatlibrary.widget.ClearEditText
+        android:id="@+id/et_update_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space50"
+        android:background="@color/colorWrite"
+        android:gravity="center_vertical"
+        android:hint="@string/mine_setting_hint_phone"
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:maxLength="11"
+        android:paddingLeft="@dimen/space10"
+        android:paddingRight="@dimen/space40"
+        android:singleLine="true"
+        android:textColor="@color/colorBlck666"
+        android:textColorHint="@color/colorBlck666"
+        android:textSize="@dimen/space15" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:background="@color/colorffd7d7d7" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    0代表从左至右颜色渐变；
+    45代表从右下至左上颜色渐变；
+    90代表从下至上颜色渐变…-->
+    <gradient
+        android:angle="0"
+        android:endColor="@color/colorBlue3BB7FD"
+        android:startColor="@color/colorBlue508DFF" />
+</shape>

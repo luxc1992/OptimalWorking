@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.yst.im.imchatlibrary.base.baseview.AbstractTitleView
+        android:id="@+id/title_group_groups_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space44"
+        android:background="@color/colorWrite"
+        title:title_text_color="@color/colorBlck999"
+        title:title_name="标题"
+        title:title_text_size="20sp"
+        title:small_text_size="15sp"
+        title:left_image="@mipmap/back_title_right"
+        title:right_image="@mipmap/icon_more"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#EEEEEE">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="群聊名称"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/group_chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="@dimen/space120"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical|right"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="群聊人数"
+            android:textColor="#222222"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_group_chat_member_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space1"
+        android:background="#dddddd"/>
+
+    <ListView
+        android:id="@+id/lv_group_chat_member"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp"
+        android:divider="@null"/>
+</LinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.ImSearchActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space22"
+        android:background="@drawable/shape_address_book_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space59"
+        android:background="@drawable/shape_address_book_title">
+
+        <com.yst.im.imchatlibrary.widget.ClearEditText
+            android:id="@+id/cedt_search_input"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/space30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space12"
+            android:layout_weight="1"
+            android:background="@color/colorWrite"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="@dimen/space10"
+            android:hint="@string/txt_search_hint"
+            android:paddingLeft="@dimen/space15"
+            android:paddingRight="@dimen/space10"
+            android:singleLine="true"
+            android:textColorHint="@color/colorBlack2F"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/txt_search_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space17"
+            android:layout_marginRight="@dimen/space12"
+            android:text="@string/txt_close"
+            android:textColor="@color/colorWrite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lil_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lil_search_friend_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rel_search_nearest_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_search_nearest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space10"
+                    android:padding="@dimen/space5"
+                    android:text="@string/txt_search_nearest" />
+
+                <TextView
+                    android:id="@+id/txt_search_nearest_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/space10"
+                    android:padding="@dimen/space5"
+                    android:text=""
+                    android:textColor="@color/colorBlck666" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space1"
+                android:layout_marginLeft="@dimen/space16"
+                android:layout_marginRight="@dimen/space16"
+                android:background="@color/colorBlackEB" />
+
+            <ListView
+                android:id="@+id/lv_search_nearest_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space1"
+                android:background="@color/colorBlackEB" />
+
+            <RelativeLayout
+                android:id="@+id/rel_search_more_nearest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWrite"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/space5"
+                android:paddingLeft="@dimen/space16"
+                android:paddingTop="@dimen/space12">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_search_more_nearest" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/space12"
+                    android:src="@mipmap/item_right_allow" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lil_search_group_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space5"
+                android:background="@color/colorBlackEB" />
+
+            <TextView
+                android:id="@+id/txt_search_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWrite"
+                android:paddingBottom="@dimen/space5"
+                android:paddingLeft="@dimen/space16"
+                android:paddingTop="@dimen/space12"
+                android:text="@string/txt_search_group" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space1"
+                android:layout_marginLeft="@dimen/space16"
+                android:layout_marginRight="@dimen/space16"
+                android:background="@color/colorBlackEB" />
+
+            <ListView
+                android:id="@+id/lv_search_group_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space1"
+                android:background="@color/colorBlackEB" />
+
+            <RelativeLayout
+                android:id="@+id/rel_search_more_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWrite"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/space5"
+                android:paddingLeft="@dimen/space16"
+                android:paddingTop="@dimen/space12">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_search_more_group" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/space12"
+                    android:src="@mipmap/item_right_allow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space5"
+                android:background="@color/colorBlackEB" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_search_nothing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWrite"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/default_nothing" />
+    </RelativeLayout>
+
+
+</LinearLayout>

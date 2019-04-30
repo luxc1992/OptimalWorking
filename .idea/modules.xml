@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/OptimalWorking.iml" filepath="$PROJECT_DIR$/OptimalWorking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VideoSDK/VideoSDK.iml" filepath="$PROJECT_DIR$/VideoSDK/VideoSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basicframework/basicframework.iml" filepath="$PROJECT_DIR$/basicframework/basicframework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imchatlibrary/imchatlibrary.iml" filepath="$PROJECT_DIR$/imchatlibrary/imchatlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imsdk/imsdk.iml" filepath="$PROJECT_DIR$/imsdk/imsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharelibrary/sharelibrary.iml" filepath="$PROJECT_DIR$/sharelibrary/sharelibrary.iml" />
+    </modules>
+  </component>
+</project>

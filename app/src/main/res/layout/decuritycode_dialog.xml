@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="180dp"
+    android:background="@drawable/shape_solid_white"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <TextView
+        android:layout_marginTop="@dimen/x20"
+        android:text="请输入图中的验证码结果"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textColor="@color/color_595959"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:id="@+id/ed_text_linear"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <EditText
+            android:background="@null"
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/img_code"
+            android:layout_marginLeft="@dimen/x3"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/x10"
+        android:padding="@dimen/x8"
+        android:background="@color/color_red_ED5452"
+        android:layout_below="@id/ed_text_linear"
+        android:id="@+id/sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:text="确 认"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

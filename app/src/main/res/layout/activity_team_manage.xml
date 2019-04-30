@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/main_title"></include>
+
+    <include layout="@layout/include_team_touxiang"></include>
+
+    <TextView
+        android:id="@+id/tv_base_info"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:drawableRight="@mipmap/nav_icon_next"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/base_info"
+        android:textColor="@color/color_222222" />
+
+    <include layout="@layout/line"></include>
+
+    <LinearLayout
+        android:id="@+id/ll_sala_state"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/sale_state"
+            android:textColor="@color/color_222222" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/nav_icon_next"
+            android:gravity="center_vertical"
+            android:text="@string/onsale" />
+    </LinearLayout>
+
+    <include layout="@layout/line"></include>
+
+    <LinearLayout
+        android:id="@+id/ll_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/team_address"
+            android:textColor="@color/color_222222" />
+
+        <TextView
+            android:id="@+id/tv_map"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/nav_icon_next"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <include layout="@layout/line"></include>
+
+    <TextView
+        android:id="@+id/tv_server_range"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:drawableRight="@mipmap/nav_icon_next"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/server_range"
+        android:textColor="@color/color_222222" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_sale_class"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/sale_class"
+            android:textColor="@color/color_222222" />
+
+        <TextView
+            android:id="@+id/tv_sale_class"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/sale_class" />
+    </LinearLayout>
+
+    <include layout="@layout/line"></include>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_issue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.yst.onecity.activity.issue.IssueActivity">
+
+    <TextView
+        android:id="@+id/issue_oneCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x80"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="@dimen/textsize_24"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/issue_oneCity"
+        android:layout_marginTop="@dimen/x18"
+        android:gravity="center"
+        android:text="@string/more_chance_text"
+        android:textSize="@dimen/textsize_18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/issue_iv_cancel">
+
+        <LinearLayout
+            android:id="@+id/issue_ll_product_plan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/issue_middle_view"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x70"
+                android:layout_height="@dimen/x70"
+                android:layout_gravity="center"
+                android:background="@mipmap/publish" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/x10"
+                android:text="@string/product_plan"
+                android:textColor="@color/color_9B7F7E"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/issue_ll_project_plan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/issue_middle_view"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x70"
+                android:layout_height="@dimen/x70"
+                android:layout_gravity="center"
+                android:background="@mipmap/project_plan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/x10"
+                android:text="@string/project_plan"
+                android:textColor="@color/color_9B7F7E"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/issue_iv_cancel"
+        android:layout_width="@dimen/x45"
+        android:layout_height="@dimen/x45"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/x40"
+        android:layout_marginTop="@dimen/x40"
+        android:background="@mipmap/publish_close" />
+</RelativeLayout>

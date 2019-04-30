@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        applicationId "com.yst.onecity"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //极光推送
+        ndk {
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        //可以根据自己需要的cpu添加
+        manifestPlaceholders = [
+                JPUSH_PKGNAME   : applicationId,
+                JPUSH_APPKEY    : "41776fbe2dddf1b892452663", //JPush上注册的包名对应的appkey（*换成你的*）
+                JPUSH_CHANNEL   : "developer-default", //暂时填写默认值即可.
+                BUILD_TIME_VALUE: new Date().format('yyyyMMdd'),
+                JPUSH_KEY_VALUE : '88888888'
+        ]
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias 'onecitymember'
+            keyPassword 'puji001184'
+            storeFile file('onecity.jks')
+            storePassword 'puji001184'
+        }
+    }
+
+//    signingConfigs {
+//        debug {
+//            keyAlias 'ygl'
+//            keyPassword 'yougonglian001184'
+//            storeFile file('optimal.jks')
+//            storePassword 'yougonglian001184'
+//        }
+//    }
+
+//    dexOptions {
+//        jumboMode true
+//        incremental true
+//        javaMaxHeapSize "4g"
+//    }
+    buildToolsVersion '28.0.3'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    api project(':basicframework')
+    api project(':VideoSDK')
+    //状态栏
+//    compile files('libs/tbs_sdk_thirdapp_v3.5.0.1004_43500_sharewithdownload_withoutGame_obfs_20170801_113025.jar')
+    implementation files('libs/AMap3DMap_6.2.0_AMapSearch_6.1.0_AMapLocation_4.0.1_20180427.jar')
+    testCompile 'junit:junit:4.12'
+    implementation rootProject.ext.dependencies["design"]
+    implementation rootProject.ext.dependencies["XTabLayout"]
+    implementation rootProject.ext.dependencies["indexablerecyclerview"]
+    implementation rootProject.ext.dependencies["cardview"]
+    implementation rootProject.ext.dependencies["services"]
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation files('libs/alipaySdk-20180403.jar')
+}

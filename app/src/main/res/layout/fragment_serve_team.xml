@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_container"
+    style="@style/ServerTeam_container">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x25"
+        android:background="@color/color_DDDDDD" />
+
+    <com.yst.onecity.view.ImageCycleView
+        android:id="@+id/image_cycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <LinearLayout style="@style/serverteam_classify_container">
+
+        <LinearLayout style="@style/ServerTeam_LL">
+
+            <TextView
+                android:id="@+id/tv_classify"
+                style="@style/ServerTeam_Classify"
+                android:drawableRight="@mipmap/select_down"
+                android:text="分类" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ServerTeam_LL">
+
+            <TextView
+                android:id="@+id/tv_distance"
+                style="@style/ServerTeam_Classify"
+                android:drawableRight="@mipmap/select_down"
+                android:text="距离" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ServerTeam_LL">
+
+            <TextView
+                android:id="@+id/tv_server_range"
+                style="@style/ServerTeam_Classify"
+                android:drawableRight="@mipmap/select_down"
+                android:text="智能排序" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_EEEEEE" />
+
+    <FrameLayout style="@style/MatchMatch">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smartRefreshLayout_product_plan"
+            style="@style/MatchMatch"
+            app:srlAccentColor="@android:color/black"
+            app:srlEnablePreviewInEditMode="true"
+            app:srlPrimaryColor="@color/white">
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader style="@style/MatchWrap" />
+
+            <ListView
+                android:id="@+id/lv_server_team"
+                style="@style/serverteam_listview" />
+
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter style="@style/MatchWrap" />
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_no_date"
+            style="@style/ll_nodate">
+
+            <ImageView
+                style="@style/WrapWrapCenter"
+                android:src="@mipmap/kong" />
+
+            <TextView
+                style="@style/WrapWrapCenter"
+                android:layout_marginTop="20dp"
+                android:text="暂无服务团队信息"
+                android:textColor="@color/color_666666" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

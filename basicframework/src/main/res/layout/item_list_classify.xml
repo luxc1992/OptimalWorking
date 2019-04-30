@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x8"
+        android:layout_toLeftOf="@+id/goods_classify_move_img"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/classify_edit_img"
+            android:layout_width="@dimen/x28"
+            android:layout_height="@dimen/x28"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/x4"
+            android:src="@drawable/classify_edit_img" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="@dimen/x44"
+            android:layout_marginBottom="@dimen/x6"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_marginRight="@dimen/x8"
+            android:layout_marginTop="@dimen/x6"
+            android:background="#556c6c6c" />
+
+        <ImageView
+            android:id="@+id/classify_delete_img"
+            android:layout_width="@dimen/x28"
+            android:layout_height="@dimen/x28"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/x4"
+            android:src="@drawable/classify_delete_img" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="@dimen/x44"
+            android:layout_marginBottom="@dimen/x6"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_marginRight="@dimen/x8"
+            android:layout_marginTop="@dimen/x6"
+            android:background="#556c6c6c" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/goods_classify_move_img"
+        android:layout_width="@dimen/x32"
+        android:layout_height="@dimen/x32"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x16"
+        android:padding="@dimen/x4"
+        android:src="@drawable/classify_location_img" />
+
+    <TextView
+        android:id="@+id/classify_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/classify_name"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="#878787"
+        android:textSize="@dimen/textsize_12" />
+
+    <TextView
+        android:id="@+id/classify_name"
+        android:layout_width="@dimen/x104"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x12"
+        android:layout_marginRight="@dimen/x12"
+        android:gravity="center_vertical"
+        android:text="Name"
+        android:textSize="@dimen/textsize_15" />
+</RelativeLayout>

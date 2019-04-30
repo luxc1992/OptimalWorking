@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">basicframework</string>
+    <string name="commit_dialog_content">正在请求数据...</string>
+    <string name="main_tab_home_tag">Type1</string>
+    <string name="order_manage_tab_jiedan">Type2</string>
+    <string name="main_tab_money_tag">Type3</string>
+    <string name="main_tab_merchant_center_tag">Type4</string>
+
+    <!-- 主界面需要用到文本信息 -->
+    <string name="tab1_text">首页</string>
+    <string name="tab2_text">服务团队</string>
+    <string name="tab3_text">发布</string>
+    <string name="tab4_text">分享</string>
+    <string name="tab5_text">我的</string>
+    <string name="main_activity_exit_msg">再按一次退出</string>
+</resources>

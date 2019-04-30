@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_update_verison_bg"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <FrameLayout
+        android:id="@+id/fram_sahngjia_ed_de"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_shangjia"
+                style="@style/server_edit"
+                android:layout_marginLeft="0dp"
+                android:text="上架" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_bianji"
+                style="@style/server_edit"
+                android:text="编辑" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_delete"
+                style="@style/server_edit"
+                android:text="删除" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fram_xiajia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_xiajia"
+            style="@style/server_edit"
+            android:text="下架" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fram_edit_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_bianji2"
+                style="@style/server_edit"
+                android:text="编辑" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_delete2"
+                style="@style/server_edit"
+                android:text="删除" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

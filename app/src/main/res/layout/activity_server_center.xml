@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_title" />
+
+    <TextView
+        android:id="@+id/tv_my_group_chat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:layout_marginTop="@dimen/x15"
+        android:drawableLeft="@mipmap/icon_group_chat"
+        android:layout_marginLeft="@dimen/x15"
+        android:drawablePadding="@dimen/x5"
+        android:drawableRight="@mipmap/right_arrow"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/x15"
+        android:background="@color/white"
+        android:textSize="@dimen/textsize_16"
+        android:textColor="@color/color_333333"
+        android:text="我的群聊" />
+</LinearLayout>

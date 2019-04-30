@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+
+    <RelativeLayout
+        android:id="@+id/popup_rl"
+        android:padding="@dimen/x20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/popup_window_view_picture"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x80"
+            android:background="@mipmap/addproduct_addpic"
+            android:layout_toStartOf="@+id/popup_middle_line"
+            android:layout_marginEnd="@dimen/x15"
+            android:layout_toLeftOf="@+id/popup_middle_line"
+            android:layout_marginRight="@dimen/x15" />
+        <View
+            android:id="@+id/popup_middle_line"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_centerHorizontal="true"
+            />
+        <ImageView
+            android:id="@+id/popup_window_view_video"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x80"
+            android:background="@mipmap/addproduct_addvideo"
+            android:layout_toEndOf="@+id/popup_middle_line"
+            android:layout_marginStart="@dimen/x15"
+            android:layout_toRightOf="@+id/popup_middle_line"
+            android:layout_marginLeft="@dimen/x15" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/popup_window_tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x10"
+        android:text="@string/cancle"
+        android:textSize="@dimen/textsize_20"
+        android:gravity="center"
+        android:layout_below="@+id/popup_rl"
+        android:background="@color/color_F0F0F0"
+        android:textColor="@color/color_B0B0B0"
+        />
+</RelativeLayout>

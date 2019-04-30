@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_set_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x15"
+            android:gravity="center"
+            android:text="@string/set_pwd"
+            android:textColor="@color/color_666666" />
+
+        <com.yst.onecity.view.ContainsEmojiEditText
+            android:id="@+id/et_set_login_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_set_pwd"
+            android:background="@color/white"
+            android:hint="@string/set_pwd"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/x10"
+            android:textColor="@color/color_222222"
+            android:textColorHint="@color/color_666666"
+            android:textSize="@dimen/textsize_12" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_sure_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x15"
+            android:gravity="center"
+            android:text="@string/sure_pwd"
+            android:textColor="@color/color_666666" />
+
+        <com.yst.onecity.view.ContainsEmojiEditText
+            android:id="@+id/et_sure_login_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_sure_pwd"
+            android:background="@color/white"
+            android:inputType="textPassword"
+            android:hint="@string/sure_pwd"
+            android:paddingLeft="@dimen/x10"
+            android:textColor="@color/color_222222"
+            android:textColorHint="@color/color_666666"
+            android:textSize="@dimen/textsize_12" />
+    </RelativeLayout>
+</LinearLayout>

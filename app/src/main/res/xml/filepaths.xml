@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <root-path path="Android/data/com.yst.onecity/"  name="download"/>
+    <external-path path="images/" name="camera_photos" />
+</paths>

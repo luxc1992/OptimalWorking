@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space30"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginRight="@dimen/space15"
+        android:layout_marginTop="@dimen/space5"
+        android:background="@drawable/shape_search_bag"
+        android:drawableLeft="@mipmap/icon_search"
+        android:paddingLeft="10dp" />
+
+    <com.yst.onecity.view.viewpagerindicator.ViewPagerIndicator
+        android:id="@+id/indicator_industry"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space40"
+        android:layout_marginTop="@dimen/space5"
+        android:background="@color/white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_F1F1F1"/>
+
+
+</LinearLayout>

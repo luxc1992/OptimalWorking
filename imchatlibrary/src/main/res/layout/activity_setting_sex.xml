@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorffeeeeee"
+    android:orientation="vertical"
+    >
+    <com.yst.im.imchatlibrary.base.baseview.AbstractTitleView
+        android:id="@+id/titleview_set_sex"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space44"
+        android:background="@color/colorWrite"
+        title:right_text_color="@color/colorBlue439"
+        title:small_text_size="15sp"
+        title:title_name="设置性别"
+        title:title_text_color="@color/colorff222222"
+        title:left_text_color="@color/colorBlck999"
+        title:title_text_size="18sp"
+        title:left_text="@string/cancle"
+        title:right_text="完成"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:background="@color/colorffd7d7d7" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:layout_marginTop="@dimen/space10"
+        android:background="@color/colorffd7d7d7" />
+
+    <RelativeLayout
+        android:id="@+id/rel_setting_sex_man"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space55"
+        android:background="@color/colorWrite">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/space10"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:text="@string/mine_setting_nan"
+            android:textColor="@color/colorff333333"
+            android:textSize="@dimen/space16" />
+
+        <ImageView
+            android:id="@+id/img_nan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space10"
+            android:clickable="false"
+            android:src="@drawable/selector_im_invitee" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_marginRight="@dimen/space10"
+        android:background="@color/colorffd7d7d7" />
+    <RelativeLayout
+        android:id="@+id/rel_setting_sex_woman"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space55"
+        android:background="@color/colorWrite">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/space10"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:text="@string/mine_setting_nv"
+            android:textColor="@color/colorff333333"
+            android:textSize="@dimen/space16" />
+
+        <ImageView
+            android:id="@+id/img_nv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space10"
+            android:clickable="false"
+            android:src="@drawable/selector_im_invitee" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:background="@color/colorffd7d7d7" />
+</LinearLayout>

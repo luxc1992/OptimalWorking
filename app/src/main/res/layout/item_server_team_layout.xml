@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_container"
+        style="@style/MatchWrap"
+        android:layout_marginBottom="15dp">
+
+        <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+            android:id="@+id/iv_server_team"
+            style="@style/serverteam_ivhead"
+            android:src="@mipmap/default_head"
+            app:corner_radius="@dimen/x10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:oval="false" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/serverteam_tvname"
+            app:layout_constraintLeft_toRightOf="@+id/iv_server_team"
+            app:layout_constraintTop_toTopOf="@+id/iv_server_team" />
+
+        <TextView
+            android:id="@+id/tv_server_distance"
+            style="@style/serverteam_tvdistance"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_server_team" />
+
+        <com.yst.onecity.view.RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/serverteam_ratingbar"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            app:starCount="5"
+            app:starEmpty="@mipmap/comments_img_star_n"
+            app:starFill="@mipmap/comments_img_star_s"
+            app:starImageSize="10dp"
+            app:starPadding="3dp"
+            app:stepSize="Full" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            style="@style/serverteam_tvdesc"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_name"
+            app:layout_constraintRight_toLeftOf="@+id/tv_contact_team"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+        <TextView
+            android:id="@+id/tv_contact_team"
+            style="@style/serverteam_tvcontactteam"
+            android:text="联系团队"
+            app:layout_constraintRight_toRightOf="@+id/tv_server_distance"
+            app:layout_constraintTop_toBottomOf="@+id/tv_server_distance" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <RelativeLayout style="@style/serverteam_rl_container">
+
+
+        <LinearLayout
+            android:id="@+id/ll_first_server_case"
+
+            style="@style/serverteam_first_llcontainer">
+
+            <LinearLayout style="@style/serverteam_llfirst_case">
+
+                <TextView
+                    android:id="@+id/tv_server_case"
+                    style="@style/serverteam_tv_firt_case"
+                    android:text="服务案例" />
+
+                <TextView
+                    android:id="@+id/tv_first_server_case_name"
+                    style="@style/serverteam_tv_first_case_name" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/WrapWrap"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_first_server_case"
+                    style="@style/serverteam_iv_first_case" />
+
+                <TextView
+                    android:id="@+id/tv_first_case_detail"
+                    style="@style/serverteam_tv_first_case_detail"
+                    android:text="案例详情" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_second_server_case"
+            style="@style/serverteam_ll_second_server_case">
+
+            <LinearLayout
+                style="@style/MatchWrap"
+                android:orientation="horizontal">
+
+                <LinearLayout style="@style/serverteam_second_container">
+
+
+                    <TextView
+                        android:id="@+id/tv_second_server_case_name"
+                        style="@style/serverteam_tv_second_server_case_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/WrapWrap"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_second_server_case"
+                        style="@style/serverteam_iv_first_case" />
+
+                    <TextView
+                        android:id="@+id/tv_second_case_detail"
+                        style="@style/serverteam_tv_first_case_detail"
+                        android:text="案例详情" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_second_down"
+                style="@style/serverteam_iv_second_down"
+                android:src="@mipmap/case_more_down" />
+
+            <ImageView
+                android:id="@+id/iv_second_up"
+                style="@style/serverteam_iv_second_down"
+                android:src="@mipmap/case_more_up"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_third_server_case"
+            style="@style/serverteam_ll_third_server_case">
+
+            <LinearLayout
+                style="@style/MatchWrap"
+                android:orientation="horizontal">
+
+                <LinearLayout style="@style/serverteam_ll_thirdcase">
+
+                    <TextView
+                        android:id="@+id/tv_third_server_case_name"
+                        style="@style/serverteam_tv_third_server_case_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/WrapWrap"
+                    android:layout_marginRight="20dp"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_third_server_case"
+                        style="@style/serverteam_iv_first_case" />
+
+                    <TextView
+                        android:id="@+id/tv_third_case_detail"
+                        style="@style/serverteam_tv_first_case_detail"
+                        android:text="案例详情" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_third_down"
+                style="@style/serverteam_iv_second_down"
+                android:src="@mipmap/case_more_down" />
+
+            <ImageView
+                android:id="@+id/iv_third_up"
+                style="@style/serverteam_iv_second_down"
+                android:src="@mipmap/case_more_up"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_check_more_case"
+        style="@style/serverteam_tv_check_more_case"
+        android:text="查看更多服务案例" />
+
+
+</LinearLayout>

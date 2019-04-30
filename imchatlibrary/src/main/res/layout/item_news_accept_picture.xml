@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_news_accept_picture_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space5"
+        android:orientation="horizontal">
+
+        <com.yst.im.imchatlibrary.widget.ImRoundedImageView
+            android:id="@+id/img_pic_accept_picture_user_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            app:oval="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space200"
+            android:layout_marginTop="@dimen/space2">
+
+            <TextView
+                android:id="@+id/txt_news_accept_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space5"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack555"
+                android:textSize="13sp" />
+
+            <!--<com.yst.im.imchatlibrary.widget.SampleCoverVideo-->
+                <!--android:id="@+id/video_accept_player"-->
+                <!--android:layout_width="@dimen/space157"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:layout_below="@+id/txt_news_accept_user_name"-->
+                <!--android:layout_centerInParent="true" />-->
+
+            <RelativeLayout
+                android:id="@+id/rel_accpet_isShow_time"
+                android:layout_width="@dimen/space157"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#66000000">
+
+                <TextView
+                    android:id="@+id/txt_accept_voice_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:text="02:15"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+            <com.yst.im.imchatlibrary.widget.ImRoundedImageView
+                android:id="@+id/img_news_accept_picture"
+                android:layout_width="@dimen/space157"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txt_news_accept_user_name"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

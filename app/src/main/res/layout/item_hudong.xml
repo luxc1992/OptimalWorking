@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+        android:id="@+id/item_project_head"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:corner_radius="@dimen/space5"
+        app:oval="false"
+        android:scaleType="fitXY"  />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/item_project_head">
+
+        <LinearLayout
+            android:id="@+id/ll_item_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_txt_project_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/color_121212"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <TextView
+                android:id="@+id/item_txt_project_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space3"
+                android:text="03-26 14:20"
+                android:textColor="@color/color_9A9A9A"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_zixun_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space3"
+            android:text="回复"
+            android:gravity="center"
+            android:textColor="@color/color_9A9A9A"
+            android:textSize="@dimen/text_size_11sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space15"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/comment"
+            android:drawablePadding="@dimen/space5"
+            android:background="@drawable/shape_reply_bg"
+            android:padding="@dimen/space5"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_txt_project_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_project_head"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textColor="@color/color_121212"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/rel_hudong_img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_txt_project_title"
+        android:layout_margin="@dimen/space10"
+        android:background="@color/color_F5F5F5"
+        android:padding="@dimen/space10"
+        android:orientation="vertical"
+        >
+
+        <com.yst.onecity.view.MyGridView
+            android:id="@+id/mygrid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="@dimen/space2"
+            android:numColumns="3" />
+
+        <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+            android:id="@+id/irv_project_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            app:corner_radius="@dimen/space3"
+            app:oval="false"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_below="@+id/mygrid_view"
+            >
+
+            <TextView
+                android:id="@+id/item_txt_project_content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space8"
+                android:text=""
+                android:textColor="@color/color_121212"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/item_txt_project_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space8"
+                android:scrollbars="horizontal"
+                android:text=""
+                android:textColor="@color/color_767676"
+                android:textSize="@dimen/text_size_nomal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

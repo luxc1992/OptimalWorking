@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space22"
+        android:background="@color/colorWrite"
+        />
+    <com.yst.im.imchatlibrary.base.baseview.AbstractTitleView
+        android:id="@+id/titleView_one_cities_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space44"
+        android:background="@color/colorWrite"
+        android:paddingRight="@dimen/space15"
+        title:left_image="@mipmap/back_title_right"
+        title:small_text_size="@dimen/text_size_14sp"
+        title:title_text_color="@color/colorBlack333"
+        title:title_text_size="@dimen/text_size_xlarge" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space35"
+        android:background="@color/colorBlackEEE">
+
+        <TextView
+            android:id="@+id/txt_one_cities_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/space13"
+            android:textColor="@color/colorBlck666"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/space13"
+            android:text="@string/personal_setting_select"
+            android:textColor="@color/colorBlck666"
+            android:textSize="@dimen/text_size_small" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_one_cities_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorffeeeeee"
+        android:dividerHeight="@dimen/space0.5"
+        android:overScrollMode="never"
+        />
+
+</LinearLayout>
+

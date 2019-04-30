@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F2F2F2"
+    android:orientation="vertical"
+    >
+<include layout="@layout/main_title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/bank_textview"
+        android:textSize="13sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/txt_bank_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/bank_person"
+            android:textColor="@color/colorBlack"
+             />
+
+        <TextView
+            android:id="@+id/txt_bank_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textCursorDrawable="@null"
+            android:background="@null"
+            android:layout_toRightOf="@id/txt_bank_textview"
+            android:textSize="14dp"
+            android:maxLength="10" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorWhite"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/txt_bane_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/bank_num"
+            android:textColor="@color/colorBlack"
+             />
+
+        <EditText
+            android:id="@+id/et_bank_card_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textCursorDrawable="@null"
+            android:paddingLeft="20dp"
+            android:hint="@string/bank_banknum"
+            android:background="@null"
+            android:inputType="number"
+            android:textSize="14dp"
+            android:maxLines="1"
+            android:layout_alignBaseline="@+id/txt_bane_textview"
+            android:layout_alignBottom="@+id/txt_bane_textview"
+            android:layout_toEndOf="@+id/txt_bane_textview" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/bank_type"
+        android:textSize="13sp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/txt_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/bank_typenum"
+            android:textColor="@color/colorBlack"
+            />
+        <TextView
+            android:id="@+id/txt_card_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/txt_card"
+            android:text="@string/bank_typenum"
+            android:textColor="@color/color_003284"
+            />
+        <TextView
+            android:id="@+id/tv_bank_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:hint="@string/bank_auto"
+            android:textColorHint="@color/color_999999" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txt_bank_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_fetchcash_bt_bg_false"
+        android:text="@string/next_step"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="18dp"
+        />
+
+</LinearLayout>

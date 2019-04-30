@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"
+        android:orientation="horizontal"
+        android:padding="@dimen/space10">
+
+        <LinearLayout
+            android:id="@+id/lil_news_inform"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/space57"
+                android:layout_height="@dimen/space57"
+                android:clickable="false"
+                android:src="@mipmap/xiaoxi"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space8"
+                android:text="消息通知"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_nomal"
+                android:clickable="false"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lil_new_attention"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/space57"
+                android:layout_height="@dimen/space57"
+                android:src="@mipmap/xinzeng"
+                android:clickable="false"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space8"
+                android:text="新增关注"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_nomal"
+                android:clickable="false"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lil_interaction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/space57"
+                android:layout_height="@dimen/space57"
+                android:src="@mipmap/hudong"
+                android:clickable="false"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space8"
+                android:text="互动 "
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_nomal"
+                android:clickable="false"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space10"
+        android:background="@color/color_F9F9F9" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/recent_contacts_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space10"
+        android:background="@color/color_F1F1F1"
+        android:visibility="visible"
+        ></android.support.v4.view.ViewPager>
+</LinearLayout>

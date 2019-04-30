@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_pop"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".ui.activity.AddActivity">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_recall_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_pop_window_transport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/space5"
+            android:paddingRight="@dimen/space5"
+            android:singleLine="true"
+            android:text="@string/txt_group_update_copy"
+            android:textColor="@color/colorWrite"
+            android:textSize="@dimen/text_size_nomal" />
+
+        <View
+            android:id="@+id/v_copy_recall"
+            android:layout_width="@dimen/space0.5"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/space2"
+            android:layout_marginTop="@dimen/space2"
+            android:background="@color/colorBlck999"
+            android:paddingLeft="@dimen/space5"
+            android:paddingRight="@dimen/space5" />
+
+        <TextView
+            android:id="@+id/txt_pop_window_copy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/space5"
+            android:paddingRight="@dimen/space5"
+            android:singleLine="true"
+            android:text="@string/txt_group_update_transport"
+            android:textColor="@color/colorWrite"
+            android:textSize="@dimen/text_size_nomal" />
+
+        <View
+            android:id="@+id/v_recall_delete"
+            android:layout_width="@dimen/space0.5"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/space2"
+            android:layout_marginTop="@dimen/space2"
+            android:background="@color/colorBlck999"
+            android:paddingLeft="@dimen/space5"
+            android:paddingRight="@dimen/space5" />
+
+        <TextView
+            android:id="@+id/txt_pop_window_recall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text="@string/txt_group_update_recall"
+            android:textColor="@color/colorWrite"
+            android:textSize="@dimen/text_size_nomal" />
+    </LinearLayout>
+
+    <!--<View-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="@dimen/space10" />-->
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

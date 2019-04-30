@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/lll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/round_local_left"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/positioning" />
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space8"
+        android:background="@drawable/shape_product_item"
+        android:paddingBottom="@dimen/space5"
+        android:paddingLeft="@dimen/space20"
+        android:paddingRight="@dimen/space20"
+        android:paddingTop="@dimen/space5"
+        android:text="天花板"
+        android:textColor="@color/white" />
+    <ImageView
+        android:id="@+id/round_local_right"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/space8"
+        android:src="@mipmap/positioning"
+        android:visibility="invisible" />
+    </LinearLayout>
+</RelativeLayout>

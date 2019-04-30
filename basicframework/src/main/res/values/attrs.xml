@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    corner_radius         边缘的弧度数
+    border_width         描边的宽度
+    border_color         描边的颜色
+    mutate_background     背景是否变化
+    oval                 是否为圆形
+    android:scaleType     拉伸的方式
+ -->
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="mutate_background" format="boolean" />
+        <attr name="oval" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowCheckLayout">
+        <attr name="color_normal" format="color" />
+        <attr name="color_check" format="color" />
+        <attr name="bg_normal" format="reference" />
+        <attr name="bg_check" format="reference" />
+        <attr name="check_mode" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipyRefreshLayout">
+        <attr name="srl_direction">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="both" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_newLine" format="boolean" />
+        <attr name="layout_horizontalSpacing" format="dimension" />
+        <attr name="layout_verticalSpacing" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="debugDraw" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ScaleImageiew">
+        <attr name="scale_mode" format="integer" />
+    </declare-styleable>
+    <!-- HeaderBar自定义属性 -->
+    <declare-styleable name="HeaderBar">
+        <attr name="isShowBack" format="boolean" />
+        <attr name="titleText" format="string" />
+        <attr name="rightText" format="string" />
+    </declare-styleable>
+</resources>

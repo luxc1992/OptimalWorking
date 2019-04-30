@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yst.onecity.activity.mine.order.EvaluateProductActivity">
+
+    <include
+        android:id="@+id/main_layout"
+        layout="@layout/main_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_commit"
+        android:layout_below="@+id/main_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_order_product" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_white"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp">
+
+                <com.yst.onecity.view.RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    app:starCount="5"
+                    app:starEmpty="@mipmap/comments_img_star_n"
+                    app:starFill="@mipmap/comments_img_star_s"
+                    app:starImageSize="30dp"
+                    app:starPadding="15dp"
+                    app:stepSize="Full">
+
+                </com.yst.onecity.view.RatingBar>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <com.yst.onecity.view.ContainsEmojiEditText
+                    android:id="@+id/et_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:maxLength="120"
+                    android:hint="本商品如何，服务怎样，描述一下吧..."
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="15sp" />
+
+                <com.yst.onecity.view.MyGridView
+                    android:id="@+id/griView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:verticalSpacing="10dp">
+
+                </com.yst.onecity.view.MyGridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp">
+
+                <CheckBox
+                    android:id="@+id/cb_anonymity"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/selector_evalute"
+                    android:button="@null" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="匿名评价" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您写的评价会以匿名的形式展现"
+                    android:textColor="@color/color_999999" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_EE8382"
+        android:enabled="false"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="确认"
+        android:textColor="@color/color_white"
+        android:textSize="16sp" />
+</RelativeLayout>

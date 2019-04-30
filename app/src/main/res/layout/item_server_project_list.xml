@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x180">
+
+        <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+            android:id="@+id/sever_project_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:corner_radius="@dimen/space5"
+            app:oval="false" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space45"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_transformation_left_bottom_right_bottom_radius_bg">
+
+            <TextView
+                android:id="@+id/sever_project_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space15"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space16" />
+
+            <TextView
+                android:id="@+id/sever_project_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space15"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space16" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

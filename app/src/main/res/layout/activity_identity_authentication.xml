@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_identity_before"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:text="@string/phone_colon"
+                android:textColor="@color/color_222222"
+                android:textSize="@dimen/textsize_13" />
+
+            <TextView
+                android:id="@+id/tv_phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_toRightOf="@+id/tv_phone"
+                android:gravity="left|center_vertical"
+                android:textSize="@dimen/textsize_12" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x45"
+                android:layout_marginLeft="@dimen/x15">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="65dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_real_name"
+                    android:textColor="@color/color_222222"
+                    android:textSize="@dimen/textsize_13" />
+
+                <com.yst.onecity.view.ContainsEmojiEditText
+                    android:id="@+id/et_real_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_toRightOf="@+id/tv_name"
+                    android:background="@color/white"
+                    android:hint="@string/acount_input_real_name"
+                    android:paddingLeft="@dimen/x15"
+                    android:textColor="@color/color_666666"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/textsize_12" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x45"
+                android:layout_marginLeft="@dimen/x15">
+
+                <TextView
+                    android:id="@+id/tv_identity_card"
+                    android:layout_width="65dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_identity_card"
+                    android:textColor="@color/color_222222"
+                    android:textSize="@dimen/textsize_13" />
+
+                <com.yst.onecity.view.ContainsEmojiEditText
+                    android:id="@+id/et_identity_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_toRightOf="@+id/tv_identity_card"
+                    android:background="@color/white"
+                    android:hint="@string/acount_input_identity_card"
+                    android:paddingLeft="@dimen/x15"
+                    android:textColor="@color/color_666666"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/textsize_12" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x45"
+                android:layout_marginLeft="@dimen/x15">
+
+                <TextView
+                    android:id="@+id/verification_code"
+                    android:layout_width="65dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_verification_code"
+                    android:textColor="@color/color_222222"
+                    android:textSize="@dimen/textsize_13" />
+
+                <com.yst.onecity.view.ContainsEmojiEditText
+                    android:id="@+id/et_verification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:layout_toLeftOf="@+id/btn_get_verification_code"
+                    android:layout_toRightOf="@+id/verification_code"
+                    android:layout_marginRight="@dimen/x15"
+                    android:background="@color/white"
+                    android:maxLength="6"
+                    android:inputType="number"
+                    android:textColorHint="@color/color_999999"
+                    android:textColor="@color/color_666666"
+                    android:hint="@string/please_input_verification_code"
+                    android:textSize="@dimen/textsize_12" />
+
+                <TextView
+                    android:id="@+id/btn_get_verification_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="@dimen/x15"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_get_verification_code"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/x15"
+                    android:paddingRight="@dimen/x15"
+                    android:text="获取验证码"
+                    android:textColor="#FF5424" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/x15"
+            android:layout_marginTop="@dimen/x15"
+            android:text="@string/real_name_authentication_tips"
+            android:textColor="#187D00"
+            android:textSize="@dimen/textsize_12" />
+
+        <TextView
+            android:id="@+id/btn_commit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40"
+            android:layout_margin="@dimen/x15"
+            android:background="@drawable/shape_btn_pink_red_bg"
+            android:gravity="center"
+            android:enabled="false"
+            android:text="@string/commit"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_identity_after"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x15"
+                android:gravity="center_vertical"
+                android:text="@string/str_real_name"
+                android:textColor="@color/color_222222"
+                android:textSize="@dimen/textsize_14" />
+
+            <TextView
+                android:id="@+id/tv_real_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x15"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/textsize_14" />
+        </RelativeLayout>
+
+        <include layout="@layout/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x15"
+                android:gravity="center_vertical"
+                android:text="@string/certificate_type"
+                android:textColor="@color/color_222222"
+                android:textSize="@dimen/textsize_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x15"
+                android:gravity="center_vertical"
+                android:text="@string/ic_card"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/textsize_14" />
+        </RelativeLayout>
+
+        <include layout="@layout/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x15"
+                android:gravity="center_vertical"
+                android:text="@string/certificate_num"
+                android:textColor="@color/color_222222"
+                android:textSize="@dimen/textsize_14" />
+
+            <TextView
+                android:id="@+id/tv_ic_card"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x15"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/textsize_14" />
+        </RelativeLayout>
+
+        <include layout="@layout/line" />
+    </LinearLayout>
+</LinearLayout>

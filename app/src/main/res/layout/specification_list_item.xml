@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/activity_line_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_specification"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/x5"
+            android:layout_marginLeft="@dimen/x5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_toRightOf="@+id/image_view"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/stock_list_header_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:textColor="@color/black"
+                    android:text="规格" />
+
+                <TextView
+                    android:id="@+id/stock_list_header_symbol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="价格(元)" />
+
+                <TextView
+                    android:id="@+id/stock_list_header_last_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="库存" />
+
+                <TextView
+                    android:id="@+id/stock_list_header_price_change"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x6"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:padding="2dip"
+                    android:text="规格图片" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_delete_specification"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/x5"
+            android:layout_marginLeft="@dimen/x5"
+            android:src="@mipmap/shanchuguige" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_toRightOf="@+id/image_delete_specification"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/activity_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/specification_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_575757"
+                    android:gravity="center"
+                    android:padding="2dip" />
+
+                <EditText
+                    android:id="@+id/edit_pice"
+                    android:inputType="number|numberDecimal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_575757"
+                    android:maxLength="8"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:padding="2dip" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/edit_inventory"
+                    android:textColor="@color/color_575757"
+                    android:maxLength="8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:padding="2dip" />
+
+                <TextView
+                    android:id="@+id/stock_change_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/x6"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/space12"
+                    android:background="@drawable/shape_goods_add_code"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:padding="2dip"
+                    android:text="上传图片"
+                    android:textColor="@color/color_red" />
+
+                <ImageView
+                    android:id="@+id/image_commodity"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/x6"
+                    android:layout_weight="1"
+                    android:padding="2dip"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

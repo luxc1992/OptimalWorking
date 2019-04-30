@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F7F7F7"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_search_home_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_search_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/space10"
+        android:background="@color/colorWrite"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/search_history_icon"
+                android:drawablePadding="@dimen/space5"
+                android:text="搜索历史"
+                android:textColor="@color/color_9C9C9C"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_clear_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="清除"
+                android:textColor="@color/color_9C9C9C"
+                android:textSize="@dimen/text_size_14sp" />
+        </RelativeLayout>
+
+        <com.yst.basic.framework.view.FlowLayout
+            android:id="@+id/flv_search_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space10"
+            app:horizontalSpacing="@dimen/space15"
+            app:verticalSpacing="@dimen/space10"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/search_hot_icon"
+                android:drawablePadding="@dimen/space5"
+                android:text="热门搜索"
+                android:textColor="@color/color_9C9C9C"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+        <com.yst.basic.framework.view.FlowLayout
+            android:id="@+id/flv_search_hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space10"
+            app:horizontalSpacing="@dimen/space15"
+            app:verticalSpacing="@dimen/space10"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space40"
+        android:layout_marginTop="@dimen/space5"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <com.yst.onecity.view.viewpagerindicator.ViewPagerIndicator
+            android:id="@+id/indicator_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space40"
+            android:layout_marginLeft="@dimen/space20"
+            android:layout_marginRight="@dimen/space20"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="@dimen/space1"
+            android:layout_height="@dimen/space20"
+            android:layout_centerInParent="true"
+            android:background="@color/colorDDD" />
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space10"
+        android:background="@color/color_F1F1F1"
+        android:visibility="gone"
+        ></android.support.v4.view.ViewPager>
+</LinearLayout>

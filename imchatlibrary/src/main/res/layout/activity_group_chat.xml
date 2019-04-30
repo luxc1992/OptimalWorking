@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBlackFFDDDDDD"
+    tools:context=".ui.fragment.GroupChatFragment">
+
+    <LinearLayout
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space44"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="@dimen/space10"
+            android:id="@+id/img_groupChat_back"
+            android:layout_width="@dimen/space60"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"/>
+
+        <View
+            android:layout_width="@dimen/space0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/tab_groupChat_title"
+            android:layout_width="@dimen/space115"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:tabMinWidth="@dimen/space115"
+            app:xTabIndicatorColor="@color/colorAccent"
+            app:xTabIndicatorWidth="@dimen/space10"
+            app:xTabMode="fixed"
+            app:xTabSelectedTextColor="@color/colorBlack333"
+            app:xTabTextColor="@color/colorBlck999" />
+
+        <View
+            android:layout_width="@dimen/space0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txt_groupChat_create"
+            android:layout_width="@dimen/space60"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space5"
+            android:gravity="center"
+            android:text="@string/txt_groupChat_create"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/text_size_nomal" />
+    </LinearLayout>
+
+    <com.yst.im.imchatlibrary.utils.NoScrollViewPager
+        android:background="@color/colorWrite"
+        android:id="@+id/vp_groupChat_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space0.5" />
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="@dimen/x12"
+        android:layout_marginRight="@dimen/x12"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_one_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/x12"
+                android:maxLines="2"
+                android:textColor="@color/color_353535"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_marginRight="@dimen/x10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_one_author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:textColor="@color/color_AAAAAA"
+                        android:textSize="11sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x12"
+                        android:layout_height="@dimen/x12"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:src="@mipmap/pinglun2" />
+
+                    <TextView
+                        android:id="@+id/tv_one_commet_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="12"
+                        android:textColor="@color/color_636363"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_one_issue_reprint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/color_AAAAAA"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/line_one_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/x13"
+                        android:layout_height="@dimen/x12"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/shoucang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x5"
+                        android:text="@string/cancle_collect"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_one_pic"
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/x120"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_one_pic_product_plan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/color_F7F7F7"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/x44"
+            android:layout_height="@dimen/x40"
+            android:layout_marginBottom="@dimen/x5"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_marginTop="@dimen/x5"
+            android:padding="@dimen/x5"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/tv_one_product_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/color_232225"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/nav_icon_next" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_one_product_delete"
+        android:layout_width="@dimen/x70"
+        android:layout_height="@dimen/x25"
+        android:layout_gravity="right|center"
+        android:layout_marginBottom="@dimen/x10"
+        android:layout_marginRight="@dimen/x20"
+        android:background="@drawable/shape_btn_bg"
+        android:text="@string/delete_btn"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="visible" />
+</LinearLayout>

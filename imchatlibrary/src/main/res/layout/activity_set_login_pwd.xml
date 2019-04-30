@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorffeeeeee"
+    android:orientation="vertical">
+
+
+    <com.yst.im.imchatlibrary.base.baseview.AbstractTitleView
+        android:id="@+id/titleview_set_login_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space44"
+        android:background="@color/colorWrite"
+        title:left_text="取消"
+        title:left_text_color="@color/colorBlack222"
+        title:right_text="完成"
+        title:right_text_color="@color/colorff439eff"
+        title:small_text_size="15sp"
+        title:title_name="设置登录密码"
+        title:title_text_color="@color/colorBlack333"
+        title:title_text_size="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:background="@color/colorffd7d7d7" />
+
+    <TextView
+        android:id="@+id/txt_forget_pwd_msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space50"
+        android:background="@color/colorfff1f0f7"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space15"
+        android:paddingRight="@dimen/space15"
+        android:text="@string/mine_setting_login_pws_msg"
+        android:textColor="@color/colorff999999"
+        android:textSize="@dimen/space14" />
+
+    <TextView
+        android:id="@+id/txt_forget_pwd_msg1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space10"
+        android:background="@color/colorfff1f0f7"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space15"
+        android:paddingRight="@dimen/space15"
+        android:textColor="@color/colorff999999"
+        android:textSize="@dimen/space14"
+        android:visibility="gone"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:background="@color/colorffd7d7d7" />
+
+    <TextView
+        android:id="@+id/txt_set_login_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space55"
+        android:background="@color/colorWrite"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space15"
+        android:text="手机号："
+        android:textColor="@color/colorff666666"
+        android:textSize="@dimen/text_size_15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginRight="@dimen/space15"
+        android:background="@color/colorffd7d7d7" />
+
+    <LinearLayout
+        android:id="@+id/ll_input_old_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space15"
+            android:text="@string/mine_setting_old_pwd"
+            android:textColor="@color/colorff333333"
+            android:textSize="@dimen/text_size_15sp" />
+
+        <com.yst.im.imchatlibrary.widget.ClearEditText
+            android:id="@+id/edt_input_old_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space55"
+            android:background="@null"
+            android:digits="0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+            android:gravity="center_vertical"
+            android:hint="@string/mine_setting_old_pwd_msg"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:paddingRight="@dimen/space40"
+            android:singleLine="true"
+            android:textColor="@color/colorBlck666"
+            android:textColorHint="@color/colorBlck666"
+
+            android:textSize="@dimen/space15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginRight="@dimen/space15"
+        android:background="@color/colorffd7d7d7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space15"
+            android:text="@string/mine_setting_new_pwd"
+            android:textColor="@color/colorff333333"
+            android:textSize="@dimen/text_size_15sp" />
+
+        <com.yst.im.imchatlibrary.widget.ClearEditText
+            android:id="@+id/edt_input_new_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space55"
+            android:background="@null"
+            android:digits="0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+            android:gravity="center_vertical"
+            android:hint="@string/mine_setting_new_pwd_msg"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:paddingRight="@dimen/space40"
+            android:singleLine="true"
+            android:textColor="@color/colorBlck666"
+            android:textColorHint="@color/colorBlck666"
+            android:textSize="@dimen/space15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginRight="@dimen/space15"
+        android:background="@color/colorffd7d7d7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space15"
+            android:text="@string/mine_setting_sure_pwd"
+            android:textColor="@color/colorff333333"
+            android:textSize="@dimen/text_size_15sp" />
+
+        <com.yst.im.imchatlibrary.widget.ClearEditText
+            android:id="@+id/edt_input_agin_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space55"
+            android:background="@null"
+            android:digits="0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+            android:gravity="center_vertical"
+            android:hint="@string/mine_setting_hint_agin_code"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:paddingRight="@dimen/space40"
+            android:singleLine="true"
+            android:textColor="@color/colorBlck666"
+            android:textColorHint="@color/colorBlck666"
+            android:textSize="@dimen/space15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginRight="@dimen/space15"
+        android:background="@color/colorffd7d7d7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space35"
+            android:background="@color/colorWrite"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space15"
+            android:text="@string/mine_setting_login_cod_pws_msg"
+            android:textColor="@color/colorff439eff"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space35"
+            android:background="@color/colorWrite"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space15"
+            android:text="@string/mine_setting_login_cod_pws_msg1"
+            android:textColor="@color/colorBlck666"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginRight="@dimen/space15"
+        android:background="@color/colorffd7d7d7" />
+
+    <TextView
+        android:id="@+id/txt_forget_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginTop="@dimen/space10"
+        android:text="@string/mine_setting_send_formsg"
+        android:textColor="@color/colorff439eff"
+        android:textSize="@dimen/text_size_small" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_server_manage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务管理" />
+
+    <TextView
+        android:id="@+id/tv_case_manage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="案例管理" />
+
+    <TextView
+        android:id="@+id/tv_team_manage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="团队管理" />
+</LinearLayout>

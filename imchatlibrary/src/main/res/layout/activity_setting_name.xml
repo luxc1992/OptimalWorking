@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorffeeeeee"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <com.yst.im.imchatlibrary.base.baseview.AbstractTitleView
+        android:id="@+id/titleview_set_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space44"
+        android:background="@color/colorWrite"
+        title:left_text="取消"
+        title:right_text="完成"
+        title:right_text_color="@color/colorff999999"
+        title:left_text_color="@color/colorBlck999"
+        title:small_text_size="15sp"
+        title:title_name="设置名字"
+        title:title_text_color="@color/colorBlack333"
+        title:title_text_size="18sp"
+        android:layout_marginBottom="@dimen/space10"
+        />
+    <TextView
+        android:id="@+id/txt_add_friend_msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space25"
+        android:text="你需要发送验证申请，等待对方通过"
+        android:textColor="#ff439eff"
+        android:textSize="@dimen/text_size_nomal"
+        android:gravity="top"
+        android:paddingLeft="@dimen/space10"
+        android:visibility="gone"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:background="@color/colorffd7d7d7" />
+
+    <com.yst.im.imchatlibrary.widget.ClearEditText
+        android:id="@+id/et_set_nameet_set_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space50"
+        android:background="@color/colorWrite"
+        android:gravity="center_vertical"
+        android:hint="@string/mine_setting_name"
+        android:textColorHint="@color/colorffd7d7d7"
+        android:paddingLeft="@dimen/space10"
+        android:paddingRight="@dimen/space40"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:textColor="@color/colorBlack222"
+        android:textSize="@dimen/space15"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:background="@color/colorffd7d7d7" />
+</LinearLayout>

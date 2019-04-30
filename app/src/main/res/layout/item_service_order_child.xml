@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_service_order_ll_child"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_service_order_product" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/color_white" />
+
+    <LinearLayout
+        android:id="@+id/item_service_order_ll_order_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/color_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_DDDDDD" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/item_service_order_tv_isPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/should_pay"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/color_333333" />
+
+            <TextView
+                android:id="@+id/item_service_order_tv_order_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥0.00"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/color_222222"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/item_service_order_tv_isPay"
+                />
+
+            <TextView
+                android:id="@+id/item_service_order_tv_btn1"
+                android:layout_width="@dimen/x70"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_text_bg"
+                android:layout_marginLeft="@dimen/x5"
+                android:paddingTop="@dimen/x6"
+                android:paddingBottom="@dimen/x6"
+                android:paddingLeft="@dimen/x8"
+                android:paddingRight="@dimen/x8"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp"
+                android:layout_toLeftOf="@+id/item_service_order_tv_btn2"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/item_service_order_tv_btn2"
+                android:layout_width="@dimen/x70"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_text_bg"
+                android:paddingTop="@dimen/x6"
+                android:paddingBottom="@dimen/x6"
+                android:paddingLeft="@dimen/x8"
+                android:paddingRight="@dimen/x8"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp"
+                android:layout_toLeftOf="@+id/item_service_order_tv_btn"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/item_service_order_tv_btn"
+                android:layout_width="@dimen/x70"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_text_bg_red"
+                android:paddingTop="@dimen/x6"
+                android:paddingBottom="@dimen/x6"
+                android:paddingLeft="@dimen/x8"
+                android:paddingRight="@dimen/x8"
+                android:textColor="@color/color_FB3C3C"
+                android:textSize="13sp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

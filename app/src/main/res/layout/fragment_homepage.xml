@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x25"
+        android:background="@color/color_DDDDDD" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sousuo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <!--普济•一城-->
+            <TextView
+                android:id="@+id/tv_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/homepage_name"
+                android:textColor="@color/color_222222"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_location_city"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/arrow"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="定位中..."
+                android:textColor="@color/color_666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/tixing" />
+
+        <TextView
+            android:id="@+id/tv_red_point"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_red_point"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yst.onecity.view.MyScrollView
+            android:id="@+id/scrollView"
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.yst.onecity.view.BannerView
+                    android:id="@+id/banner_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="12dp" />
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    app:tabBackground="@android:color/transparent"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabMode="scrollable"
+                    app:tabPaddingEnd="5dp"
+                    app:tabPaddingStart="5dp"
+                    app:tabSelectedTextColor="@color/color_ED5452" />
+
+                <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/small_banner"
+                    app:corner_radius="4dp" />
+
+
+                <com.yst.onecity.view.CustomViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp">
+
+                </com.yst.onecity.view.CustomViewPager>
+            </LinearLayout>
+        </com.yst.onecity.view.MyScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.OperatingGroupMemberActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_nearest_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlackEB">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space25"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/space7"
+            android:layout_marginLeft="@dimen/space12"
+            android:layout_marginRight="@dimen/space12"
+            android:layout_marginTop="@dimen/space7"
+            android:background="@color/colorWrite"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space5"
+                android:text="搜索"
+                android:textColor="@color/colorBlck666"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/smlv_nearest_chatList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

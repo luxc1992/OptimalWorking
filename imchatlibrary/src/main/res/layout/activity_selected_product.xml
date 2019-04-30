@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.yst.im.imchatlibrary.base.baseview.AbstractTitleView
+        android:id="@+id/title_selected_product"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space44"
+        android:background="@color/colorWrite"
+        title:title_text_color="@color/colorBlck999"
+        title:title_name="选择商品"
+        title:title_text_size="20sp"
+        title:small_text_size="15sp"
+        title:left_image="@mipmap/back_title_right"
+        title:right_text="确定  "
+        title:right_text_color="@color/colorBlck999"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/ref_news_refresh"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/title_selected_product"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space2"
+        android:background="@color/colorWrite">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <GridView
+            android:id="@+id/gv_select_product_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="#ffffffff"
+            android:layout_margin="10dp"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            android:numColumns="2"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="暂无商品"/>
+</RelativeLayout>

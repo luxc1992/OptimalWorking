@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="265dp"
+    android:layout_height="135dp"
+    android:background="@drawable/shape_solid_white">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text=""
+        android:textColor="@color/color_333333"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/ll_button"
+        android:background="@color/color_DDDDDD" />
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="44.5dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="44.5dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_FF4852"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_DDDDDD"/>
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="44.5dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/color_FF4852"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</RelativeLayout>

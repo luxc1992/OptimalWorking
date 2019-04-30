@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/color_F2F2F2"
+    >
+    <include layout="@layout/main_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        >
+        <EditText
+            android:id="@+id/et_idea_couple"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:hint="@string/set_feed_back"
+            android:textColorHint="@color/color_999999"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:gravity="clip_vertical"
+            android:textSize="16sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/txt_textnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:id="@+id/txt_idea_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/color_999999"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/100"
+                android:textColor="@color/color_999999"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_idea_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="20dp"
+        android:hint="@string/set_phonetext"
+        android:paddingLeft="15dp"
+        android:textSize="15sp"
+        android:maxLength="20"
+        android:textColorHint="@color/color_999999"
+        />
+    <TextView
+        android:id="@+id/txt_idea_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_btn_bg"
+        android:text="@string/set_comment"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        />
+
+</LinearLayout>

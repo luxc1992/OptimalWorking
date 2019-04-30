@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F7F7F7"
+    android:orientation="vertical"
+    tools:context=".activity.home.ChangeCityActivity">
+
+    <include layout="@layout/main_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="定位"
+        android:textColor="@color/color_999999" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_location_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="定位中..."
+            android:textColor="@color/color_222222"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/shuaxin" />
+    </LinearLayout>
+
+    <me.yokeyword.indexablerv.IndexableLayout
+        android:id="@+id/indexableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:indexBar_layout_width="25dp"
+        app:indexBar_selectedTextColor="@color/color_222222"
+        app:indexBar_textColor="@color/color_999999"
+        app:indexBar_textSize="14sp"
+        app:indexBar_textSpace="5dp" />
+</LinearLayout>

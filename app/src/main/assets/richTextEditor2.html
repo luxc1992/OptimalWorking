@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+                img
+                {
+                    display: block;
+                    width: 100%;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                video{
+
+                    display: block;
+                    width: 100%;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    height: 50%;
+
+                }
+            /* placeholder for contenteditable dom */
+            [contenteditable=true]:empty:before{
+                content: attr(placeholder);
+                color: #BEBEBE;
+            }
+
+
+            #content
+            {
+                padding: 10px 0;
+                font-family:PingFang-SC-Medium;
+                -webkit-tap-highlight-color: #000000;
+                min-height:100px;
+                font-size:13px;
+                color: #BEBEBE
+
+            }
+
+                </style>
+</head>
+
+<body>
+
+<div id="content" contenteditable="true" onmouseup="saveSelection();" onkeyup="saveSelection();" onfocus="restoreSelection();" onkeydown ="kkkkkk(event)" placeholder="例：西服套装男士三件套四季" ></div>
+<script>
+            var savedRange, isInFocus;
+            var editableContent = document.getElementById("content");
+            alert(editableContent);
+
+        function triggerFocus()
+        {
+            editableContent.focus();
+        }
+
+        function saveSelection()
+        {
+            if(window.getSelection)
+            {
+                savedRange = window.getSelection().getRangeAt(0);
+            }
+            else if(document.selection)
+            {
+                savedRange = document.selection.createRange();
+            }
+        }
+
+        function restoreSelection()
+        {
+            isInFocus = true;
+            editableContent.focus();
+            if (savedRange != null) {
+                if (window.getSelection)
+                {
+                    var s = window.getSelection();
+                    if (s.rangeCount > 0)
+                    s.removeAllRanges();
+                    s.addRange(savedRange);
+                }
+                else if (document.createRange)
+                {
+                    window.getSelection().addRange(savedRange);
+                }
+                else if (document.selection)
+                {
+                    savedRange.select();
+                }
+            }
+        }
+        function  kkkkkk (event)
+        {
+            var e = event || window.event || arguments.callee.caller.arguments[0];
+            if(e && e.keyCode==27){ // 按 Esc
+                //要做的事情
+            }
+            if(e && e.keyCode==113){ // 按 F2
+                //要做的事情
+            }
+            if(e && e.keyCode==13){ // enter 键
+                //要做的事情
+                if(newWin == null){
+                    alert("弹窗被阻止");
+                }
+            }
+        }
+        //插入图片
+        function insertImage(imageName)
+        {
+            restoreSelection();
+            var imageElement = document.createElement('img');
+            var breakElement = document.createElement('div');
+            imageElement.setAttribute('src', imageName);
+            breakElement.innerHTML = "<br>";
+            editableContent.appendChild(imageElement);
+            editableContent.appendChild(breakElement);
+        }
+
+        //更新图片
+        function updateImageURL(imageName, imageURL)
+        {
+            var selectedElement = document.getElementById(imageName);
+            selectedElement.setAttribute('src', imageURL);
+        }
+        //插入视频
+
+       function insertVideo(videoName,postername)
+        {
+            restoreSelection();
+            var videoElement = document.createElement('video');
+            var breakElement = document.createElement('div');
+            videoElement.setAttribute('src', videoName);
+            videoElement.setAttribute('controls',"controls");
+            videoElement.setAttribute('type', "video/mp4");
+            videoElement.setAttribute('preload', "auto");
+            videoElement.setAttribute('poster', postername);
+
+            breakElement.innerHTML = "<br>";
+            editableContent.appendChild(videoElement);
+            editableContent.appendChild(breakElement);
+        }
+
+
+        function placeHTMLToEditor(html)
+        {
+            editableContent.innerHTML = html;
+        }
+
+		function getCurrentHtml(html)
+        {
+            window.stub.jsToAndroid(document.getElementById("content").innerHTML);
+        }
+
+            </script>
+</body>
+</html>

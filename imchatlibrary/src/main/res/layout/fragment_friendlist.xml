@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ui.fragment.FriendListFragment">
+
+    <com.yst.im.imchatlibrary.base.baseview.AbstractTitleView
+        android:id="@+id/titleView_address_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space44"
+        android:background="@drawable/shape_address_book_title"
+        title:right_image="@drawable/im_friend_add"
+        title:right_text_color="@color/colorWrite"
+        title:small_text_size="15sp"
+        title:title_name="标题"
+        title:title_text_color="@color/colorWrite"
+        title:title_text_size="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/rel_address_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlackEB">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space25"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/space7"
+            android:layout_marginLeft="@dimen/space12"
+            android:layout_marginRight="@dimen/space12"
+            android:layout_marginTop="@dimen/space7"
+            android:background="@color/colorWrite"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/space7"
+                android:src="@drawable/icon_search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="搜索"
+                android:textColor="@color/colorBlck666"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lil_address_new_friends"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space57"
+        android:background="@color/colorWrite"
+        android:paddingTop="@dimen/space8"
+        android:paddingBottom="@dimen/space8"
+        android:paddingRight="@dimen/space12"
+        android:paddingLeft="@dimen/space12">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_new_friends" />
+
+        <TextView
+            android:layout_width="@dimen/space0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="新的好友/群" />
+
+        <TextView
+            android:id="@+id/txt_address_new_friend_num"
+            android:layout_width="@dimen/space15"
+            android:layout_height="@dimen/space15"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_im_red_num"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorWrite"
+            android:textSize="@dimen/text_size_xxsmall" />
+
+        <ImageView
+            android:layout_width="@dimen/space13"
+            android:layout_height="@dimen/space13"
+            android:layout_gravity="center"
+            android:src="@mipmap/item_right_allow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:layout_marginLeft="@dimen/space12"
+        android:layout_marginRight="@dimen/space12"
+        android:background="@color/colorBlackEB" />
+
+    <LinearLayout
+        android:id="@+id/lil_address_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space57"
+        android:background="@color/colorWrite"
+        android:paddingTop="@dimen/space8"
+        android:paddingBottom="@dimen/space8"
+        android:paddingRight="@dimen/space12"
+        android:paddingLeft="@dimen/space12">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_new_group" />
+
+        <TextView
+            android:layout_width="@dimen/space0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="我的群聊" />
+
+        <TextView
+            android:id="@+id/txt_address_new_group_num"
+            android:layout_width="@dimen/space15"
+            android:layout_height="@dimen/space15"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_im_red_num"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorWrite"
+            android:textSize="@dimen/text_size_xxsmall"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/space13"
+            android:layout_height="@dimen/space13"
+            android:layout_gravity="center"
+            android:src="@mipmap/item_right_allow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:background="@color/colorBlackEB" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlackEB"
+        android:paddingBottom="@dimen/space5"
+        android:paddingLeft="@dimen/space15"
+        android:paddingTop="@dimen/space7"
+        android:text="全部好友" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:background="@color/colorBlackEB" />
+
+    <ListView
+        android:id="@+id/lv_address_friendList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space1"
+        android:divider="@color/colorffd7d7d7"
+        android:dividerHeight="@dimen/space0.5"
+        />
+
+</LinearLayout>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_title" />
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/top_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+            <ImageView
+                android:id="@+id/set_service_img"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="centerCrop"
+                 />
+            <TextView
+                android:id="@+id/bt_del"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space8"
+                android:layout_marginTop="@dimen/space8"
+                android:background="@mipmap/bt_dynamic_del" />
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/linear_1"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="@dimen/space5"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/space15">
+
+                <ImageView
+                    android:id="@+id/select_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/select_photo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/space8"
+                    android:text="@string/select_phont_hint"
+                    android:textColor="#DFDFDF"
+                    android:textSize="@dimen/textsize_13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/space12"
+                    android:paddingTop="@dimen/space5"
+                    android:text="@string/select_phont_hint1"
+                    android:textColor="#DFDFDF"
+                    android:textSize="@dimen/textsize_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space5"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <com.yst.onecity.view.MyGridView
+                    android:id="@+id/select_photo_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space10"
+                    android:layout_marginRight="@dimen/space10"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="3"
+                    android:paddingTop="@dimen/space5"/>
+                <ImageView
+                    android:id="@+id/select_photo_add"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="@dimen/space20"
+                    android:layout_marginTop="@dimen/space8"
+                    android:src="@mipmap/service_add"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/space8"
+                    android:paddingLeft="@dimen/space10"
+                    android:paddingTop="@dimen/space8"
+                    android:text="@string/select_phont_hint2"
+                    android:textColor="@color/color_red_ED5452"
+                    android:textSize="@dimen/textsize_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space5"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/space10"
+                    android:paddingLeft="@dimen/space8"
+                    android:paddingTop="@dimen/space10"
+                    android:text="@string/select_phont_hint4"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:id="@+id/select_come_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space30">
+
+                    <ImageView
+                        android:id="@+id/select_come_shop_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/service_select_true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/space8"
+                        android:text="@string/select_phont_hint5"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/select_come_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space30">
+
+                    <ImageView
+                        android:id="@+id/select_come_home_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/service_select_false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/space8"
+                        android:text="@string/select_phont_hint6"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space5"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/space10"
+                android:paddingTop="@dimen/space10">
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/space8"
+                    android:text="@string/select_phont_hint7"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/select_fen_lei"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_1"
+                    android:background="@null"
+                    android:hint="室内装修/室内设计"
+                    android:paddingLeft="@dimen/space15"
+                    android:textSize="@dimen/textsize_13" />
+
+                <ImageView
+                    android:id="@+id/classify_select"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/space15"
+                    android:src="@mipmap/service_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space5"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/space10"
+                android:paddingTop="@dimen/space10">
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/space8"
+                    android:text="@string/select_phont_hint8"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <com.yst.basic.framework.view.ContainsEmojiEditText
+                    android:id="@+id/service_name"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_2"
+                    android:background="@null"
+                    android:hint="室内装修/室内设计"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/space15"
+                    android:textSize="@dimen/textsize_13" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/space15"
+                    android:src="@mipmap/service_pan" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space5"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/space10"
+                android:paddingTop="@dimen/space10">
+
+                <TextView
+                    android:id="@+id/tv_3"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/space8"
+                    android:text="项目价格"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/product_price"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_3"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="项目单价"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/space15"
+                    android:textSize="@dimen/textsize_13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/space15"
+                    android:text="元/次"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space5"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/space10"
+                android:paddingTop="@dimen/space10">
+
+                <TextView
+                    android:id="@+id/tv_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/space8"
+                    android:text="选择服务时间"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/service_time"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_4"
+                    android:paddingLeft="@dimen/space15" />
+                <ImageView
+                    android:id="@+id/select_service_time"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/space15"
+                    android:src="@mipmap/service_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space5"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/space10"
+                android:paddingTop="@dimen/space10">
+
+                <TextView
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/space8"
+                    android:text="是否上架"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/is_put_away"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/space15"
+                    android:background="@mipmap/service_guan" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space5"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/space10">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/space8"
+                        android:text="服务描述"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/service_msg_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/space15"
+                        android:src="@mipmap/service_photo" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/space15"
+                    android:layout_marginRight="@dimen/space15"
+                    android:layout_marginTop="@dimen/space8"
+                    android:background="#E3E3E3" />
+                <com.yst.onecity.view.editor.CommoditySortRichEditor
+                    android:id="@+id/service_msg_editText"
+                    style="?android:attr/textViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:imeOptions="actionNext"
+                    android:minHeight="@dimen/x160"
+                    app:sreHint="请添加服务描述..."
+                    app:sreHintColor="@color/color_92969C"
+                    app:sreTextSize="14"
+                    />
+
+                <TextView
+                    android:id="@+id/save_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space70"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="@dimen/space20"
+                    android:background="#ED5452"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/space8"
+                    android:paddingTop="@dimen/space8"
+                    android:text="保存"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

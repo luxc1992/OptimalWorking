@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/main_title"/>
+
+    <LinearLayout
+        android:id="@+id/ll_list_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/kong"
+            />
+        <TextView
+            android:id="@+id/txt_list_add"
+            android:layout_width="85dp"
+            android:layout_height="35dp"
+            android:text="立即添加"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_trans_sure"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/txt_list_addcourse"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="+ 新建课题"
+            android:gravity="center"
+            android:textColor="@color/color_ED5452"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_attention"
+            android:layout_marginTop="12dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_list_delete"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="删除"
+            android:textColor="@color/color_ED5452"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            />
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refresh_course"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:layout_below="@id/txt_list_addcourse"
+            android:layout_above="@id/txt_list_delete"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            app:srlAccentColor="@android:color/black"
+            app:srlEnablePreviewInEditMode="true"
+            app:srlPrimaryColor="@color/white"
+            >
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </RelativeLayout>
+
+</LinearLayout>

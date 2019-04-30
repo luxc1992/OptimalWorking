@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/activity_line_color"
+>
+
+    <TableLayout
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/x10"
+        android:stretchColumns="3">
+
+
+        <TableRow android:id="@+id/stock_list_header_row">
+
+
+            <TextView
+                android:id="@+id/stock_list_header_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dip"
+                android:text="规格" />
+
+            <TextView
+                android:id="@+id/stock_list_header_symbol"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dip"
+                android:text="价格(元)" />
+
+            <TextView
+                android:id="@+id/stock_list_header_last_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/x5"
+                android:padding="2dip"
+                android:layout_marginRight="@dimen/x10"
+                android:text="库存" />
+
+            <TextView
+                android:id="@+id/stock_list_header_price_change"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dip"
+                android:text="规格图片" />
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

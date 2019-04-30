@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <include layout="@layout/main_title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/color_F6F6F6"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择一级分类"
+        android:textColor="@color/color_B6B6B6"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="0.5dp"
+        android:background="@color/color_DDDDDD"
+        />
+    <ListView
+        android:id="@+id/lv_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:dividerHeight="0.5dp"
+        android:divider="@color/color_DDDDDD"
+        />
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/x46" />
+
+    <RelativeLayout
+        android:id="@+id/rrlayout_main_bottom_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x70"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/main_activity_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x50"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/x10"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/main_activity_line_color" />
+
+            <LinearLayout
+                android:id="@+id/llayout_main_bottom_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/main_activity_home_linear_layout"
+                    android:layout_width="@dimen/main_activity_bottom_layout_width"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/main_activity_home_image_view"
+                        android:layout_width="@dimen/x20"
+                        android:layout_height="@dimen/x20"
+                        android:src="@drawable/selector_main_tab_1" />
+
+                    <TextView
+                        android:id="@+id/main_activity_home_text_view"
+                        style="@style/home_bottom_tab_text_style"
+                        android:text="@string/tab1_text"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_activity_classification_linear_layout"
+                    android:layout_width="@dimen/main_activity_bottom_layout_width"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/main_activity_classification_image_view"
+                        android:layout_width="@dimen/x20"
+                        android:layout_height="@dimen/x20"
+                        android:src="@drawable/selector_main_tab_2" />
+
+                    <TextView
+                        android:id="@+id/main_activity_classification_text_view"
+                        style="@style/home_bottom_tab_text_style"
+                        android:text="@string/tab2_text"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_activity_middle_linear_layout"
+                    android:layout_width="@dimen/main_activity_bottom_layout_width"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/main_activity_middle_image_view"
+                            android:layout_width="@dimen/x20"
+                            android:layout_height="@dimen/x20"
+                            android:layout_marginLeft="@dimen/x8"
+                            android:layout_marginRight="@dimen/x8"
+                            android:src="@drawable/tab1_press" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/main_activity_middle_text_view"
+                        style="@style/home_bottom_tab_text_style"
+                        android:text="@string/tab1_text"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_activity_rank_linear_layout"
+                    android:layout_width="@dimen/main_activity_bottom_layout_width"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/main_activity_rank_image_view"
+                            android:layout_width="@dimen/x20"
+                            android:layout_height="@dimen/x20"
+                            android:layout_marginLeft="@dimen/x8"
+                            android:layout_marginRight="@dimen/x8"
+                            android:src="@drawable/selector_main_tab_3" />
+
+                        <TextView
+                            android:id="@+id/tv_shopcart_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|right"
+                            android:layout_marginRight="@dimen/x4"
+                            android:paddingLeft="@dimen/x4"
+                            android:paddingRight="@dimen/x4"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_6"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/main_activity_rank_text_view"
+                        style="@style/home_bottom_tab_text_style"
+                        android:text="@string/tab4_text"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_activity_mine_linear_layout"
+                    android:layout_width="@dimen/main_activity_bottom_layout_width"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/main_activity_mine_image_view"
+                        android:layout_width="@dimen/x20"
+                        android:layout_height="@dimen/x20"
+                        android:src="@drawable/selector_main_tab_4" />
+
+                    <TextView
+                        android:id="@+id/main_activity_mine_text_view"
+                        style="@style/home_bottom_tab_text_style"
+                        android:text="@string/tab5_text"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

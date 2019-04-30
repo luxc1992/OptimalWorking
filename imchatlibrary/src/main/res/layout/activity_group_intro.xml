@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlackF5"
+    android:orientation="vertical"
+    tools:context="com.yst.im.imchat.ui.activity.GroupIntroActivity">
+
+    <include layout="@layout/title_layout" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space170"
+        android:layout_margin="@dimen/space15"
+        android:background="@color/colorWrite">
+
+        <EditText
+            android:hint="约聊室简介"
+            android:gravity="top"
+            android:paddingTop="@dimen/space10"
+            android:paddingLeft="@dimen/space13"
+            android:textSize="@dimen/text_size_small"
+            android:textColorHint="@color/colorBlck999"
+            android:id="@+id/edt_intro_inputTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/space13"
+            android:layout_marginRight="@dimen/space15"
+            android:gravity="right">
+
+            <TextView
+                android:textSize="@dimen/text_size_small"
+                android:id="@+id/txt_intro_tipsTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <TextView
+                android:textSize="@dimen/text_size_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_groupIntro_tips150" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

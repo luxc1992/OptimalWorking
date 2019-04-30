@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlue">#bb4678ed</color>
+    <color name="colorBlack555">#555555</color>
+    <color name="colorBlack72">#727272</color>
+    <color name="colorGray">#ece8e8</color>
+    <color name="colorWrite">#FFFFFF</color>
+    <color name="colorLoginBtn">#F33A3A</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorRedF85959">#F85959</color>
+    <color name="colorRedF44B50">#FFF44B50 </color>
+    <color name="colorBlackFFDDDDDD">#FFDDDDDD</color>
+
+    <color name="divider_line">#d9d9d9</color>
+    <color name="bg_content">#f3f3f3</color>
+    <color name="colorBlackF5">#F5F5F5</color>
+    <color name="colorBlackE5">#E5E5E5</color>
+    <color name="colorBlackEEE">#EEEEEE</color>
+    <color name="colorBlackF0">#FFF0F0F0</color>
+    <color name="colorCome">#789bb8f0</color>
+    <color name="colorBlue439">#439EFF</color>
+    <color name="colorBlck999">#999999</color>
+    <color name="colorBlack8C">#8C8C8C</color>
+    <color name="colorBlackD4">#D4D4D4</color>
+    <color name="colorBlck666">#666666</color>
+    <color name="colorBlackD7">#D7D7D7</color>
+    <color name="colorBlackEB">#EBEBEB</color>
+    <color name="colorBlack2A">#2A2A2A</color>
+    <color name="colorBlack8E">#8E8E8E</color>
+    <color name="colorBlack2F">#2F2F2F</color>
+    <color name="colorGreen1AA">#1AAC19</color>
+    <color name="colorff525252">#ff525252</color>
+    <color name="colorff9494942">#ff949494</color>
+    <color name="colorff0b0b0b">#ff0b0b0b</color>
+    <color name="colorff8b8b8b">#ff8b8b8b</color>
+    <color name="colorffe9f4ff">#ffe9f4ff</color>
+    <color name="colorffebebeb">#ffebebeb</color>
+    <color name="colorffaaaaaa">#ffaaaaaa</color>
+    <color name="colorBlack333">#333333</color>
+    <color name="colorBlack1D">#1D1D1D</color>
+    <color name="colorBlack41">#414141</color>
+    <color name="colorBlack222">#222222</color>
+    <color name="colorBlackB6">#B6B6B6</color>
+    <color name="colorBlackF9">#F9F9F9</color>
+    <color name="colorGreen">#00FF00</color>
+    <color name="colorGreen0038503">#c0038503</color>
+    <color name="colorDDD">#DDDDDD</color>
+
+    <!--通讯录标题渐变色-->
+    <color name="colorBlue508DFF">#508DFF</color>
+    <color name="colorBlue2EBBFE">#2EBBFE</color>
+    <color name="colorBlue3BB7FD">#3BB7FD</color>
+    <color name="colorBlue963bb7fd">#553bb7fd</color>
+
+    <!--我的-->
+    <color name="colorff999999">#ff999999</color>
+    <color name="colorff666666">#ff666666</color>
+    <color name="colorffeeeeee">#ffeeeeee</color>
+    <color name="colorffd7d7d7">#ffd7d7d7</color>
+    <color name="colorff333333">#ff333333</color>
+    <color name="colorff439eff">#ff439eff</color>
+    <color name="colorff222222">#ff222222</color>
+    <color name="colorfff9f9f9">#fff9f9f9</color>
+    <color name="colorWriteF6">#f6f6f6</color>
+    <color name="colorfff1f0f7">#fff1f0f7</color>
+    <color name="color0000">#00000000</color>
+
+    <color name="mis_actionbar_color">#21282C</color>
+    <color name="mis_white">#ffffff</color>
+</resources>

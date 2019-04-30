@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWrite"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_news_accept_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space30"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/space5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"
+        android:orientation="horizontal">
+
+        <com.yst.im.imchatlibrary.widget.ImRoundedImageView
+            android:id="@+id/img_pic_accept_user_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            app:oval="true" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="70dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_news_accept_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/space5"
+                android:text="接收者"
+                android:textColor="@color/colorBlack555"
+                android:textSize="13sp" />
+
+                <com.yst.im.imchatlibrary.widget.GifTextView
+                    android:layout_marginTop="@dimen/space2"
+                    android:background="@drawable/accept_new_msg"
+                    android:id="@+id/txt_time_accept_msg_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:gravity="left"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

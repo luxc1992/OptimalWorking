@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_state"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_xiajia"
+        style="@style/server_edit"
+        android:text="下架" />
+
+    <TextView
+        android:id="@+id/tv_bianji"
+        style="@style/server_edit"
+        android:layout_marginLeft="5dp"
+        android:text="编辑"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        style="@style/server_edit"
+        android:layout_marginLeft="5dp"
+        android:text="删除"
+        android:visibility="gone" />
+
+</LinearLayout>

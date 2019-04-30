@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom_view"
+        android:layout_marginBottom="@dimen/x5"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_title" />
+
+        <com.yst.onecity.view.ClearEditText
+            android:id="@+id/filter_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x5"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/x15"
+            android:layout_marginTop="@dimen/x5"
+            android:background="@drawable/shape_gray_frame"
+            android:drawableLeft="@drawable/icon_search"
+            android:paddingTop="@dimen/x5"
+            android:paddingBottom="@dimen/x5"
+            android:drawablePadding="@dimen/x5"
+            android:hint="请输入关键字"
+            android:imeOptions="actionSearch"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:textColorHint="@color/color_999999"
+            android:textSize="@dimen/textsize_14" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ListView
+                android:id="@+id/lv_contact"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:divider="@null"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/title_layout_no_friends"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="right|top"
+                android:background="#E0E0E0"
+                android:gravity="center_vertical"
+                android:text="没有匹配的联系人"
+                android:textColor="#454545"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/title_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="right|top"
+                android:background="#ff303030"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title_layout_catalog"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/color_F2F1F1"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="5dip"
+                    android:paddingTop="5dip"
+                    android:textColor="#454545" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_transparent_bg"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="30.0dip"
+                android:visibility="invisible" />
+
+            <com.yst.onecity.view.SideBar
+                android:id="@+id/sidebar"
+                android:layout_width="30.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/ll_bottom_view"
+        android:background="@color/color_DDDDDD" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/btn_sure"
+            android:layout_width="@dimen/x0"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x5"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/x5"
+            android:layout_weight="0.3"
+            android:background="@drawable/shape_btn_bg"
+            android:gravity="center"
+            android:text="短信邀请"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_16" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/main_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_share_et"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        >
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/icon_search"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            />
+        <com.yst.onecity.view.ContainsEmojiEditText
+            android:id="@+id/et_share_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入搜索内容"
+            android:textSize="14sp"
+            android:textColorHint="@color/color_BEBEBE"
+            android:layout_marginLeft="2dp"
+            android:background="@null"
+            android:maxHeight="40dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/shape_edittext_cursor"
+            />
+    </LinearLayout>
+    
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/tab_share"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="6dp"
+        app:xTabMode="scrollable"
+        app:xTabTextColor="@color/color_666666"
+        app:xTabSelectedTextColor="@color/color_222222"
+        app:xTabIndicatorColor="@color/color_ED5452"
+        app:xTabBackgroundColor="@color/white"
+        app:xTabIndicatorHeight="2dp"
+        app:xTabIndicatorWidth="15dp"
+        app:xTabTextSize="16sp"
+        app:xTabMaxWidth="300dp"
+        app:xTabMinWidth="20dp"
+        app:xTabPaddingStart="12dp"
+        app:xTabPaddingEnd="12dp"
+        >
+    </com.androidkun.xtablayout.XTabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_share"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

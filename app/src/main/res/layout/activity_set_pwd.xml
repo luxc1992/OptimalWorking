@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_title" />
+
+    <include layout="@layout/line" />
+
+    <TextView
+        android:id="@+id/view_update_trade_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:layout_marginRight="@dimen/x15"
+        android:drawablePadding="@dimen/x10"
+        android:drawableRight="@mipmap/right_arrow"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x15"
+        android:text="@string/update_trade_password"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/textsize_13" />
+
+    <include layout="@layout/line" />
+
+    <TextView
+        android:id="@+id/view_forget_trade_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:layout_marginRight="@dimen/x15"
+        android:drawablePadding="@dimen/x10"
+        android:drawableRight="@mipmap/right_arrow"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x15"
+        android:text="@string/forget_trade_password"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/textsize_13" />
+
+    <include layout="@layout/line" />
+</LinearLayout>

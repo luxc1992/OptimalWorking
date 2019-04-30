@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lil_news_temp_bottom"
+    android:background="@color/colorWrite"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_temp_bottom_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space5"
+        android:text="这是一条分享消息" />
+
+    <TextView
+        android:id="@+id/tv_temp_bottom_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="@dimen/space5"
+        android:text="分享内容是嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻" />
+
+    <ImageView
+        android:id="@+id/img_temp_bottom_pic"
+        android:layout_width="@dimen/space120"
+        android:layout_height="@dimen/space50"
+        android:src="@drawable/default_nothing" />
+</LinearLayout>

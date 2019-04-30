@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="@string/phone" />
+
+        <TextView
+            android:id="@+id/tv_account_safe_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/x10"
+            android:gravity="right|center_vertical" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/txt_bind_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="@string/safe_bind_wechat" />
+
+        <TextView
+            android:id="@+id/tv_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/iv_bind_wechat"
+            android:layout_toRightOf="@+id/txt_bind_wechat"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:textColor="#999999" />
+
+        <ImageView
+            android:id="@+id/iv_bind_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/close2" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/txt_bind_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="@string/safe_bind_qq" />
+
+        <TextView
+            android:id="@+id/tv_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/iv_bind_qq"
+            android:layout_toRightOf="@+id/txt_bind_qq"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:textColor="#999999" />
+
+        <ImageView
+            android:id="@+id/iv_bind_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/close2" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_set_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:drawableRight="@mipmap/right_arrow"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="@string/set_login_password" />
+    </RelativeLayout>
+
+    <include layout="@layout/line"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_set_trade_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:drawableRight="@mipmap/right_arrow"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="@string/set_trade_pwd" />
+    </RelativeLayout>
+
+    <include layout="@layout/line"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_update_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:drawableRight="@mipmap/right_arrow"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="@string/update_login_password" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_update_trade_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:drawableRight="@mipmap/right_arrow"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="@string/update_trade_password" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_identity_authentication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="@string/safe_identity_authentication" />
+
+        <TextView
+            android:id="@+id/tv_authentication_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="@dimen/x10"
+            android:drawableRight="@mipmap/right_arrow"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text=""
+            android:textColor="#999999" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!---->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <!-- 刷新控件的样式 -->
+    <color name="light_grey">#f9f9f9</color>
+    <color name="colorBlack">#000000</color>
+    <color name="color_003284">#003284</color>
+    <color name="tab_text_color">#000000</color>
+    <color name="tab_top_line_color">#E8E8E8</color>
+    <color name="main_activity_line_color">#EFECED</color>
+    <!--自定义viewpager控制器颜色-->
+    <color name="holo_blue">#FF33E5B5</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="color_F0F2F5">#F0F2F5</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_DDDDDD">#DDDDDD</color>
+    <color name="color_F2F2F2">#F2F2F2</color>
+    <color name="color_F4F4F4">#F4F4F4</color>
+    <color name="color_FCFCFC">#FCFCFC</color>
+
+</resources>

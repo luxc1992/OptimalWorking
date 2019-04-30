@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F1F1F1"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/main_title" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginRight="@dimen/space15"
+        android:layout_marginTop="@dimen/space10"
+        android:background="@drawable/shape_hunteryuan"
+        android:paddingBottom="@dimen/space10">
+
+        <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+            android:id="@+id/riv_head"
+            android:layout_width="@dimen/space83"
+            android:layout_height="@dimen/space83"
+            android:layout_marginLeft="@dimen/space20"
+            android:layout_marginTop="@dimen/space20"
+            android:scaleType="centerCrop"
+            app:corner_radius="@dimen/space5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:oval="false" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space15"
+            android:layout_marginTop="@dimen/space5"
+            android:textColor="@color/color_222222"
+            android:textSize="@dimen/space18"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/riv_head"
+            app:layout_constraintTop_toTopOf="@+id/riv_head" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space5"
+            android:layout_marginLeft="@dimen/space15"
+            android:textColor="@color/color_222222"
+            android:textSize="@dimen/space16"
+            app:layout_constraintBottom_toBottomOf="@+id/riv_head"
+            app:layout_constraintLeft_toRightOf="@+id/riv_head" />
+
+        <TextView
+            android:id="@+id/card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space15"
+            android:layout_marginRight="@dimen/space15"
+            android:background="@drawable/shape_btn_bg"
+            android:paddingBottom="@dimen/space5"
+            android:paddingLeft="@dimen/space10"
+            android:paddingRight="@dimen/space10"
+            android:paddingTop="@dimen/space5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space16"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/riv_head" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space15"
+            android:layout_marginTop="@dimen/space15"
+            android:text=""
+            android:textColor="@color/color_222222"
+            android:textSize="@dimen/space16"
+            app:layout_constraintLeft_toRightOf="@+id/riv_head"
+            app:layout_constraintTop_toBottomOf="@+id/riv_head" />
+
+        <TextView
+            android:id="@+id/tv_detail_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space15"
+            android:layout_marginRight="@dimen/space15"
+            android:layout_marginTop="@dimen/space15"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_222222"
+            android:textSize="@dimen/space14"
+            app:layout_constraintLeft_toRightOf="@+id/riv_head"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_address" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="@dimen/space0"
+            android:layout_height="@dimen/space1"
+            android:layout_marginLeft="@dimen/space15"
+            android:layout_marginRight="@dimen/space15"
+            android:layout_marginTop="@dimen/space25"
+            android:background="@color/colorDDD"
+            app:layout_constraintLeft_toRightOf="@+id/riv_head"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_address" />
+
+        <TextView
+            android:id="@+id/tv_residue_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space15"
+            android:layout_marginRight="@dimen/space15"
+            android:layout_marginTop="@dimen/space15"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_222222"
+            android:textSize="@dimen/space16"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/riv_head"
+            app:layout_constraintTop_toBottomOf="@+id/view_line" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space15"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_5A5A5A"
+            android:textSize="@dimen/space16"
+            app:layout_constraintRight_toRightOf="@+id/card_name"
+            app:layout_constraintTop_toBottomOf="@+id/view_line" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>

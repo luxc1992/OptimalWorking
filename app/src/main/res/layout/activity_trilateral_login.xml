@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/main_title"/>
+    <ImageView
+        android:paddingTop="@dimen/x30"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_sanfanglogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:paddingTop="@dimen/x30"
+        android:textSize="@dimen/textsize_15"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录以后该应用将获得以下权限："
+        android:textColor="#ff333333"
+        />
+    <TextView
+        android:paddingTop="@dimen/x10"
+        android:textSize="@dimen/textsize_13"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="• 获得你的公开信息昵称、头像等"
+        android:textColor="#ff999999"
+        />
+    <TextView
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_margin="@dimen/x15"
+        android:background="@drawable/shape_btn_bg"
+        android:gravity="center"
+        android:text="@string/sure_login"
+        android:textColor="@color/white"/>
+</LinearLayout>

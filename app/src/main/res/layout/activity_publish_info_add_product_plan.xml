@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.yst.onecity.activity.home.PublishInfoAddProductPlanActivity">
+
+
+    <include layout="@layout/main_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/publish_add_product_et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/x15"
+            android:layout_marginTop="@dimen/x10"
+            android:background="@drawable/shape_white_5"
+            android:drawablePadding="@dimen/x10"
+            android:drawableLeft="@mipmap/icon_search"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/tv_search"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="@dimen/x5"
+            android:textSize="@dimen/x16" />
+
+        <ImageView
+            android:id="@+id/publish_add_product_iv_search_clear"
+            android:layout_width="@dimen/x20"
+            android:layout_height="@dimen/x20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:clickable="true"
+            android:src="@mipmap/search_clear_normal"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/publish_add_product_smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="visible"
+        app:srlAccentColor="@android:color/black"
+        app:srlEnablePreviewInEditMode="true"
+        app:srlPrimaryColor="@color/white">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/publish_add_product_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:choiceMode="singleChoice" />
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

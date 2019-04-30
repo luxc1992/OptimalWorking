@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_F2F2F2"
+    android:orientation="vertical">
+    <include layout="@layout/main_huntertitle"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+  <include layout="@layout/activity_hunters"/>
+
+
+</LinearLayout>
+<include layout="@layout/hunter_shopping_bottom"/>
+    <RelativeLayout
+        android:id="@+id/rel_shopping"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/tv_hunter_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/right_arrow"
+            android:drawablePadding="10dp"
+            />
+        <TextView
+            android:id="@+id/txt_hunter_shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/hunter_shopping"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_333333"
+            />
+    </RelativeLayout>
+</LinearLayout>

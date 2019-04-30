@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yst.onecity">
+
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 安装包 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 允许程序使用摄像头 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 允许录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+
+    <application
+        android:name="com.yst.basic.framework.App"
+        android:allowBackup="false"
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name"
+        android:resizeableActivity="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:name,android:label,android:theme,android:allowBackup">
+
+        <!-- 添加友盟appkey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="@string/youmeng_appkey" />
+        <!-- 高德地图 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="@string/gaode_map" />
+
+        <service android:name="com.amap.api.location.APSService" />
+        <!-- 微信，微博，qqd的activity -->
+        <activity
+            android:name="com.yst.onecity.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.yst.onecity.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/tencent_qq" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.yst.onecity.wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.yst.onecity.activity.SplashActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yst.onecity.activity.MainActivity"
+            android:hardwareAccelerated="false" />
+        <activity android:name="com.yst.onecity.activity.mine.order.MyServiceOrderActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.order.HunterOrderDetailsActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.order.CheckEvaluateListActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.setting.PersonDetailActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.setting.IdeaActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.setting.MyActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.setting.BankActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.setting.BankNumActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.setting.NoBankNumActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.setting.VerifyTelphoneActivity" />
+        <activity android:name="com.yst.onecity.activity.hunter.HunterPersonActivity" />
+        <activity
+            android:name="com.yst.onecity.activity.mine.order.EvaluateProductActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name="com.yst.onecity.activity.issue.IssueActivity" />
+        <activity android:name="com.yst.onecity.activity.issue.ProjectPlanActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.setting.SettingActivity" />
+        <activity
+            android:name="com.yst.onecity.activity.mine.order.ChooseAfterSalesTypeActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.yst.onecity.activity.issue.AddProductPlanActivity" />
+        <activity
+            android:name="com.yst.onecity.activity.home.PublishInfoOnGraphicsActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name="com.yst.onecity.activity.home.PublishInfoVideoActivity" />
+        <activity android:name="com.yst.onecity.activity.home.EditVideoActivity" />
+        <activity android:name="com.yst.onecity.activity.home.WidthMatchVideoActivity" />
+        <activity android:name="com.yst.onecity.activity.home.PublishInfoAddProductPlanActivity" />
+        <activity
+            android:name="com.yst.onecity.activity.issue.AddCommodityActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.yst.onecity.activity.mine.order.ApplyReturnMoneyGoodsActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- 账号安全 -->
+        <activity android:name="com.yst.onecity.activity.mine.accountsafe.AccountSafeActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.accountsafe.BindPhoneNumActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.accountsafe.UpdatePhoneNumActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.accountsafe.SetLoginPwdActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.accountsafe.RealNameAuthenticationActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.accountsafe.SetPwdActivity" />
+        <activity android:name="com.yst.onecity.activity.hunter.GoodsManageActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.HuntingBeansActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.FansActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.AttentionActivity" />
+        <activity android:name="com.yst.onecity.activity.VersionUpdateActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.order.TransportInformationActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.message.MessageActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.MyZxingActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.MyIssueActivity" />
+        <activity
+            android:name="com.yst.onecity.activity.issue.AddNewCommodityActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name="com.yst.onecity.activity.issue.VideoListActivity" />
+        <activity
+            android:name="com.yst.onecity.activity.login.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.yst.onecity.activity.login.RegisterActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name="com.yst.onecity.activity.UserAgreementActivity" />
+        <activity android:name="com.yst.onecity.activity.ForgetPasWordActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.MyInComeActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.address.AddressManagerActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.address.AddAddressActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.ServerCenterActivity" />
+        <activity android:name="com.yst.onecity.activity.home.InformationDetailActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.order.AfterSalesListActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.order.CheckEvaluteActivity" />
+        <activity android:name="com.yst.onecity.activity.home.GoodsDetailActivity" />
+        <!-- <activity android:name=".activity.GroupChatMemberListActivity" /> -->
+        <activity android:name="com.yst.onecity.activity.ApplyServeCommissionerActivity" />
+        <activity android:name="com.yst.onecity.activity.ApplyHunterActivity" />
+        <activity
+            android:name="com.yst.onecity.activity.issue.EstablishFreightTemplateActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name="com.yst.onecity.activity.mine.order.AfterSalesDetailsActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.MyCollectActivity" />
+        <!-- <activity android:name=".activity.mine.SelectProductActivity" /> -->
+        <activity android:name="com.yst.onecity.activity.FetchCashActivity" />
+        <activity
+            android:name="com.yst.onecity.activity.SpeciallyPersonListActivity"
+            android:theme="@style/activityTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name="com.yst.onecity.activity.mine.address.ChooseAddressActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.order.ChooseAfterSalesProductListActivity" />
+        <activity android:name="com.yst.onecity.activity.RecruitActivity" />
+        <activity
+            android:name="com.yst.onecity.activity.mine.ContactFriendsActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.yst.onecity.activity.issue.SelectCommodityActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.yst.onecity.activity.issue.SelectSupplierCommodityActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name="com.yst.onecity.activity.hunter.OnSaleBatchManageActivity" />
+        <activity android:name="com.yst.onecity.activity.hunter.OffSaleBatchManageActivity" />
+        <activity
+            android:name="com.yst.onecity.activity.issue.IssueDiaryActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.yst.onecity.activity.MainHtmlActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.yst.onecity.activity.TrilateralLoginActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.ProductPlanDetailActivity" />
+        <activity android:name="com.yst.onecity.activity.home.PlatformInformActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- User defined. 用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.yst.onecity.receiver.JpushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.yst.onecity" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.yst.onecity.activity.hunter.HunterShopDeatilActivity" />
+        <activity android:name="com.yst.onecity.activity.issue.CommodityClassifyActivity" />
+        <activity android:name="com.yst.onecity.activity.H5OrderDetailsActivity" />
+        <activity android:name="com.yst.onecity.activity.home.ChooseServeAddressActivity" />
+        <activity android:name="com.yst.onecity.activity.home.ChangeCityActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.cardbag.CardBagListActivity" />
+        <!-- 服务管理页面 -->
+        <activity
+            android:name="com.yst.onecity.activity.serverteam.ServerManagerActivity"
+            android:screenOrientation="portrait" />
+        <!-- 案例管理页面 -->
+        <activity
+            android:name="com.yst.onecity.activity.casemanage.CaseManagerActivity"
+            android:screenOrientation="portrait" />
+        <!-- 批量管理页面 -->
+        <activity
+            android:name="com.yst.onecity.activity.serverteam.BulkManageActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.yst.onecity.activity.agent.ApplyAgentActivity" />
+        <activity android:name="com.yst.onecity.activity.agent.AgentCenterActivity" />
+        <activity android:name="com.yst.onecity.activity.agent.CourseListActivity" />
+        <activity android:name="com.yst.onecity.activity.serverteam.ServerTeamPersonPageActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.order.MyOrderActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.order.MyServiceOrderDetailActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.order.RefundAfterActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.order.ApplicationForRefundActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.order.ServiceOrderEvaluateActivity" />
+        <!-- 基本信息页面 -->
+        <activity
+            android:name="com.yst.onecity.activity.teammanage.TeamInfoActivity"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified"
+            android:screenOrientation="portrait" />
+        <!-- 团队管理页面 -->
+        <activity
+            android:name="com.yst.onecity.activity.teammanage.TeamManageActivity"
+            android:screenOrientation="portrait" />
+        <!-- 营业状态页面 -->
+        <activity
+            android:name="com.yst.onecity.activity.teammanage.OnSaleStateActvity"
+            android:screenOrientation="portrait" />
+        <!-- 商品管理页面 -->
+        <activity
+            android:name="com.yst.onecity.activity.serverteam.GoodsManageActivity"
+            android:screenOrientation="portrait" />
+        <!-- 商品管理批量删除页面 -->
+        <activity
+            android:name="com.yst.onecity.activity.serverteam.MoreManageActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.yst.onecity.activity.mine.cardorder.CardUnionOrderActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.cardorder.CardUnionOrderDetailActivity" />
+        <activity android:name="com.yst.onecity.activity.home.SearchAddressActivity" />
+        <activity android:name="com.yst.onecity.activity.CreateServeActivity" />
+        <activity android:name="com.yst.onecity.activity.agent.PublishCourseActivity" />
+        <activity android:name="com.yst.onecity.activity.agent.CourseTypeActivity" />
+        <activity android:name="com.yst.onecity.activity.home.SearchHomeActivity" />
+        <activity android:name="com.yst.onecity.activity.agent.AddShareActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.CardUnionListActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.CardUnionDetailActivity" />
+        <activity android:name="com.yst.onecity.activity.h5detail.ServerTeamPageDetailActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.cardbag.CardBagDetailActivity" />
+        <activity android:name="com.yst.onecity.activity.h5detail.ServerGoodsDetailActivity" />
+        <activity android:name="com.yst.onecity.activity.h5detail.CaseDetailActivity" />
+        <activity android:name="com.yst.onecity.activity.SelectClassifyActivity" />
+        <activity android:name="com.yst.onecity.activity.SelectServiceTimeActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.order.ServeTeamProductOrderActivity" />
+        <!-- 扫码验证页面 -->
+        <activity
+            android:name="com.yst.onecity.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait" />
+        <!-- 输入验证码 -->
+        <activity
+            android:name="com.yst.onecity.activity.yanzhengma.EditCodeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 上传资质 -->
+        <activity
+            android:name="com.yst.onecity.activity.UploadZizhiActivity"
+            android:screenOrientation="portrait" />
+        <!-- 团队地址 -->
+        <activity
+            android:name="com.yst.onecity.activity.teammanage.TeamAddressActivity"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.yst.onecity.activity.home.RedPackageRulActivity" />
+        <!-- 创建团队 -->
+        <activity
+            android:name="com.yst.onecity.activity.teammanage.CreateTeamActivity"
+            android:screenOrientation="portrait" />
+        <!-- 评价管理 -->
+        <activity
+            android:name="com.yst.onecity.activity.comment.CommentManageActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.yst.onecity.activity.mine.order.CheckServiceOrderEvaluateActivity" />
+        <activity android:name="com.yst.onecity.activity.mine.order.PendingRefundAfterActivity"></activity>
+        <activity android:name="com.yst.onecity.activity.EditPhotoActivity" />
+        <activity android:name="com.yst.onecity.activity.SelectProductActivity" />
+        <activity
+            android:name="com.yst.onecity.fragment.share.WatchReplayListActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <activity
+            android:name="com.yst.onecity.activity.SaleClassActivity"
+            android:screenOrientation="portrait" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.yst.onecity.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space40">
+
+        <ImageView
+            android:id="@+id/iv_order_no"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space15"
+            android:src="@mipmap/order_no" />
+
+        <TextView
+            android:id="@+id/tv_order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space10"
+            android:layout_toRightOf="@+id/iv_order_no"
+            android:layout_toLeftOf="@+id/tv_order_status"
+            android:ellipsize="end"
+            android:gravity="start|center_vertical"
+            android:maxLines="1"
+            android:textSize="@dimen/space13"
+            android:text="订单编号:2018888484848884468" />
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space15"
+            android:gravity="center"
+            android:text="@string/trade_success"
+            android:textColor="#368D2F" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA">
+
+        <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+            android:id="@+id/iv_card"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:layout_marginBottom="@dimen/space10"
+            android:layout_marginLeft="@dimen/space15"
+            android:layout_marginTop="@dimen/space10"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/default_product_icon"
+            app:corner_radius="@dimen/x10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:oval="false" />
+
+        <TextView
+            android:id="@+id/tv_card_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space15"
+            android:text="周期卡(高端尊享卡)"
+            android:textColor="#212121"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toRightOf="@+id/iv_card"
+            app:layout_constraintTop_toTopOf="@+id/iv_card" />
+
+        <TextView
+            android:id="@+id/tv_card_specifications"
+            android:layout_width="@dimen/x80"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space5"
+            android:text="30天"
+            android:textColor="#8D8D8D"
+            android:textSize="12dp"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_card_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_card_name" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space10"
+            android:layout_marginTop="@dimen/space5"
+            android:maxLines="1"
+            android:text="¥100.00"
+            android:textSize="12dp"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_card_specifications"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_card_specifications" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space10"
+            app:layout_constraintTop_toBottomOf="@+id/iv_card"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space40"
+        android:layout_marginLeft="@dimen/space15">
+
+        <TextView
+            android:id="@+id/need_pay_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="应付金额:" />
+
+        <TextView
+            android:id="@+id/tv_need_pay_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space5"
+            android:layout_toRightOf="@+id/need_pay_money"
+            android:textSize="@dimen/space14"
+            android:gravity="center"
+            android:text="¥100.00" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="@dimen/x70"
+            android:layout_marginBottom="@dimen/space5"
+            android:layout_marginRight="@dimen/space10"
+            android:layout_marginTop="@dimen/space5"
+            android:background="@drawable/shape_text_bg"
+            android:gravity="center"
+            android:textSize="@dimen/space13"
+            android:paddingLeft="@dimen/space5"
+            android:paddingRight="@dimen/space5"
+            android:layout_toLeftOf="@+id/btn_watch_coupon"
+            android:text="@string/comment"
+            android:textColor="#8D8D8D" />
+
+        <TextView
+            android:id="@+id/btn_watch_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/space5"
+            android:layout_marginRight="@dimen/space10"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/space5"
+            android:background="@drawable/shape_card_order_bg"
+            android:gravity="center"
+            android:textSize="@dimen/space13"
+            android:paddingLeft="@dimen/space5"
+            android:paddingRight="@dimen/space5"
+            android:text="@string/watch_coupon"
+            android:textColor="#368D2F" />
+
+    </RelativeLayout>
+</LinearLayout>

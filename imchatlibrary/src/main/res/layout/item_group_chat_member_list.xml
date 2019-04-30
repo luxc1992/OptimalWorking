@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.yst.im.imchatlibrary.widget.ImRoundedImageView
+            android:id="@+id/group_chat_member_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/space10"
+            android:src="#dddddd"
+            android:scaleType="centerCrop"
+            app:oval="true"
+            />
+
+        <TextView
+            android:id="@+id/group_chat_member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/group_chat_member_avatar"
+            android:text="我的名字"
+            android:gravity="center"
+            android:textColor="#222222"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space1"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginRight="@dimen/space15"
+        android:background="#dddddd"/>
+</LinearLayout>

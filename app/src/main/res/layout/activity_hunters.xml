@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F2F2F2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/bg_yuan"
+            >
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_marginTop="65dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_hunteryuan"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="65dp"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                />
+            <TextView
+                android:id="@+id/tv_hunter_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:hint="@string/bunter_more"
+                android:textColorHint="@color/color_999999"
+                android:drawableRight="@mipmap/right_arrow"
+                android:drawablePadding="10dp"
+                />
+            <TextView
+                android:id="@+id/txt_hunter_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/bunter_out"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_333333"
+                android:layout_alignBaseline="@+id/txt_card_text"
+                android:layout_alignBottom="@+id/txt_card_text"
+                />
+        </RelativeLayout>
+        </RelativeLayout>
+
+    <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+        android:id="@+id/image_head"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="43dp"
+        android:src="@mipmap/default_nor_avatar"
+        app:oval="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp" />
+    <TextView
+        android:id="@+id/txt_hunter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hunter_name"
+        android:layout_gravity="center"
+        android:textColor="@color/color_222222"
+        android:layout_toRightOf="@id/image_head"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+</RelativeLayout>

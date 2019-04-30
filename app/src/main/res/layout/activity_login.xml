@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ECECEC"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/state_height"
+            android:background="#FCA555"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x30"/>
+        <LinearLayout
+            android:paddingTop="@dimen/x15"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/shape_gradual_login">
+
+            <ImageView
+                android:layout_marginTop="-20dp"
+                android:src="@mipmap/ic_logo_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/shape_login_bigbg"
+            android:orientation="vertical">
+
+            <com.yst.onecity.view.ContainsEmojiEditText
+                android:hint="@string/input_phone_num_11"
+                android:textSize="@dimen/textsize_13"
+                android:maxLines="1"
+                android:textColorHint="@color/color_999999"
+                android:inputType="number"
+                android:id="@+id/et_user_card"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_login_bg"
+                android:drawableLeft="@mipmap/ic_phone"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp" />
+
+            <RelativeLayout
+                android:id="@+id/psw_relative"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp">
+
+                <com.yst.onecity.view.ContainsEmojiEditText
+                    android:textColorHint="@color/color_999999"
+                    android:digits="0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+                    android:textSize="@dimen/textsize_13"
+                    android:hint="@string/register_input_psw"
+                    android:inputType="textPassword"
+                    android:id="@+id/et_user_psw"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_login_bg"
+                    android:drawableLeft="@mipmap/ic_psw"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp" />
+                <LinearLayout
+                    android:id="@+id/eyes_linear"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/psw_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_eye_psw" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/code_relative"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_login_bg"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/gain_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_text_half_bg"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/x15"
+                    android:paddingRight="@dimen/x10"
+                    android:text="获取验证码" />
+                <com.yst.onecity.view.ContainsEmojiEditText
+                    android:textSize="@dimen/textsize_13"
+                    android:hint="@string/register_message_code"
+                    android:maxLines="1"
+                    android:maxLength="6"
+                    android:inputType="number"
+                    android:id="@+id/et_user_message_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_toLeftOf="@id/gain_code"
+                    android:background="@drawable/shape_login_half_bg"
+                    android:drawableLeft="@mipmap/ic_code"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/x15">
+
+                <TextView
+                    android:id="@+id/change_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_exempt"
+                    android:textSize="@dimen/textsize_15" />
+
+                <TextView
+                    android:id="@+id/forget_psw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/login_forget_psw"
+                    android:textSize="@dimen/textsize_15" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/shape_text_join"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/login_join"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/x3"
+                    android:text="@string/login_message"
+                    android:textColor="@color/color_747474" />
+
+                <TextView
+                    android:id="@+id/jump_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_register"
+                    android:textColor="@color/color_red_ED5452" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/x10"
+        android:padding="@dimen/x10">
+
+        <TextView
+            android:id="@+id/san_fang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="第三方登录" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_toLeftOf="@id/san_fang"
+            android:background="@color/color_DDDDDD" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_toRightOf="@id/san_fang"
+            android:background="@color/color_DDDDDD" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/san_fang"
+            android:gravity="center"
+            android:paddingTop="@dimen/x50">
+
+            <ImageView
+                android:id="@+id/weixin_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_wx" />
+
+            <ImageView
+                android:id="@+id/qq_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:src="@mipmap/ic_qq" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/x40"
+        android:layout_marginLeft="20dp"
+        android:padding="@dimen/x8"
+        android:src="@mipmap/fanhui" />
+</RelativeLayout>

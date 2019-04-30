@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWrite"
+    >
+
+    <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+        android:id="@+id/iv_item_new_attention_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"
+        app:oval="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="13dp"
+        />
+    <TextView
+        android:id="@+id/txt_item_new_attention_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="达达"
+        android:layout_toRightOf="@id/iv_item_new_attention_head"
+        android:textColor="@color/color_121212"
+        android:layout_alignTop="@id/iv_item_new_attention_head"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="@dimen/text_size_17sp"
+        />
+    <TextView
+        android:id="@+id/txt_item_new_attention_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03-26 09:12"
+        android:textSize="13sp"
+        android:layout_toRightOf="@id/iv_item_new_attention_head"
+        android:textColor="@color/color_9A9A9A"
+        android:layout_alignBottom="@id/iv_item_new_attention_head"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="12dp"
+        />
+    <TextView
+        android:id="@+id/txt_item_new_attention"
+        android:layout_width="@dimen/space70"
+        android:layout_height="@dimen/space30"
+        android:text="+ 关注 "
+        android:textSize="@dimen/text_size_15sp"
+        android:textColor="@color/color_D35E52"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/shape_new_attention_bg_red"
+        android:gravity="center"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_DDDDDD"
+        android:layout_below="@id/txt_item_new_attention_time"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="10dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_news_send_picture_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="@dimen/space40"
+        android:layout_marginRight="@dimen/space5"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_news_pic_fail"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/space10"
+            android:focusable="false"
+            android:src="@drawable/msg_state_fail_resend"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pb_news_pic_progress"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/space10"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/lil_news_send_pic"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_news_send_picture_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/space5"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack555"
+                android:textSize="13sp" />
+
+            <!--<com.yst.im.imchatlibrary.widget.SampleCoverVideo-->
+                <!--android:id="@+id/video_send_player"-->
+                <!--android:layout_width="@dimen/space157"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_below="@+id/txt_news_send_picture_user_name"-->
+                <!--android:layout_centerInParent="true" />-->
+
+            <RelativeLayout
+                android:id="@+id/rel_send_isShow_time"
+                android:layout_width="@dimen/space157"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="#66000000"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txt_send_voice_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:text="02:15"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+            <com.yst.im.imchatlibrary.widget.ImRoundedImageView
+                android:id="@+id/img_news_accept_picture_img_url"
+                android:layout_width="@dimen/space157"
+                android:layout_height="200dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txt_news_send_picture_user_name"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <com.yst.im.imchatlibrary.widget.ImRoundedImageView
+            android:id="@+id/img_pic_accept_picture_user_icon"
+            android:layout_width="@dimen/space40"
+            android:layout_height="@dimen/space40"
+            android:layout_margin="@dimen/space5"
+            android:scaleType="centerCrop"
+            app:oval="true" />
+    </LinearLayout>
+
+</LinearLayout>

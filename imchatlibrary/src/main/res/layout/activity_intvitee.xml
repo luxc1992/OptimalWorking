@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.InviteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edt_invite_search"
+            android:layout_width="@dimen/space0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space15"
+            android:layout_weight="1"
+            android:background="@color/colorBlackEEE"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="@dimen/space10"
+            android:hint="@string/txt_search"
+            android:padding="@dimen/space5"
+            android:textSize="@dimen/text_size_11sp" />
+
+        <TextView
+            android:id="@+id/txt_invite_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/space15"
+            android:text="确定"
+            android:textColor="@color/colorRedF44B50"
+            android:textSize="@dimen/text_size_nomal" />
+    </LinearLayout>
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/tab_invite_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:tabMinWidth="@dimen/space115"
+        app:xTabIndicatorColor="@color/colorAccent"
+        app:xTabIndicatorWidth="@dimen/space10"
+        app:xTabMode="scrollable"
+        app:xTabSelectedTextColor="@color/colorBlack333"
+        app:xTabTextColor="@color/colorBlck999" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_invite_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space5" />
+
+    <ListView
+        android:id="@+id/lv_invite_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rel_invite_nothing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_nothing" />
+    </RelativeLayout>
+
+</LinearLayout>

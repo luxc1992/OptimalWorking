@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:background="@color/color_EEEEEE">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x15"
+            android:gravity="center_vertical"
+            android:text="群聊名称"
+            android:textColor="@color/color_222222"
+            android:textSize="@dimen/textsize_18" />
+
+        <TextView
+            android:id="@+id/group_chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x15"
+            android:gravity="center_vertical"
+            android:text="一群吃货"
+            android:textSize="@dimen/textsize_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x15"
+            android:gravity="center_vertical"
+            android:text="群聊人数"
+            android:textColor="@color/color_222222"
+            android:textSize="@dimen/textsize_16" />
+
+        <TextView
+            android:id="@+id/tv_group_chat_member_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x15"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/textsize_16" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <com.yst.onecity.view.MyListView
+        android:id="@+id/lv_group_chat_member"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="@dimen/x0"
+        android:divider="@null"/>
+</LinearLayout>

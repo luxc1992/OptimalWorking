@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_comment_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFF5F5F5"
+        android:padding="10dp"
+        android:text="评价详情"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_no_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_comment_normal"
+            android:text="未回复\t0"
+            android:textColor="@color/color_FF222222" />
+
+        <TextView
+            android:id="@+id/tv_zhongcha_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_comment_normal"
+            android:text="中差评\t0"
+            android:textColor="@color/color_FF222222" />
+
+        <TextView
+            android:id="@+id/tv_good_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_comment_normal"
+            android:text="好评\t0"
+            android:textColor="@color/color_FF222222" />
+
+        <TextView
+            android:id="@+id/tv_total_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_comment_select"
+            android:text="全部\t0"
+            android:textColor="@color/white" />
+
+        <include layout="@layout/line"></include>
+    </LinearLayout>
+</LinearLayout>

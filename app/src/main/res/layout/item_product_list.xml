@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/x5"
+    android:background="@drawable/shape_classfiy_bag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_marginTop="@dimen/x10"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/fyj"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:paddingTop="@dimen/x10"
+        android:layout_gravity="center"
+        android:text="芭妮兰 致柔卸妆膏卸妆霜"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:paddingTop="@dimen/x10"
+        android:layout_gravity="center"
+        android:text="朋友经常推荐的一款卸妆膏"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="¥123"
+            android:textColor="@color/color_ED5452"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/gray_line"
+            android:text="黑龙江"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

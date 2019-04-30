@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWrite"
+    android:orientation="vertical"
+    tools:context=".ui.activity.CreateGroupActivity">
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginRight="@dimen/space15"
+        android:background="@color/colorBlackF5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWrite"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_groupChat_groupName"
+                android:layout_width="@dimen/space0"
+                android:layout_height="@dimen/space40"
+                android:layout_marginTop="@dimen/space0.5"
+                android:layout_weight="1"
+                android:background="@color/colorWrite"
+                android:ellipsize="end"
+                android:hint="@string/txt_groupChat_groupName"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack333"
+                android:textSize="@dimen/text_size_nomal" />
+
+            <TextView
+                android:id="@+id/txt_groupChat_title_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="还可以输入20字"
+                android:textColor="@color/colorRed" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_groupChat_groupTopic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space40"
+            android:layout_marginTop="@dimen/space0.5"
+            android:background="@color/colorWrite"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/txt_groupChat_groupTopic"
+                android:textColor="@color/colorBlack333"
+                android:textSize="@dimen/text_size_nomal" />
+
+            <TextView
+                android:id="@+id/txt_createGroup_describe"
+                android:layout_width="@dimen/space0"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxEms="6"
+                android:paddingLeft="@dimen/space10"
+                android:singleLine="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/im_right_arrow" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space40"
+            android:layout_marginTop="@dimen/space0.5"
+            android:background="@color/colorWrite"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/txt_groupChat_groupUserManager"
+                android:textColor="@color/colorBlack333"
+                android:textSize="@dimen/text_size_nomal" />
+
+            <View
+                android:layout_width="@dimen/space0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/edt_groupChat_groupUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_groupChat_groupIndustry"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space40"
+            android:layout_marginTop="@dimen/space0.5"
+            android:background="@color/colorWrite"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/txt_groupChat_groupType"
+                android:textColor="@color/colorBlack333"
+                android:textSize="@dimen/text_size_nomal" />
+
+            <TextView
+                android:id="@+id/txt_createGroup_industry"
+                android:layout_width="@dimen/space0"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxEms="6"
+                android:paddingLeft="@dimen/space10"
+                android:singleLine="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/im_right_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_groupChat_groupInvitee"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space40"
+            android:layout_marginTop="@dimen/space0.5"
+            android:background="@color/colorWrite"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/txt_groupChat_groupIntivee"
+                android:textColor="@color/colorBlack333"
+                android:textSize="@dimen/text_size_nomal" />
+
+            <TextView
+                android:id="@+id/txt_groupChat_Invited"
+                android:layout_width="@dimen/space0"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxEms="6"
+                android:paddingLeft="@dimen/space10"
+                android:singleLine="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/im_right_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space0.5"
+            android:background="@color/colorWrite"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/space15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt_groupChat_groupaddPic"
+                android:textColor="@color/colorBlack333"
+                android:textSize="@dimen/text_size_nomal" />
+
+
+            <ImageView
+                android:id="@+id/img_groupChat_createGroupPic"
+                android:layout_width="@dimen/space92"
+                android:layout_height="@dimen/space53"
+                android:layout_margin="@dimen/space15"
+                android:src="@drawable/add_photo"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

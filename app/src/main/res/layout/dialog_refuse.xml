@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="265dp"
+    android:layout_height="185dp"
+    android:background="@drawable/shape_solid_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="拒绝理由"
+        android:textColor="@color/color_333333"
+        android:textSize="16sp" />
+
+    <com.yst.onecity.view.ContainsEmojiEditText
+        android:id="@+id/et_refuse_reason"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F6F6F6"
+        android:gravity="left"
+        android:hint="此处添加拒绝理由，如：商品未损坏"
+        android:textColorHint="@color/color_999999"
+        android:paddingBottom="8dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/color_333333"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_DDDDDD" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44.5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="0dp"
+            android:layout_height="44.5dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_FF4852"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_DDDDDD" />
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="0dp"
+            android:layout_height="44.5dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/color_FF4852"
+            android:textSize="17sp" />
+    </LinearLayout>
+</LinearLayout>

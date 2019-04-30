@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="@dimen/x80"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/default_head"
+                    app:oval="true" />
+
+
+                <TextView
+                    android:id="@+id/tv_add_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="点击添加头像"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="创建团队:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/tv_team_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:hint="未命名"
+                    android:maxLength="100"
+                    android:textColorHint="@color/gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/space10">
+
+                <EditText
+                    android:id="@+id/et_team_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:gravity="start"
+                    android:hint="@string/create_team_tips"
+                    android:padding="10dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/team_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:text="团队地址"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_toRightOf="@+id/team_address"
+                    android:id="@+id/tv_team_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:drawablePadding="@dimen/space10"
+                    android:drawableRight="@mipmap/right_arrow"
+                    android:padding="13dp"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/jingying_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:text="经营品类"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_toRightOf="@+id/jingying_class"
+                    android:id="@+id/tv_jingying_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:drawablePadding="@dimen/space10"
+                    android:drawableRight="@mipmap/right_arrow"
+                    android:padding="13dp"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <TextView
+                android:id="@+id/tv_upload_zizhi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/right_arrow"
+                android:padding="13dp"
+                android:text="上传资质"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="365dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还可以输入" />
+
+        <TextView
+            android:id="@+id/tv_no_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="150"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个字" />
+    </LinearLayout>
+
+</RelativeLayout>

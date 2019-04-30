@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.yst.im.imchatlibrary.base.baseview.AbstractTitleView
+        android:id="@+id/titleview_set_icon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space44"
+        android:background="@color/colorWrite"
+        title:left_image="@mipmap/back_title_right"
+        title:right_text_color="@color/colorBlck999"
+        title:small_text_size="15sp"
+        title:title_name="个人头像"
+        title:title_text_color="@color/colorBlck999"
+        title:title_text_size="18sp"
+        title:right_image="@drawable/icon_select"
+        android:paddingRight="@dimen/space5"/>
+
+    <ImageView
+        android:id="@+id/img_my_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        />
+</LinearLayout>

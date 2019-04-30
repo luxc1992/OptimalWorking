@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/main_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom_view"
+        android:layout_below="@+id/title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space45"
+                android:layout_marginTop="@dimen/space8"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="@dimen/space3"
+                    android:layout_height="@dimen/space15"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space5"
+                    android:background="@color/red" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space15"
+                    android:gravity="center"
+                    android:text="用户评论"
+                    android:textSize="@dimen/space14" />
+
+                <TextView
+                    android:id="@+id/tv_comment_total_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space15"
+                    android:gravity="center"
+                    android:textSize="@dimen/space12" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_comment_person_avatar"
+                    android:layout_width="@dimen/space60"
+                    android:layout_height="@dimen/space60"
+                    android:layout_marginLeft="@dimen/space10"
+                    android:layout_marginTop="@dimen/space10"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:oval="true" />
+
+                <TextView
+                    android:id="@+id/tv_nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space15"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space16"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@+id/iv_comment_person_avatar"
+                    app:layout_constraintTop_toTopOf="@+id/iv_comment_person_avatar" />
+
+                <TextView
+                    android:id="@+id/tv_comment_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space15"
+                    android:layout_marginTop="@dimen/space10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space16"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@+id/iv_comment_person_avatar"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_nick_name" />
+
+                <TextView
+                    android:id="@+id/tv_comment_publish_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space15"
+                    android:layout_marginTop="@dimen/space10"
+                    app:layout_constraintLeft_toRightOf="@+id/iv_comment_person_avatar"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_comment_content" />
+
+                <TextView
+                    android:id="@+id/btn_reply"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space10"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="回复"
+                    app:layout_constraintRight_toLeftOf="@+id/image"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_comment_content" />
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="@dimen/space15"
+                    android:layout_height="@dimen/space15"
+                    android:layout_marginRight="@dimen/space8"
+                    android:layout_marginTop="@dimen/space12"
+                    android:background="@mipmap/dianzan"
+                    app:layout_constraintRight_toLeftOf="@+id/tv_like_num"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_comment_content" />
+
+                <TextView
+                    android:id="@+id/tv_like_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space15"
+                    android:layout_marginTop="@dimen/space10"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_comment_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space10"
+                    android:background="@color/white"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_comment_publish_time" />
+            </android.support.constraint.ConstraintLayout>
+
+            <com.yst.onecity.view.MyListView
+                android:id="@+id/lv_all_reply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space15"
+                android:layout_marginRight="@dimen/space15"
+                android:background="@color/color_F5F5F5"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space45">
+
+                <View
+                    android:layout_width="@dimen/space83"
+                    android:layout_height="@dimen/space1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space20"
+                    android:layout_toLeftOf="@+id/end"
+                    android:background="@color/gray_line" />
+
+                <TextView
+                    android:id="@+id/end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="The End" />
+
+                <View
+                    android:layout_width="@dimen/space83"
+                    android:layout_height="@dimen/space1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space20"
+                    android:layout_toRightOf="@+id/end"
+                    android:background="@color/gray_line" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/ll_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space60"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_EEEEEE">
+
+        <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/space40"
+            android:layout_height="@dimen/space40"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space15"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/default_head"
+            app:oval="true" />
+
+        <TextView
+            android:id="@+id/btn_publish_reply"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space35"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space15"
+            android:layout_marginRight="@dimen/space15"
+            android:layout_toRightOf="@+id/icon"
+            android:background="@drawable/shape_white_5"
+            android:gravity="center"
+            android:text="想勾搭，先评论" />
+    </RelativeLayout>
+
+</RelativeLayout>

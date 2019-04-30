@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yst.im.imchatlibrary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 读写权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 语音录入权限相关 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 震动 -->
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <!-- 传感器权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 视频拍播新增 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 录音 -->
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".ui.activity.ChatScreenActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.GroupDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.GroupNoticeActivity"
+            android:screenOrientation="portrait" />
+
+
+
+        <activity
+            android:name=".ui.activity.NewsPhotoViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ImWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SingleLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogActivityTheme"
+            android:launchMode="singleTop"
+            />
+y
+        <activity
+            android:name=".ui.activity.SettingUserNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SettingUserSexActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.UpdatePhoneActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".ui.service.SocketCollectionService" />
+
+        <activity
+            android:name=".ui.activity.ImSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SettingLoginPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.TierOneCitiesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SecondaryCitiesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.WriteCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.ImSearchResultActivity" />
+        <activity
+            android:name=".ui.activity.ApplyListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.MoreGroupMembersActivity" />
+        <activity
+            android:name=".ui.activity.ApplyAffirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.FrientInfoSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SystemNotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.UpdateNameActivity" />
+        <activity android:name=".ui.activity.OperatingGroupMemberActivity" />
+        <activity android:name=".ui.activity.ForwardingActivity" />
+        <activity android:name=".ui.activity.GroupMemberActivity" />
+        <activity android:name=".ui.activity.MineGroupActivity" />
+        <activity android:name=".ui.activity.PersonalInfoActivity" />
+        <activity
+            android:name=".ui.activity.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize" />
+    </application>
+
+</manifest>

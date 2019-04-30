@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yst.im.imchat.ui.activity.GroupMembersActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space44"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="@dimen/space10"
+            android:id="@+id/img_groupMembers_back"
+            android:layout_width="@dimen/space60"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:drawableLeft="@mipmap/back_title_right" />
+
+        <View
+            android:layout_width="@dimen/space0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/space115"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_member_newApply_num"
+                android:layout_width="@dimen/space15"
+                android:layout_height="@dimen/space15"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space2"
+                android:layout_marginTop="@dimen/space5"
+                android:background="@drawable/shape_im_apply_num"
+                android:gravity="center"
+                android:padding="@dimen/space2"
+                android:textColor="@color/colorWrite"
+                android:textSize="@dimen/text_size_xsmall"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/rg_meber_perAndMem"
+                android:layout_width="@dimen/space115"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/space0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/rg_member_member"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="成员"
+                        android:textSize="@dimen/text_size_xlarge" />
+
+                    <View
+                        android:id="@+id/view_member_line"
+                        android:layout_marginTop="@dimen/space5"
+                        android:layout_width="@dimen/space15"
+                        android:layout_height="@dimen/space1"
+                        android:layout_gravity="center"
+                        android:background="@color/colorRedF44B50" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="@dimen/space0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:id="@+id/rg_meber_persion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="申请"
+                        android:textSize="@dimen/text_size_xlarge" />
+
+                    <View
+                        android:id="@+id/view_person_line"
+                        android:layout_marginTop="@dimen/space5"
+                        android:layout_width="@dimen/space15"
+                        android:layout_height="@dimen/space1"
+                        android:layout_gravity="center"
+                        android:background="@color/colorRedF44B50" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/space0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="@dimen/space60"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space5" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space0.5"
+        android:background="@color/colorBlackE5" />
+
+    <FrameLayout
+        android:id="@+id/fl_groupMembers_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space5"
+
+        />
+
+</LinearLayout>

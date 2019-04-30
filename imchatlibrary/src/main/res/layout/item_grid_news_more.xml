@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/space5">
+
+    <ImageView
+        android:id="@+id/img_news_more_pic"
+        android:layout_width="@dimen/space60"
+        android:layout_height="@dimen/space60"
+        android:src="@mipmap/icon_default" />
+
+    <TextView
+        android:id="@+id/txt_news_more_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space5"
+        android:text="文字"
+        android:textColor="@color/colorBlck999"
+        android:textSize="@dimen/text_size_small"
+        android:singleLine="true"
+        />
+</LinearLayout>

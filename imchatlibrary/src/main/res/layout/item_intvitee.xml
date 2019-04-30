@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    tools:context=".ui.activity.InviteActivity">
+
+
+    <com.yst.im.imchatlibrary.widget.ImRoundedImageView
+        android:id="@+id/img_invite_UserIcon"
+        android:layout_width="@dimen/space44"
+        android:layout_height="@dimen/space44"
+        android:layout_marginBottom="@dimen/space10"
+        android:layout_marginLeft="@dimen/space15"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/space10" />
+
+    <LinearLayout
+        android:layout_width="@dimen/space0"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/img_invite_UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="马云"
+            android:textColor="@color/colorBlack555"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/space7">
+
+            <TextView
+                android:id="@+id/img_invite_UserTopic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阿里"
+                android:textColor="@color/colorBlack72"
+                android:textSize="@dimen/text_size_11sp" />
+
+            <TextView
+                android:id="@+id/img_invite_UserCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space5"
+                android:text="CEO"
+                android:textColor="@color/colorBlack72"
+                android:textSize="@dimen/text_size_11sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_invite_select"
+        android:layout_width="@dimen/space17"
+        android:layout_height="@dimen/space17"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/space15"
+        android:background="@drawable/selector_im_invitee"
+        android:button="@null"
+        android:focusable="false"
+        android:padding="@dimen/space20" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+        android:id="@+id/iv_head_team"
+        android:layout_width="@dimen/x50"
+        app:oval="true"
+        android:scaleType="centerCrop"
+        android:layout_height="@dimen/x50"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/default_head" />
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_head_team">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="乱石山碧波谭"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:drawablePadding="2dp"
+            android:drawableLeft="@mipmap/dingwei"
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:text="花果山" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/tv_location"
+            android:text="装修/扫地"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

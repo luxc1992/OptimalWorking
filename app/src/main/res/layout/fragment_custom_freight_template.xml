@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.yst.onecity.view.MyRadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.yst.onecity.view.MyScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x20"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/x10">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:drawableLeft="@mipmap/icon_ems"
+                            android:text=" 快递" />
+
+                        <RadioButton
+                            android:id="@+id/radio_but_expressage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x5"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:textColor="@color/share_name_grey" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/activity_line_color"
+                        android:padding="@dimen/x18">
+
+                        <TextView
+                            android:id="@+id/tev_default_freight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="默认运费" />
+
+                        <TextView
+                            android:id="@+id/tev_jian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="件内" />
+
+                        <EditText
+
+                            android:id="@+id/edt_import_piece"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tev_jian"
+                            android:layout_toRightOf="@+id/tev_default_freight"
+                            android:background="@null"
+                            android:maxLength="6"
+                            android:gravity="center"
+                            android:inputType="phone" />
+
+                        <TextView
+                            android:id="@+id/tev_yuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="元" />
+
+                        <EditText
+                            android:id="@+id/edt_import_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tev_yuan"
+                            android:layout_toRightOf="@+id/tev_jian"
+                            android:background="@null"
+                            android:maxLength="6"
+                            android:gravity="center"
+                            android:inputType="number" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x3"
+                        android:background="@color/activity_line_color"
+                        android:padding="@dimen/x18">
+
+                        <TextView
+                            android:id="@+id/tev_default_freight_s"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="每增加" />
+
+                        <TextView
+                            android:id="@+id/tev_jian_s"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="件,增加运费" />
+
+                        <EditText
+                            android:id="@+id/edt_import_piece_s"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tev_jian_s"
+                            android:layout_toRightOf="@+id/tev_default_freight_s"
+                            android:background="@null"
+                            android:maxLength="6"
+                            android:gravity="center"
+                            android:inputType="phone" />
+
+
+                        <TextView
+                            android:id="@+id/tev_yuan_s"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="元" />
+
+                        <EditText
+                            android:id="@+id/edt_import_money_s"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tev_yuan_s"
+                            android:layout_toRightOf="@+id/tev_jian_s"
+                            android:background="@null"
+                            android:maxLength="6"
+                            android:gravity="center"
+                            android:inputType="number" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:background="@color/activity_line_color"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x20"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/x10">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/ic_launcher_round"
+                            android:gravity="center_vertical"
+                            android:text="EMS" />
+
+                        <RadioButton
+                            android:id="@+id/radio_but_ems"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x5"
+                            android:textColor="@color/share_name_grey" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/activity_line_color"
+                        android:padding="@dimen/x18">
+
+                        <TextView
+                            android:id="@+id/tev_default_freight_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="默认运费" />
+
+                        <TextView
+                            android:id="@+id/tev_jian_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="件内" />
+
+                        <EditText
+                            android:id="@+id/edt_import_piece_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tev_jian_two"
+                            android:layout_toRightOf="@+id/tev_default_freight_two"
+                            android:background="@null"
+                            android:gravity="center" />
+
+
+                        <TextView
+                            android:id="@+id/tev_yuan_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="元" />
+
+                        <EditText
+                            android:id="@+id/edt_import_money_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tev_yuan_two"
+                            android:layout_toRightOf="@+id/tev_jian_two"
+                            android:background="@null"
+                            android:gravity="center" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x3"
+                        android:background="@color/activity_line_color"
+                        android:padding="@dimen/x18">
+
+                        <TextView
+                            android:id="@+id/tev_default_freight_s_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="每增加" />
+
+                        <TextView
+                            android:id="@+id/tev_jian_s_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="件,增加运费" />
+
+                        <EditText
+                            android:id="@+id/edt_import_piece_s_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tev_jian_s_two"
+                            android:layout_toRightOf="@+id/tev_default_freight_s_two"
+                            android:background="@null"
+                            android:gravity="center" />
+
+
+                        <TextView
+                            android:id="@+id/tev_yuan_s_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="元" />
+
+                        <EditText
+                            android:id="@+id/edt_import_money_s_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tev_yuan_s_two"
+                            android:layout_toRightOf="@+id/tev_jian_s_two"
+                            android:background="@null"
+                            android:gravity="center" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:background="@color/activity_line_color"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x20"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/x10">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/ic_launcher_round"
+                            android:gravity="center_vertical"
+                            android:text="平邮" />
+
+                        <RadioButton
+                            android:id="@+id/radio_but_common"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x5"
+                            android:textColor="@color/share_name_grey" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/activity_line_color"
+                        android:padding="@dimen/x18">
+
+                        <TextView
+                            android:id="@+id/tev_default_freight_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="默认运费" />
+
+                        <TextView
+                            android:id="@+id/tev_jian_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="件内" />
+
+                        <EditText
+                            android:id="@+id/edt_import_piece_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tev_jian_three"
+                            android:layout_toRightOf="@+id/tev_default_freight_three"
+                            android:background="@null"
+                            android:gravity="center" />
+
+
+                        <TextView
+                            android:id="@+id/tev_yuan_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="元" />
+
+                        <EditText
+                            android:id="@+id/edt_import_money_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tev_yuan_three"
+                            android:layout_toRightOf="@+id/tev_jian_three"
+                            android:background="@null"
+                            android:gravity="center" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x3"
+                        android:background="@color/activity_line_color"
+                        android:padding="@dimen/x18">
+
+                        <TextView
+                            android:id="@+id/tev_default_freight_s_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="每增加" />
+
+                        <TextView
+                            android:id="@+id/tev_jian_s_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="件,增加运费" />
+
+                        <EditText
+                            android:id="@+id/edt_import_piece_s_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tev_jian_s_three"
+                            android:layout_toRightOf="@+id/tev_default_freight_s_three"
+                            android:background="@null"
+                            android:gravity="center" />
+
+
+                        <TextView
+                            android:id="@+id/tev_yuan_s_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="元" />
+
+                        <EditText
+                            android:id="@+id/edt_import_money_s_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tev_yuan_s_three"
+                            android:layout_toRightOf="@+id/tev_jian_s_three"
+                            android:background="@null"
+                            android:gravity="center" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:background="@color/activity_line_color"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </com.yst.onecity.view.MyScrollView>
+
+    </com.yst.onecity.view.MyRadioGroup>
+
+    <Button
+        android:id="@+id/btn_affirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#F07878"
+        android:padding="@dimen/x10"
+        android:text="确认"
+        android:textColor="@color/white" />
+</RelativeLayout>

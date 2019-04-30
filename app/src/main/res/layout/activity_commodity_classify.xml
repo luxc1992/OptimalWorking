@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_commodity_classify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yst.onecity.activity.issue.CommodityClassifyActivity">
+
+    <include layout="@layout/main_title" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x16"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/x16"
+            android:layout_weight="1.3"
+            android:fadingEdge="none"
+            android:listSelector="@color/white"
+            android:scrollbars="none"
+            android:text="选择一级分类"
+            android:textColor="#B6B6B6"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x16"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/x16"
+            android:layout_weight="3"
+            android:scrollbars="none"
+            android:text="选择二级分类"
+            android:textColor="#B6B6B6"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/lv_classify"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:background="@color/color_F2F2F2"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@color/white"
+            android:scrollbars="none" />
+
+        <ListView
+            android:id="@+id/lv_child_classify"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:divider="@drawable/list_item_divider"
+            android:dividerHeight="1px"
+            android:paddingLeft="@dimen/x5"
+            android:paddingTop="@dimen/x5"
+            android:scrollbars="none" />
+    </LinearLayout>
+</LinearLayout>

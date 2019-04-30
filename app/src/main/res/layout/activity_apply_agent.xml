@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/main_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="13dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="你还不是经济人哦！"
+            android:textColor="@color/color_979CA3"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="如何成为经纪人？"
+            android:textColor="@color/color_3C3C3C"
+            android:textSize="15sp"
+            android:layout_marginTop="7dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="邀请一名未在平台上注册的新用户即可成为经纪人。"
+            android:textColor="@color/color_3C3C3C"
+            android:textSize="15sp"
+            android:layout_marginTop="7dp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/txt_apply_invite"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="立即邀请好友"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_trans_sure"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

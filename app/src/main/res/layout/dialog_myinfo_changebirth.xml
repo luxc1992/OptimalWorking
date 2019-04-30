@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/ly_myinfo_changeaddress"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorWhite"
+android:orientation="vertical" >
+
+<LinearLayout
+    android:id="@+id/ly_myinfo_changeaddress_child"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        >
+
+        <TextView
+            android:id="@+id/btn_myinfo_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:text="取消"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="15dip"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_myinfo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/confirm_txtview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="确定"
+            android:paddingRight="12dp"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_DDDDDD"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <com.yst.onecity.wheelview.MyWheelView
+            android:id="@+id/province_wheel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.yst.onecity.wheelview.MyWheelView
+            android:id="@+id/city_wheel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

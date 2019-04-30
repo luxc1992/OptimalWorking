@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tv_child_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="我们在家怎么能练出马甲线呢？呦！您在家还想练马甲线呐，想的可真多啊"
+        android:textColor="@color/color_333333" />
+
+    <com.yst.basic.framework.view.roundedimageview.RoundedImageView
+        android:id="@+id/iv_news_img"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="15dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/list_bg"
+        app:corner_radius="3dp" />
+</LinearLayout>

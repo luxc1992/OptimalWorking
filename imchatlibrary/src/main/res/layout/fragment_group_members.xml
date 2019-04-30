@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space15"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/edt_members_search"
+            android:layout_width="@dimen/space0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorBlackEEE"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="@dimen/space10"
+            android:hint="@string/txt_search"
+            android:padding="@dimen/space5"
+            android:textSize="@dimen/text_size_11sp"
+            android:singleLine="true"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_member_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/lil_member_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlackF5"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/space5"
+            android:paddingLeft="@dimen/space10"
+            android:paddingTop="@dimen/space5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_groupIntro_groupManager" />
+
+            <TextView
+                android:id="@+id/txt_groupManager_perNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space5"
+                android:text="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_groupIntro_pers" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_groupManager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlackF5"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_groupIntro_groupMember" />
+
+            <TextView
+                android:id="@+id/txt_groupMembers_perNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space5"
+                android:text="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_groupIntro_pers" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_groupMembers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_member_nothing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_nothing" />
+    </RelativeLayout>
+</LinearLayout>

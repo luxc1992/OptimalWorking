@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/main_title"></include>
+
+    <TextView
+        android:id="@+id/tv_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include"
+        android:padding="12dp"
+        android:text="选择一级分类"
+        android:textColor="@color/color_FFB6B6B6"
+        android:textSize="14sp" />
+    <View
+        android:layout_below="@id/tv_choice"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_DDDDDD"></View>
+
+    <ListView
+        android:id="@+id/lv_sale_class"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_choice"
+        android:padding="5dp"></ListView>
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/emptydata"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffeeeeee">
+
+        <com.yst.onecity.view.ContainsEmojiEditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/x10"
+            android:background="@drawable/shape_speciallyperson_bg"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/x10"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tv_search"
+            android:textColor="@color/color_9C9C9C"
+            android:textSize="@dimen/textsize_13" />
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/tv_search"
+            android:paddingRight="@dimen/x5"
+            android:src="@mipmap/icon_search" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/no_data_sv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@mipmap/nodate"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/sv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff3f3f3"
+                android:padding="@dimen/x10"
+                android:text="通讯录好友"
+                android:textColor="@color/black" />
+
+            <com.yst.onecity.view.MyListView
+                android:id="@+id/phone_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:listSelector="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/tv_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff3f3f3"
+                android:padding="@dimen/x10"
+                android:text="其他服务专员"
+                android:textColor="@color/black" />
+
+            <com.yst.onecity.view.MyListView
+                android:id="@+id/other_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:listSelector="#00FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/search_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:listSelector="#00FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/nodate" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/x10"
+                android:text="暂无数据" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

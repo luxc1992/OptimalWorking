@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context="com.yst.onecity.activity.mine.order.CheckEvaluateListActivity">
+
+    <include layout="@layout/main_title" />
+
+    <com.yst.onecity.view.MyListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/color_DDDDDD"
+        android:dividerHeight="0.5dp"
+        tools:listitem="@layout/item_evaluate_product">
+
+    </com.yst.onecity.view.MyListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_DDDDDD" />
+</LinearLayout>

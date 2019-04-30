@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_title" />
+
+    <TextView
+        android:id="@+id/tv_set_login_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_F2F1F1"
+        android:padding="@dimen/x15"
+        android:text="@string/str_set_pwd_tips"
+        android:visibility="gone" />
+
+    <!--设置登录密码布局-->
+    <LinearLayout
+        android:id="@+id/ll_set_pwd_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/view_set_login_pwd" />
+    </LinearLayout>
+
+    <!--修改登录密码布局-->
+    <LinearLayout
+        android:id="@+id/ll_update_login_pwd_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/view_update_login_pwd" />
+    </LinearLayout>
+
+    <!--修改交易密码布局-->
+    <LinearLayout
+        android:id="@+id/ll_update_trade_pwd_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/view_update_trade_pwd" />
+    </LinearLayout>
+
+    <!--设置交易密码布局-->
+    <LinearLayout
+        android:id="@+id/ll_set_trade_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/view_set_trade_pwd" />
+    </LinearLayout>
+
+    <!--完成按钮-->
+    <TextView
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_margin="@dimen/x15"
+        android:background="@drawable/shape_btn_pink_red_bg"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/finish"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+</LinearLayout>
